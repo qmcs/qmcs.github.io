@@ -63,6 +63,6 @@ publish:
 
 github: publish
 	ghp-import $(OUTPUTDIR)
-	git push origin gh-pages
+	git push pyclub gh-pages
 
 .PHONY: html help clean regenerate serve devserver publish github

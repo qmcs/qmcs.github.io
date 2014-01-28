@@ -2,8 +2,12 @@ Python Club at Queen Mary, University of London
 ===============================================
 
 
-This is the content of the website of the Python club at Queen Mary,
-University of London. You are welcome to contribute your articles.
+This is the content of the `website of the Python club at Queen Mary
+<http://pyclub.github.io/, University of London>`_. You are welcome to
+contribute your articles on any more or less technical topics, not necessarily
+related to Python (for instance, if you know a bit about port forwarding using
+``ssh``, and able to f*ck the system and pretend that the school SQL server is
+running locally, write it here).
 
 Getting started
 ---------------
@@ -27,6 +31,13 @@ install needed software::
     pip install -r requirements.txt
 
 now, you are ready to write an article.
+
+Note that you will need to run::
+
+    source .env/bin/activate
+
+before being able to execute ``pelican`` and other related software!
+
 
 Write an article
 ----------------
@@ -53,7 +64,7 @@ name. The content of the file should be similar to
     :category: yeah
     :author: Dmitrijs Milajevs
 
-    .. Here goes the context of the article.
+    .. Here goes the content of the article.
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -65,7 +76,66 @@ name. The content of the file should be similar to
 
 Refer to `Pelican documentation <http://docs.getpelican.com/en/3.3.0/>`_ and
 `reStructuredText examples
-<http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_.
+<http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ if you want
+nice formatting.
+
+An easy way to see rendered .rst files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can use `restview <https://pypi.python.org/pypi/restview>`_ to see
+rendered ``.rst`` files in your browser. For example, to see the intro
+article, type::
+
+    restview content/articles/001-intro.rst
+
+There are rumors, that you can feed a directroy to restview and then select
+files in the browser::
+
+    restview content
+
+Generate the HTML version of a blog locally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Wow, you can get a local version of the blog::
+
+    make devserver
+    open http://localhost:8000  # gnome-open on Linux
+
+Share with others
+~~~~~~~~~~~~~~~~~
+
+Commit and push our changes::
+
+    git st  # see what you have done
+    git diff  # really see what you have done
+    git add RELATED_FILES  # probably, somethig like content/articles/001-intro.rst
+    git push  # send you changes to github
+
+Create a `pull request <https://help.github.com/articles/creating-a-pull-request>`_.
+
+Why should I bother?
+--------------------
+
+Sharing your knowledge is cool. You can always put to your CV that you
+contribute to a blog, know git, familliar with peer reviews, and able to read
+documentation.
+
+Right, you can also directly point to your work. Your next eployer will like
+it.
+
+Updating the web site
+---------------------
+
+In case you are lucky and have write acces to the main repo you can upload the
+generated HTML version of the site.
+
+You need to set up a new remote::
+
+    git remote add pyclub git@github.com:pyclub/pyclub.github.io.git
+
+To upload the HTML just run::
+
+    make github
 
 Tips
 ----
