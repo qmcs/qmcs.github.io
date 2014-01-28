@@ -2,8 +2,8 @@ Python Club at Queen Mary, University of London
 ===============================================
 
 
-This is the content of the `website of the Python club at Queen Mary
-<http://pyclub.github.io/, University of London>`_. You are welcome to
+This is the content of the `website of the Python club at Queen Mary,
+University of London <http://pyclub.github.io/>`_. You are welcome to
 contribute your articles on any more or less technical topics, not necessarily
 related to Python (for instance, if you know a bit about port forwarding using
 ``ssh``, and able to f*ck the system and pretend that the school SQL server is
@@ -15,11 +15,13 @@ Getting started
 First of all, get an account at `github <https://github.com>`_, `set up your
 ssh key <https://help.github.com/articles/generating-ssh-keys>`_, and `fork
 <https://help.github.com/articles/fork-a-repo>`_ the `original repo
-<https://github.com/pyclub/pyclub.github.io>`_.
+<https://github.com/pyclub/pyclub.github.io>`_. Right, you also need to
+`configure git <https://help.github.com/articles/set- up-git>`_.
 
 Before writing the code, clone the repo::
 
-    git clone git@github.com:YOUR_USERNAME/pyclub.github.io
+    git clone git@github.com:username/pyclub.github.io
+    cd pyclub.github.io
 
 create a virtualenv::
 
@@ -88,7 +90,7 @@ article, type::
 
     restview content/articles/001-intro.rst
 
-There are rumors, that you can feed a directroy to restview and then select
+There are rumors, that you can feed a directory to restview and then select
 files in the browser::
 
     restview content
@@ -100,6 +102,7 @@ Wow, you can get a local version of the blog::
 
     make devserver
     open http://localhost:8000  # gnome-open on Linux
+    # make stopserver is a logical way to stop the server
 
 Share with others
 ~~~~~~~~~~~~~~~~~
@@ -109,6 +112,7 @@ Commit and push our changes::
     git st  # see what you have done
     git diff  # really see what you have done
     git add RELATED_FILES  # probably, somethig like content/articles/001-intro.rst
+    git ci -m'An article describing the enterprise (R) power of Java.'
     git push  # send you changes to github
 
 Create a `pull request <https://help.github.com/articles/creating-a-pull-request>`_.
@@ -116,33 +120,25 @@ Create a `pull request <https://help.github.com/articles/creating-a-pull-request
 Why should I bother?
 --------------------
 
-Sharing your knowledge is cool. You can always put to your CV that you
-contribute to a blog, know git, familliar with peer reviews, and able to read
+Sharing your knowledge is cool. You can always put in your CV that you
+contribute to a blog, know git, familiar with peer reviews, and able to read
 documentation.
 
-Right, you can also directly point to your work. Your next eployer will like
-it.
+You can also directly point to your work. Your next employer will like it.
 
 Updating the web site
 ---------------------
 
-In case you are lucky and have write acces to the main repo you can upload the
+In case you are lucky and have write access to the main repo you can upload the
 generated HTML version of the site.
 
 You need to set up a new remote::
 
-    git remote add pyclub git@github.com:pyclub/pyclub.github.io.git
+    git remote add pyclub.github.io git@github.com:pyclub/pyclub.github.io.git
 
 To upload the HTML just run::
 
     make github
-
-Tips
-----
-
-You can use `restview <https://pypi.python.org/pypi/restview>`_ to see
-rendered ``.rst`` files in your browser.
-
 
 License
 -------
