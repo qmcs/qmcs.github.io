@@ -34,3 +34,4 @@ DEFAULT_PAGINATION = False
 
 DISQUS_SITENAME = 'pyclub'
 GITHUB_URL = 'https://github.com/pyclub/pyclub.github.io'
+GOOGLE_ANALYTICS = 'UA-47565959-1'
