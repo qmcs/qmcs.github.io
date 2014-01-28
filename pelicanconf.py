@@ -24,8 +24,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('You can add links in your config file', '#'),
-    ('Another social link', '#'),
+    ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
 )
 
 DEFAULT_PAGINATION = False

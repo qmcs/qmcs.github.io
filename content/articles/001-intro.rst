@@ -7,4 +7,6 @@ Welcome to the QM Python club
 :category: yeah
 :author: Dmitrijs Milajevs
 
-Initial version, just to check if it works.
+Follow the `instructions
+<https://github.com/pyclub/pyclub.github.io/blob/pelican/README.rst>`_ if you
+want to add an article.
