@@ -24,8 +24,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('You can add links in your config file', '#'),
-    ('Another social link', '#'),
+    ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
 )
 
 DEFAULT_PAGINATION = False
@@ -35,3 +34,4 @@ DEFAULT_PAGINATION = False
 
 DISQUS_SITENAME = 'pyclub'
 GITHUB_URL = 'https://github.com/pyclub/pyclub.github.io'
+GOOGLE_ANALYTICS = 'UA-47565959-1'
