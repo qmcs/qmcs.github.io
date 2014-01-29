@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Club at Queen Mary</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/all.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-01-29T09:03:00+00:00</updated><entry><title>PyData, Europython and Google</title><link href="http://pyclub.github.io/pydata-europython-and-google.html" rel="alternate"></link><updated>2014-01-29T09:03:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-29:pydata-europython-and-google.html</id><summary type="html">&lt;p&gt;There are several events on the radar that not only give you loads of
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Club at Queen Mary</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/opportunities.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-01-29T09:03:00+00:00</updated><entry><title>PyData, Europython and Google</title><link href="http://pyclub.github.io/pydata-europython-and-google.html" rel="alternate"></link><updated>2014-01-29T09:03:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-29:pydata-europython-and-google.html</id><summary type="html">&lt;p&gt;There are several events on the radar that not only give you loads of
 knowledge, but also give you some money.&lt;/p&gt;
 &lt;div class="section" id="pydata-in-london"&gt;
 &lt;h2&gt;PyData in London&lt;/h2&gt;
@@ -41,6 +41,4 @@ published on February 24&lt;/a&gt;. However, it's a good idea to go trough the
 &lt;a class="reference external" href="http://www.google-melange.com/gsoc/projects/list/google/gsoc2013"&gt;project list of 2013&lt;/a&gt; to get an idea of possible projects and good
 applications.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="conference"></category><category term="scholarship"></category></entry><entry><title>Welcome to the QM Python club</title><link href="http://pyclub.github.io/welcome.html" rel="alternate"></link><updated>2014-01-28T19:49:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-28:welcome.html</id><summary type="html">&lt;p&gt;Follow the &lt;a class="reference external" href="https://github.com/pyclub/pyclub.github.io/blob/pelican/README.rst"&gt;instructions&lt;/a&gt; if you
-want to add an article.&lt;/p&gt;
-</summary><category term="thats"></category><category term="awesome"></category></entry></feed>
+</summary><category term="conference"></category><category term="scholarship"></category></entry></feed>
