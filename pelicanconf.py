@@ -25,6 +25,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
+    ('Twitter', 'https://twitter.com/pyclub_qm'),
 )
 
 DEFAULT_PAGINATION = False
@@ -35,3 +36,4 @@ DEFAULT_PAGINATION = False
 DISQUS_SITENAME = 'pyclub'
 GITHUB_URL = 'https://github.com/pyclub/pyclub.github.io'
 GOOGLE_ANALYTICS = 'UA-47565959-1'
+TWITTER_USERNAME = 'pyclub_qm'
