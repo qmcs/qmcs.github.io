@@ -16,17 +16,23 @@ First of all, get an account at `github <https://github.com>`_, `set up your
 ssh key <https://help.github.com/articles/generating-ssh-keys>`_, and `fork
 <https://help.github.com/articles/fork-a-repo>`_ the `original repo
 <https://github.com/pyclub/pyclub.github.io>`_. Right, you also need to
-`configure git <https://help.github.com/articles/set- up-git>`_.
+`configure git <https://help.github.com/articles/set- up-git>`_. If you didn't
+use git before, check out `this tutorial <http://try.github.io>`_ to get a
+general idea.
+
 
 Before writing the code, clone the repo::
 
     git clone git@github.com:username/pyclub.github.io
     cd pyclub.github.io
 
-create a virtualenv::
+create a virtualenv_::
 
-    virtualenv .env
+    python3.3 -m virtualenv .env
+    # virtualenv .env
     source .env/bin/activate
+
+.. _virtualenv: http://www.virtualenv.org
 
 install needed software::
 
