@@ -1,7 +1,7 @@
 GSOC project: MoinMoin
 ======================
 
-:date: 2014-03-10 11:17
+:date: 2014-02-10 11:17
 :tags: gsoc
 :category: opportunities
 :author: Dmitrijs Milajevs
