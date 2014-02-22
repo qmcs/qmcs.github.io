@@ -17,8 +17,10 @@ ssh key <https://help.github.com/articles/generating-ssh-keys>`_, and `fork
 <https://help.github.com/articles/fork-a-repo>`_ the `original repo
 <https://github.com/pyclub/pyclub.github.io>`_. Right, you also need to
 `configure git <https://help.github.com/articles/set- up-git>`_. If you didn't
-use git before, check out `this tutorial <http://try.github.io>`_ to get a
-general idea.
+use git before, check out `Github tutorial <http://try.github.io>`_ or a
+`tutorial provided by Software Carpentry
+<http://apawlik.github.io/2014-02-03-TGAC/lessons/tgac/version-
+control/tutorial.html>`_ to get a general idea.
 
 
 Before writing the code, clone the repo::
