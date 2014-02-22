@@ -10,7 +10,6 @@ The Pydata conference has started and the venue has a great view to East
 London. If you look carefully, you can spot Queen Mary.
 
 .. image:: {filename}/static/images/pydata-qmul.jpg
-    :width: 70%
     :align: center
-    :alt: Dmitrijs Milajevs
+    :alt: East London
     :target: {filename}/static/images/pydata-qmul-large.jpg
