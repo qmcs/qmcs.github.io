@@ -6,4 +6,4 @@ Pyclub Twitter account
 :category: yeah
 :author: Dmitrijs Milajevs
 
-I'm happy to announce that we have a Twitter account. Follow `@pyclub_qm <https://twitter.com/pyclub_qm>`.
+I'm happy to announce that we have a Twitter account. Follow `@pyclub_qm <https://twitter.com/pyclub_qm>`_.
