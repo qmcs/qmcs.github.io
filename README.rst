@@ -30,7 +30,7 @@ Before writing the code, clone the repo::
 
 create a virtualenv_::
 
-    python3.3 -m virtualenv .env
+    python3.3 -m venv .env
     # virtualenv .env
     source .env/bin/activate
 
