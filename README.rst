@@ -30,6 +30,14 @@ Before writing the code, clone the repo::
 
 create a virtualenv_::
 
+With system python::
+
+    python -m virtualenv .env
+    # virtualenv .env
+    source .env/bin/activate
+
+With python 3(You need python 3 installed for this to work)::
+
     python3.3 -m virtualenv .env
     # virtualenv .env
     source .env/bin/activate
