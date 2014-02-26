@@ -1,5 +1,5 @@
-PY=python
-PELICAN=pelican
+PY=bin/python
+PELICAN=bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
