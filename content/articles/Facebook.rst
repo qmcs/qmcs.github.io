@@ -3,7 +3,7 @@ Facebook Hackathon
 
 :date: 2014-02-28 19:32
 :tags: Facebook
-:category: First
+:category: opportunities
 :author: Umar Qureshi
 
 Facebook London Hackathon
