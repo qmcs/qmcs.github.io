@@ -15,5 +15,5 @@ so Join Facebook in London as we stay up all night hacking , learning and having
 
 The winning team will get the chance to compete against teams from other Hackathons both domestically and internationally at the Hackathon Finals and be judged by Facebook executives- held at Facebook HQ in Menlo Park , California in November!
 
-Here is a link for registration https://www.surveymonkey.com/s/londonhackathon. Register before the 4th of March. The event is over subscribed but you can still apply. Be ready for a coding puzzle on the 4th of March , this will be your ticket to the event 
+Here is a link for registration https://www.surveymonkey.com/s/londonhackathon. Register before the 4th of March. The event is over subscribed but you can still apply. Be ready for a coding puzzle on the 4th of March , this will be your ticket to the event.
 
