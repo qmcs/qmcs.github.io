@@ -62,6 +62,6 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-	ghp-import -p -b master -r pyclub.github.io $(OUTPUTDIR)
+	ghp-import -p -b master $(OUTPUTDIR)
 
 .PHONY: html help clean regenerate serve devserver publish github
