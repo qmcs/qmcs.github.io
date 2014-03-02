@@ -15,6 +15,14 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
+# Menu
+DISPLAY_CATEGORIES_ON_MENU = False
+MENUITEMS = (
+    ('Archive', 'archives.html'),
+    ('Tags', 'tags.html'),
+    ('Authors', 'authors.html'),
+)
+
 # Blogroll
 LINKS = (
     ('Pelican', 'http://getpelican.com/'),
