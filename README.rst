@@ -148,10 +148,6 @@ Updating the web site
 In case you are lucky and have write access to the main repo you can upload the
 generated HTML version of the site.
 
-You need to set up a new remote::
-
-    git remote add pyclub.github.io git@github.com:pyclub/pyclub.github.io.git
-
 To upload the HTML just run::
 
     make github
