@@ -70,8 +70,9 @@ name. The content of the file should be similar to
 
 .. code-block:: rst
 
-    .. The title
+    .. The title. It's important to put = from below and above!
 
+    =============================
     Welcome to the QM Python club
     =============================
 
