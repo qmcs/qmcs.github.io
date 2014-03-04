@@ -2,8 +2,8 @@
 ##
 # This section should match your Makefile
 ##
-PY=python
-PELICAN=pelican
+PY=$(pwd)/bin/python
+PELICAN=$(pwd)/bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(pwd)
@@ -96,7 +96,7 @@ elif [[ $1 == "restart" ]]; then
   start_up $port
 elif [[ $1 == "start" ]]; then
   if ! start_up $port; then
-    shut_down 
+    shut_down
   fi
 else
   usage
