@@ -5,13 +5,24 @@ Category: languages
 Author: Henrik O. Skogmo
 
 
-Giving writers a WYSIWYG makes the assumption that they know how to make stuff look good. This is wrong. People who work with words should only have to care about words. Leaving the design choices to the designers. Markdown does an excellent job in accomplishing this compromise.
+Giving writers a WYSIWYG makes the assumption that they know how to make stuff
+look good. This is wrong. People who work with words should only have to care
+about words. Leaving the design choices to the designers. Markdown does an
+excellent job in accomplishing this compromise.
 
-Many of the webs most populare publishing tools are now supporting Markdown. And you might recognise it from Stack Overflow and GitHub. So maybe it's time you get down with the M-down?
+Many of the webs most populare publishing tools are now supporting Markdown.
+And you might recognise it from Stack Overflow and GitHub. So maybe it's time
+you get down with the M-down?
 
-How the hell do you harvest the sweet markdown nectar? Easy. Kick-start your favourite (plain)text editor and fire away. Since Markdown is a lightweight markup language, all of you oldschool BBCode forum writers out there will find yourselves quite confortable.
+How the hell do you harvest the sweet markdown nectar? Easy. Kick-start your
+favourite (plain)text editor and fire away. Since Markdown is a lightweight
+markup language, all of you oldschool BBCode forum writers out there will find
+yourselves quite confortable.
 
-Even though you can find the reference to [Markdown's syntax](http://daringfireball.net/projects/markdown/syntax) online, I'll walk you through some of the basics. Do note that there is alternatives for some of the elements, so I encourouge you to gaze over the documenation.
+Even though you can find the reference to [Markdown's
+syntax](http://daringfireball.net/projects/markdown/syntax) online, I'll walk
+you through some of the basics. Do note that there is alternatives for some of
+the elements, so I encourouge you to gaze over the documenation.
 
 ## Headers
 
@@ -28,8 +39,8 @@ Asterisks or underlines
 
 Becomes "The quick *brown fox* jumps over the **lazy dog**"
 
-## Links
-There are multiple ways of making links in MD, either inline or by reference. However [here]() is the most populare way.
+## Links There are multiple ways of making links in MD, either inline or by
+reference. However [here]() is the most populare way.
 
 	[an example](http://example.com "Title")
 
@@ -73,8 +84,11 @@ Use the backtick quotes (\`) for `inline code`.
 	  VISIBLE "HAI WORLD!!!1!"
 	KTHXBYE
 
-If you would like to start using Markdown locally on your own system I have a couple of Markdown readers to recommend. Even though you don't strickly need anything fancy to write Markdown, you still need something to parse it.
+If you would like to start using Markdown locally on your own system I have a
+couple of Markdown readers to recommend. Even though you don't strickly need
+anything fancy to write Markdown, you still need something to parse it.
 
-[Mou](http://mouapp.com/ "Mou App") for Mac
-[MarkdownPad](http://markdownpad.com/ "Markdownpad") for Windowns
-[ReText](http://sourceforge.net/p/retext/home/ReText/ "ReText") (also for reStructuredText) for Linux
+[Mou](http://mouapp.com/ "Mou App") for Mac MarkdownPad](http://markdownpad.com/
+["Markdownpad") for Windowns
+[ReText](http://sourceforge.net/p/retext/home/ReText/ "ReText") (also for
+[reStructuredText) for Linux
