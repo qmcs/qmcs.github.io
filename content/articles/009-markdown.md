@@ -28,30 +28,30 @@ the elements, so I encourouge you to gaze over the documenation.
 
 Use hashtags to mark the level of a header.
 
-	# This is an H1
-	## This is an H2
-	### This is an H3
+    # This is an H1
+    ## This is an H2
+    ### This is an H3
 
 ## Emphasis
 Asterisks or underlines
 
-	The quick *brown fox* jumps over the **lazy dog**
+    The quick *brown fox* jumps over the **lazy dog**
 
 Becomes "The quick *brown fox* jumps over the **lazy dog**"
 
 ## Links There are multiple ways of making links in MD, either inline or by
 reference. However [here]() is the most populare way.
 
-	[an example](http://example.com "Title")
+    [an example](http://example.com "Title")
 
 ## Lists
 Simply use something that looks listy (\*, \+ or \-).
 
 ### Unordered
 
-	* Red
-	- Green
-	+ Blue
+    * Red
+    - Green
+    + Blue
 
 Becomes
 
@@ -62,9 +62,9 @@ Becomes
 ### Ordered
 (What the numbers are does't matter)
 
-	4. Red
-	0. Green
-	4. Blue
+    4. Red
+    0. Green
+    4. Blue
 
 Becomes
 
@@ -79,10 +79,10 @@ Use the backtick quotes (\`) for `inline code`.
 ### Block
 4 spaces or 1 tab indention
 
-	HAI 1.2
-	  CAN HAS STDIO?
-	  VISIBLE "HAI WORLD!!!1!"
-	KTHXBYE
+    HAI 1.2
+      CAN HAS STDIO?
+      VISIBLE "HAI WORLD!!!1!"
+    KTHXBYE
 
 If you would like to start using Markdown locally on your own system I have a
 couple of Markdown readers to recommend. Even though you don't strickly need
