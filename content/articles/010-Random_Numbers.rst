@@ -43,8 +43,8 @@ amount of numbers they produce, and after that the sequence starts to repeat
 itself. It is usually not a problem to make the period very large, so that the
 application that rely on it will never start to get repeated sequences.      
 
-A very well known PRNG is the Mersenne Twister, it is the default PRNG for
-Python, Ruby, PHP and many others. It has a period of 219937−1, which is a
+A very well known PRNG is the Mersenne Twister(1), it is the default PRNG for
+Python, Ruby, PHP and many others. It has a period of 2^(19937−1), which is a
 Mersenne prime number, hence the name of the generator. Invented in 1997 it
 was largely superior to PRNG's like C's rand or Java's Random. Furthermore it
 passes certain statistical tests for randomness so it is a very reliable
@@ -64,4 +64,7 @@ numbers from the outside world, most applications that use random numbers use
 PRNG's. It is because of their convenience, there is no need for any extra
 devices, or input, all it needs is a sequence of numbers that it later
 transforms into a pseudo-random sequence.
+
+1: Link to the implementation of Mersenne Twister. This is the latest version from the original creators: 
+http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
 
