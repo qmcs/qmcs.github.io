@@ -1,4 +1,4 @@
-Aprroximating Randomness
+Aproximating Randomness
 =============================
 
 :date: 2014-03-03 18:00
