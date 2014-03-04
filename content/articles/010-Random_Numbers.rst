@@ -21,7 +21,7 @@ next digit will be, and since computers use a set of logical steps to create
 any new number it is theoretically possible to predict it. Nonetheless
 programmers take advantage of features for creating random numbers all the
 time, the most widely used programming languages, provide libraries that can
-generate 'random' values. Any role-playing game.for example,  that you might
+generate 'random' values. Any role-playing game for example, that you might
 use, needs random values to determine the number of gold you'll find from some
 locations, what items dead enemies will drop, etc. So how is it possible that
 even though the very nature of computers makes it impossible to exhibit random
