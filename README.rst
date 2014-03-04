@@ -23,42 +23,32 @@ use git before, check out `Github tutorial <http://try.github.io>`_ or a
 control/tutorial.html>`_ to get a general idea.
 
 
-Before writing the code, clone the repo::
+Before writing an article, clone the repo::
 
     git clone git@github.com:username/pyclub.github.io
     cd pyclub.github.io
 
-create a virtualenv_::
+We use `buildout <https://pypi.python.org/pypi/zc.buildout/2.2.1>`_ to deploy
+needed software. A typical biuldout deployment consists of two steps:
+bootstrapping and building out.
 
-With system python::
+Bootstraping is simple::
 
-    python -m virtualenv .env
-    # virtualenv .env
-    source .env/bin/activate
+    python bootstrap.py
 
-With python 3(You need python 3 installed for this to work)::
+In case you get an error about setuptools, you can install them::
 
-    python3.3 -m virtualenv .env
-    # virtualenv .env
-    source .env/bin/activate
+    # Only if you get an error in the previus step!
+    python ez_setup.py --user
+    python bootstrap.py
 
-.. _virtualenv: http://www.virtualenv.org
+Now you are ready to buildout::
 
-install needed software::
-
-    pip install -r requirements.txt
-
-now, you are ready to write an article.
-
-Note that you will need to run::
-
-    source .env/bin/activate
-
-before being able to execute ``pelican`` and other related software!
+    bin/buildout
 
 
-Write an article
-----------------
+Writing an article
+------------------
 
 Once you have a copy of the repo on your computer you are ready to add
 articles to it.
@@ -105,12 +95,12 @@ You can use `restview <https://pypi.python.org/pypi/restview>`_ to see
 rendered ``.rst`` files in your browser. For example, to see the intro
 article, type::
 
-    restview content/articles/001-intro.rst
+    bin/restview content/articles/001-intro.rst
 
 There are rumors, that you can feed a directory to restview and then select
 files in the browser::
 
-    restview content
+    bin/restview content
 
 Generate the HTML version of a blog locally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +137,8 @@ Updating the web site
 ---------------------
 
 In case you are lucky and have write access to the main repo you can upload the
-generated HTML version of the site.
+generated HTML version of the site, however you need to clone
+``git@github.com:pyclub/pyclub.github.io.git``.
 
 To upload the HTML just run::
 

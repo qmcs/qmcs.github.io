@@ -1,5 +1,5 @@
-PY=python
-PELICAN=pelican
+PY=bin/python
+PELICAN=bin/pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -62,6 +62,6 @@ publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 github: publish
-	ghp-import -p -b master $(OUTPUTDIR)
+	bin/ghp-import -p -b master $(OUTPUTDIR)
 
 .PHONY: html help clean regenerate serve devserver publish github
