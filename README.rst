@@ -133,6 +133,8 @@ find an article ready to be published, write a comment ``looks good``, ``ready
 to be merged`` or something similar. It's completely fine to comment about
 anything, but it's important to be polite, precise and constructive.
 
+To speed up the process assign someone from the team to do peer review.
+
 If your article got comments from someone else, please fix them in a timely
 manner. The sooner you fix all the issues, the sooner the article appears on
 the website.
