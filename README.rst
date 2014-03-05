@@ -124,6 +124,19 @@ Commit and push our changes::
 
 Create a `pull request <https://help.github.com/articles/creating-a-pull-request>`_.
 
+Pull request review
+~~~~~~~~~~~~~~~~~~~
+
+Every article should be reviewed by two people. You are welcome to go trough
+any open pull request and comment on the things you like or dislike. If you
+find an article ready to be published, write a comment ``looks good``, ``ready
+to be merged`` or something similar. It's completely fine to comment about
+anything, but it's important to be polite, precise and constructive.
+
+If your article got comments from someone else, please fix them in a timely
+manner. The sooner you fix all the issues, the sooner the article appears on
+the website.
+
 Why should I bother?
 --------------------
 
