@@ -38,10 +38,10 @@ perform operations on the seed to make the final number different from the
 original value. So when the PRNG is supplied with seeds that are in sequence,
 it will return numbers that seem random, because the operations that are
 performed on each number should change it to make it so the returned numbers
-are no longer in sequence. PRNG's are also periodical, they have a certain
+are no longer following any pattern. PRNG's are also periodical, they have a certain
 amount of numbers they produce, and after that the sequence starts to repeat
 itself. It is usually not a problem to make the period very large, so that the
-application that rely on it will never start to get repeated sequences.      
+application that relies on it will never start to get repeated sequences.      
 
 A very well known PRNG is the Mersenne Twister(1), it is the default PRNG for
 Python, Ruby, PHP and many others. It has a period of 2^(19937−1), which is a
