@@ -10,7 +10,7 @@ look good. This is wrong. People who work with words should only have to care
 about words. Leaving the design choices to the designers. Markdown does an
 excellent job in accomplishing this compromise.
 
-Many of the webs most populare publishing tools are now supporting Markdown.
+Many of the web's most populare publishing tools are now supporting Markdown.
 And you might recognise it from Stack Overflow and GitHub. So maybe it's time
 you get down with the M-down?
 
@@ -40,7 +40,7 @@ Asterisks or underlines
 Becomes "The quick *brown fox* jumps over the **lazy dog**"
 
 ## Links There are multiple ways of making links in MD, either inline or by
-reference. However [here]() is the most populare way.
+reference. However here is the most used way.
 
     [an example](http://example.com "Title")
 
@@ -88,7 +88,6 @@ If you would like to start using Markdown locally on your own system I have a
 couple of Markdown readers to recommend. Even though you don't strickly need
 anything fancy to write Markdown, you still need something to parse it.
 
-[Mou](http://mouapp.com/ "Mou App") for Mac MarkdownPad](http://markdownpad.com/
-["Markdownpad") for Windowns
-[ReText](http://sourceforge.net/p/retext/home/ReText/ "ReText") (also for
-[reStructuredText) for Linux
+[Mou](http://mouapp.com/) for Mac
+[MarkdownPad](http://markdownpad.com/) for Windowns
+[ReText](http://sourceforge.net/p/retext/home/ReText/) for Linux
