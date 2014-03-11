@@ -20,11 +20,11 @@ enables highlighting in git output::
         ui = auto
         decorate = short
     [alias]
-            st = status
-            ci = commit
-            br = branch
-            co = checkout
-            unstage = reset HEAD --
-            last = log -1 HEAD
+        st = status
+        ci = commit
+        br = branch
+        co = checkout
+        unstage = reset HEAD --
+        last = log -1 HEAD
 
 Now you can type ``git st`` instead of ``git status``.
