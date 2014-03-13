@@ -33,7 +33,13 @@
 
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/b3a55bb9.main.min.css" />
 
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/8fe6056b.head-scripts.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://modernizr.com/downloads/modernizr.js"></script>
+
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/scripts.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/imageLoader.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/drawer.js"></script>
+
 
     {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
