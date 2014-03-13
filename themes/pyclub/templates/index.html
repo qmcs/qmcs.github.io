@@ -1,32 +1,34 @@
-{{!< default}}
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}
 
 <aside role="banner" class="cover">
-  <div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>
+  {#<div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>#}
   <div class="cover-container">
-    {{#if @blog.logo}}
+    {#{#if @blog.logo}}
       <a href="{{@blog.url}}" class="cover-logo" data-pjax>
         <img src="{{@blog.logo}}" alt="Blog Logo">
       </a>
-    {{/if}}
-    <h1 class="cover-title">{{@blog.title}}</h1>
-    <p class="cover-description">{{@blog.description}}</p>
+    {{/if}#}
+    <h1 class="cover-title">{{ SITENAME }}</h1>
+    <p class="cover-description">{#{@blog.description}#}</p>
   </div>
 </aside>
 
 <section class="wrapper" tabindex="0">
   <div class="wrapper-container">
-    {{> custom/featured this}}
+    {#{> custom/featured this}#}
 
     <section class="post-list">
-      {{#foreach posts}}
-        {{> post/list this}}
-      {{/foreach}}
+      {% for article in articles_page.object_list %}
+        {% include 'post.html' %}
+      {% endfor%}
     </section>
 
-    {{#if pagination}}
-      {{pagination}}
-    {{/if}}
+    {% include 'pagination.html' %}
 
-    {{> footer this}}
+    {#{> footer this}#}
   </div>
 </section>
+
+{% endblock content %}
