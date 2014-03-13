@@ -31,15 +31,15 @@
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/b3a55bb9.main.min.css" />
+    <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/main.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygment.css" />
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://modernizr.com/downloads/modernizr.js"></script>
 
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/scripts.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/imageLoader.js"></script>
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/drawer.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/scripts.js"></script>
 
 
     {% if FEED_ALL_ATOM %}
@@ -55,7 +55,53 @@
 
     {#{> drawer this}#}
 
+    <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
     <div class="drawer-overlay"></div>
+    <nav class="drawer" tabindex="-1">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul class="drawer-list" role="navigation">
+
+          <li class="drawer-list-item">
+            <a data-pjax="" href="{{ SITEURL }}/">
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+
+          {% for title, link in MENUITEMS %}
+            <li class="drawer-list-item">
+              <a data-pjax="" href="{{ link }}">
+                <i class="fa fa-file"></i>{{ title }}
+              </a>
+            </li>
+          {% endfor %}
+
+          <li class="drawer-list-divider"></li>
+
+          <li class="drawer-list-item drawer-list-title">Follow me</li>
+          {% for title, link in SOCIAL %}
+            <li class="drawer-list-item">
+              <a data-pjax="" href="{{ link }}">
+                <i class="fa fa-code"></i> {{ title }}
+              </a>
+            </li>
+          {% endfor %}
+
+          {% if GITHUB_URL %}
+            <li class="drawer-list-divider"></li>
+            <li class="drawer-list-item drawer-list-title">Engage</li>
+            <li class="drawer-list-item">
+              <a target="_blank" href="{{ GITHUB_URL }}">
+                <i class="fa fa-code"></i>Source
+              </a>
+            </li>
+          {% endif %}
+
+
+          </ul>
+        </div>
+      </nav>
+
     <main id="container" role="main" class="container">
       <div class="surface">
         <div class="surface-container">
