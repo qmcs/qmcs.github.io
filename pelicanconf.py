@@ -3,7 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Contributors'
-SITENAME = 'Python Club at Queen Mary'
+SITENAME = 'Python Club'
+SITESUBTITLE = 'at Queen Mary'
 SITEURL = ''
 
 TIMEZONE = 'Europe/London'
