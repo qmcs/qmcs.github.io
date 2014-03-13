@@ -4,6 +4,7 @@
 
 <aside role="banner" class="cover">
   {#<div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>#}
+  <div data-load-image="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/cover.jpg" class="cover-image"></div>
   <div class="cover-container">
     {#{#if @blog.logo}}
       <a href="{{@blog.url}}" class="cover-logo" data-pjax>
@@ -11,7 +12,7 @@
       </a>
     {{/if}#}
     <h1 class="cover-title">{{ SITENAME }}</h1>
-    <p class="cover-description">{#{@blog.description}#}</p>
+    {% if SITESUBTITLE %}<p class="cover-description">{{ SITESUBTITLE }}</p>{% endif %}
   </div>
 </aside>
 
