@@ -2,7 +2,7 @@
 {% block content_title %}{% endblock %}
 {% block content %}
 
-    {#{> custom/featured this}#}
+    {% block featured %}{% endblock %}
 
     <section class="post-list">
       {% for article in articles_page.object_list %}
