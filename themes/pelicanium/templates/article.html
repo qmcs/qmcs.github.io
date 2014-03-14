@@ -34,17 +34,35 @@
           </div>
           <footer class="post-footer">
             <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
-              {#{#if author.image}}
-                <a href="{{author.website}}" class="post-author-avatar">
-                  <img itemprop="image" src="{{author.image}}" alt="{{author.name}}">
+              {% if 'cover-image' in author_bibliography.metadata %}
+                <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-avatar">
+                  <img src="{{ SITEURL }}/{{ author_bibliography.metadata['cover-image'] }}" alt="{{article.author}}">
                 </a>
-              {{/if}#}
+              {% endif %}
               <div class="post-author-info">
                 <h4 class="post-footer-heading">Written By</h4>
+
                 <a href="{{ SITEURL }}/{{ article.author.url }}" itemprop="url" class="post-author-name">
                   <span itemprop="name">{{ article.author }}</span>
                 </a>
-                {#<p itemprop="description" class="post-author-bio">{{author.bio}}</p>#}
+
+                <p itemprop="description" class="post-author-bio">{{ author_bibliography.content }}</p>
+
+                {% if 'homepage' in author_bibliography.metadata %}
+                <p class="post-author-website">
+                  <a rel="nofollow" href="{{ author_bibliography.metadata['homepage'] }}">
+                    {{ author_bibliography.metadata['homepage'] }}
+                  </a>
+                </p>
+                {% endif %}
+
+                <p class="post-info">
+                  <b class="post-info-title">Published on</b>
+                  <time datetime="{{ article.date.isoformat() }}" class="post-date">
+                    {{ article.locale_date }}
+                  </time>
+                </p>
+
               </div>
             </div>
             <div class="post-social">
