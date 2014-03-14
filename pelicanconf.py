@@ -16,7 +16,7 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-THEME = 'themes/pyclub'
+THEME = 'themes/pelicanium'
 
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
