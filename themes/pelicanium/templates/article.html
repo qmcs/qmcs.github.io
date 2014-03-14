@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ article.title|striptags }}{% endblock %}
-{% block content %}
+{% block content_wrapper %}
 
 <section class="wrapper wrapper-post">
   <div class="wrapper-container">
@@ -80,4 +80,4 @@
   </div>
 </section>
 
-{% endblock %}
+{% endblock content_wrapper %}

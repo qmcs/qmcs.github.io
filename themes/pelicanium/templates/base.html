@@ -105,7 +105,28 @@
       <div class="surface">
         <div class="surface-container">
           <div data-pjax-container class="content">
-            {% block content %} {% endblock %}
+            {% block content_wrapper %}
+
+              <aside role="banner" class="cover">
+                {#<div {{#if @blog.cover}}data-load-image="{{@blog.cover}}"{{/if}} class="cover-image"></div>#}
+                <div data-load-image="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/cover.jpg" class="cover-image"></div>
+                <div class="cover-container">
+                  {#{#if @blog.logo}}
+                    <a href="{{@blog.url}}" class="cover-logo" data-pjax>
+                      <img src="{{@blog.logo}}" alt="Blog Logo">
+                    </a>
+                  {{/if}#}
+                  <h1 class="cover-title">{{ SITENAME }}</h1>
+                  {% if SITESUBTITLE %}<p class="cover-description">{{ SITESUBTITLE }}</p>{% endif %}
+                </div>
+              </aside>
+
+              <section class="wrapper" tabindex="0">
+                <div class="wrapper-container">
+                  {% block content %} {% endblock %}
+                </div>
+              </section>
+            {% endblock %}
           </div>
         </div>
       </div>
