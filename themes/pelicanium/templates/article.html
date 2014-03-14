@@ -9,6 +9,7 @@
         {% set author_bibliography = authors_info.get(article.author) %}
         <section class="post-container">
           <header class="post-header">
+            {% include 'post_item_list.html' %}
             <h1 itemprop="name headline" class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" itemprop="url" data-pjax title="{{ article.title|striptags }}">{{ article.title }}</a></h1>
             {#{! A subtitle not available in Ghosts yet }#}
             <!--h2 itemprop="about" class="post-subtitle"></h2-->
