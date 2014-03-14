@@ -7,7 +7,7 @@ Basic git configuration
 :category: coding
 :author: Dmitrijs Milajevs
 
-Here is a basic `~/.gitconfig` file that sets you name, sets up aliases and
+Here is a basic ``~/.gitconfig`` file that sets you name, sets up aliases and
 enables highlighting in git output::
 
     [user]
