@@ -18,6 +18,14 @@ TRANSLATION_FEED_ATOM = None
 
 THEME = 'themes/pelicanium'
 
+PLUGINS = (
+    'pelican_extended_authors',
+)
+
+ARTICLE_EXCLUDES = ('pages', 'authors')
+PAGE_EXCLUDES = ('authors',)
+PLUGINS = ('pelican_extended_authors',)
+
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
@@ -50,5 +58,6 @@ GOOGLE_ANALYTICS = 'UA-47565959-1'
 TWITTER_USERNAME = 'pyclub_qm'
 
 STATIC_PATHS = (
-    'static',
+    'static/author_images',
+    'static/images',
 )
