@@ -7,9 +7,6 @@ Facebook Hackathon
 :category: opportunities
 :author: Umar Qureshi
 
-Facebook London Hackathon
-=========================
-
 If you havent heard yet, Facebook will be hosting a Hackathon on Saturday, 15
 March 2014. A Hackathon is a (codefest) event where computer programmers and
 others involved in software development, graphic designers, interface
