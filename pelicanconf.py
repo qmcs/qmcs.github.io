@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import pelicanium
+
+
 AUTHOR = 'Contributors'
 SITENAME = 'Python Club'
 SITESUBTITLE = 'at Queen Mary'
@@ -16,11 +19,7 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-THEME = 'themes/pelicanium'
-
-PLUGINS = (
-    'pelican_extended_authors',
-)
+THEME = pelicanium.theme_path
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
