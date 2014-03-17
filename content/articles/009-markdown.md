@@ -35,18 +35,22 @@ Use hashtags to mark the level of a header.
     ### This is an H3
 
 ## Emphasis
+
 Asterisks or underlines
 
     The quick *brown fox* jumps over the **lazy dog**
 
 Becomes "The quick *brown fox* jumps over the **lazy dog**"
 
-## Links There are multiple ways of making links in MD, either inline or by
-reference. However here is the most used way.
+## Links
+
+There are multiple ways of making links in MD, either inline or by reference.
+However here is the most used way.
 
     [an example](http://example.com "Title")
 
 ## Lists
+
 Simply use something that looks listy (\*, \+ or \-).
 
 ### Unordered
@@ -62,6 +66,7 @@ Becomes
 * Blue
 
 ### Ordered
+
 (What the numbers are does't matter)
 
     4. Red
