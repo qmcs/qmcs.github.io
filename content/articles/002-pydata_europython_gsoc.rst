@@ -9,6 +9,8 @@ PyData, Europython and Google
 There are several events on the radar that not only give you loads of
 knowledge, but also give you some money.
 
+-- PELICAN_END_SUMMARY --
+
 PyData in London
 ----------------
 

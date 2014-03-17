@@ -14,7 +14,9 @@ designers and project managers collaborate intensively on software
 projects.Hackathons tend to have a specific focus, which can include the
 programming language used, the operating, an application, an API, or the
 subject and the demographic group of the programmer. Though for the Facebook
-hackthon ,there isnt any restriction on what you can make so aim for the sky.
+hackthon, there isnt any restriction on what you can make so aim for the sky.
+
+-- PELICAN_END_SUMMARY --
 
 So Join Facebook in London as we stay up all night hacking, learning and
 having a some fun! Start brainstorming ideas & forming teams (of up to 4

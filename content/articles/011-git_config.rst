@@ -7,6 +7,10 @@ Basic git configuration
 :category: coding
 :author: Dmitrijs Milajevs
 
+Git is a powerful tool, though it has to be configured first.
+
+-- PELICAN_END_SUMMARY --
+
 Here is a basic ``~/.gitconfig`` file that sets you name, sets up aliases and
 enables highlighting in git output::
 

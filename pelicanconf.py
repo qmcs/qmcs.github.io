@@ -23,7 +23,16 @@ THEME = pelicanium.theme_path
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
-PLUGINS = ('pelican_extended_authors',)
+
+PLUGIN_PATH = 'src/pelican-plugins'
+PLUGINS = (
+    'summary',
+    'pelican_extended_authors',
+)
+
+SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
+SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
+
 
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False

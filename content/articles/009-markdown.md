@@ -10,6 +10,8 @@ look good. This is wrong. People who work with words should only have to care
 about words. Leaving the design choices to the designers. Markdown does an
 excellent job in accomplishing this compromise.
 
+-- PELICAN_END_SUMMARY --
+
 Many of the web's most populare publishing tools are now supporting Markdown.
 And you might recognise it from Stack Overflow and GitHub. So maybe it's time
 you get down with the M-down?
