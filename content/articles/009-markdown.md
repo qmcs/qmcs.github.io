@@ -10,6 +10,8 @@ look good. This is wrong. People who work with words should only have to care
 about words. Leaving the design choices to the designers. Markdown does an
 excellent job in accomplishing this compromise.
 
+-- PELICAN_END_SUMMARY --
+
 Many of the web's most populare publishing tools are now supporting Markdown.
 And you might recognise it from Stack Overflow and GitHub. So maybe it's time
 you get down with the M-down?
@@ -33,18 +35,22 @@ Use hashtags to mark the level of a header.
     ### This is an H3
 
 ## Emphasis
+
 Asterisks or underlines
 
     The quick *brown fox* jumps over the **lazy dog**
 
 Becomes "The quick *brown fox* jumps over the **lazy dog**"
 
-## Links There are multiple ways of making links in MD, either inline or by
-reference. However here is the most used way.
+## Links
+
+There are multiple ways of making links in MD, either inline or by reference.
+However here is the most used way.
 
     [an example](http://example.com "Title")
 
 ## Lists
+
 Simply use something that looks listy (\*, \+ or \-).
 
 ### Unordered
@@ -60,6 +66,7 @@ Becomes
 * Blue
 
 ### Ordered
+
 (What the numbers are does't matter)
 
     4. Red

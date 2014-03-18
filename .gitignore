@@ -40,3 +40,5 @@ output/
 
 pelican.pid
 srv.pid
+
+src/

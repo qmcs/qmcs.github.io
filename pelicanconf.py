@@ -2,8 +2,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import pelicanium
+
+
 AUTHOR = 'Contributors'
-SITENAME = 'Python Club at Queen Mary'
+SITENAME = 'Python Club'
+SITESUBTITLE = 'at Queen Mary'
 SITEURL = ''
 
 TIMEZONE = 'Europe/London'
@@ -14,6 +18,21 @@ DEFAULT_LANG = 'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+
+THEME = pelicanium.theme_path
+
+ARTICLE_EXCLUDES = ('pages', 'authors')
+PAGE_EXCLUDES = ('authors',)
+
+PLUGIN_PATH = 'src/pelican-plugins'
+PLUGINS = (
+    'summary',
+    'pelican_extended_authors',
+)
+
+SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
+SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
+
 
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -47,5 +66,6 @@ GOOGLE_ANALYTICS = 'UA-47565959-1'
 TWITTER_USERNAME = 'pyclub_qm'
 
 STATIC_PATHS = (
-    'static',
+    'static/author_images',
+    'static/images',
 )

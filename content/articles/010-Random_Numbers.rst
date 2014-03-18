@@ -25,7 +25,9 @@ generate 'random' values. Any role-playing game for example, that you might
 use, needs random values to determine the number of gold you'll find from some
 locations, what items dead enemies will drop, etc. So how is it possible that
 even though the very nature of computers makes it impossible to exhibit random
-behaviour, that many programs include simulations of randomness?      
+behaviour, that many programs include simulations of randomness?
+
+-- PELICAN_END_SUMMARY --
 
 The answer is pseudo-random number generators(PRNG), these are programs that
 follow a certain algorithm to simulate random behaviour. The numbers they
@@ -41,14 +43,14 @@ performed on each number should change it to make it so the returned numbers
 are no longer following any pattern. PRNG's are also periodical, they have a certain
 amount of numbers they produce, and after that the sequence starts to repeat
 itself. It is usually not a problem to make the period very large, so that the
-application that relies on it will never start to get repeated sequences.      
+application that relies on it will never start to get repeated sequences.
 
 A very well known PRNG is the Mersenne Twister(1), it is the default PRNG for
 Python, Ruby, PHP and many others. It has a period of 2^(19937−1), which is a
 Mersenne prime number, hence the name of the generator. Invented in 1997 it
 was largely superior to PRNG's like C's rand or Java's Random. Furthermore it
 passes certain statistical tests for randomness so it is a very reliable
-generator as it is very successful at simulating genuine randomness.    
+generator as it is very successful at simulating genuine randomness.
 
 These programs have been used extensively and are relied upon by many applications,
 it is important to note that when truly random behaviour is needed then PRNG's
@@ -65,6 +67,6 @@ PRNG's. It is because of their convenience, there is no need for any extra
 devices, or input, all it needs is a sequence of numbers that it later
 transforms into a pseudo-random sequence.
 
-1: Link to the implementation of Mersenne Twister. This is the latest version from the original creators: 
+1: Link to the implementation of Mersenne Twister. This is the latest version from the original creators:
 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c
 
