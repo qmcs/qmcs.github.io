@@ -128,8 +128,8 @@ Commit and push your changes:
 
 Create a `pull request <https://help.github.com/articles/creating-a-pull-request>`_.
 
-Developing theme and plugins
-----------------------------
+Developing the theme and plugins
+--------------------------------
 
 Our blog uses custom theme and plugins. The theme and plugin are external
 projects and don't belong to this repository! However, during the ``buildout``
@@ -138,7 +138,7 @@ step they are cloned to the ``src/`` folder, thatnks to
 
 .. code-block:: bash
 
-    $ tree -L 1 src/
+    tree -L 1 src/
     src/
     ├── pelican-plugins  # Extenal plugins. Don't bother about it.
     ├── pelican_extended_authors # Our plugin that provided authors' metadata.
