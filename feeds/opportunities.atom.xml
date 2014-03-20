@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Club at Queen Mary</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/opportunities.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-02-10T11:17:00+00:00</updated><entry><title>GSOC project: MoinMoin</title><link href="http://pyclub.github.io/gsoc-project-moinmoin.html" rel="alternate"></link><updated>2014-02-10T11:17:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-10:gsoc-project-moinmoin.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://moinmo.in/"&gt;MoinMoin&lt;/a&gt;, a wiki engine, published &lt;a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas"&gt;initial project ideas&lt;/a&gt; for the &lt;a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"&gt;Google
-Summer of Code 2014&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;MoinMoin is a mature project with a wonderful core team. They participated in
-GSOC for many years.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Computing</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/opportunities.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-02-28T19:32:00+00:00</updated><entry><title>Facebook Hackathon</title><link href="http://pyclub.github.io/facebook-hackathon.html" rel="alternate"></link><updated>2014-02-28T19:32:00+00:00</updated><author><name>Umar Qureshi</name></author><id>tag:pyclub.github.io,2014-02-28:facebook-hackathon.html</id><summary type="html">&lt;p&gt;If you havent heard yet, Facebook will be hosting a Hackathon on Saturday, 15
+March 2014. A Hackathon is a (codefest) event where computer programmers and
+others involved in software development, graphic designers, interface
+designers and project managers collaborate intensively on software
+projects.Hackathons tend to have a specific focus, which can include the
+programming language used, the operating, an application, an API, or the
+subject and the demographic group of the programmer. Though for the Facebook
+hackthon, there isnt any restriction on what you can make so aim for the sky.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;So Join Facebook in London as we stay up all night hacking, learning and
+having a some fun! Start brainstorming ideas &amp;amp; forming teams (of up to 4
+people). Facebook will suply us with  food, fun diversions, prizes, and some
+expert guidance in the form of our engineers. Travel will be reimbursed for
+public transportation.You bring your laptop, appetite, skills and ideas.&lt;/p&gt;
+&lt;p&gt;The winning team will get the chance to compete against teams from other
+Hackathons both domestically and internationally at the Hackathon Finals and
+be judged by Facebook executives -- held at Facebook HQ in Menlo Park,
+California in November!&lt;/p&gt;
+&lt;p&gt;Here is a link for registration
+&lt;a class="reference external" href="https://www.surveymonkey.com/s/londonhackathon"&gt;https://www.surveymonkey.com/s/londonhackathon&lt;/a&gt;. Register before the 4th of
+March. The event is over subscribed but you can still apply. Be ready for a
+coding puzzle on the 4th of March, this will be your ticket to the event.&lt;/p&gt;
+</summary><category term="Facebook"></category></entry><entry><title>GSOC project: MoinMoin</title><link href="http://pyclub.github.io/gsoc-project-moinmoin.html" rel="alternate"></link><updated>2014-02-10T11:17:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-10:gsoc-project-moinmoin.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://moinmo.in/"&gt;MoinMoin&lt;/a&gt;, a wiki engine, published &lt;a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas"&gt;initial project ideas&lt;/a&gt; for the &lt;a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"&gt;Google
+Summer of Code 2014&lt;/a&gt;. MoinMoin is a mature project with a wonderful core team.
+They participated in GSOC for many years.&lt;/p&gt;
 </summary><category term="gsoc"></category></entry><entry><title>QCon London</title><link href="http://pyclub.github.io/qcon-london.html" rel="alternate"></link><updated>2014-01-31T17:42:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-31:qcon-london.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://qconlondon.com/"&gt;QCon London&lt;/a&gt; is looking for students to volunteer.
 Get more details and fill in the application form &lt;a class="reference external" href="http://qconlondon.com/london-2014/crew/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </summary><category term="conference"></category><category term="scholarship"></category></entry><entry><title>PyData, Europython and Google</title><link href="http://pyclub.github.io/pydata-europython-and-google.html" rel="alternate"></link><updated>2014-01-29T09:03:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-29:pydata-europython-and-google.html</id><summary type="html">&lt;p&gt;There are several events on the radar that not only give you loads of
 knowledge, but also give you some money.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;div class="section" id="pydata-in-london"&gt;
 &lt;h2&gt;PyData in London&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pydata.org/ldn2014"&gt;PyData&lt;/a&gt; is a conference dedicated to the scientific tools in Python. London is

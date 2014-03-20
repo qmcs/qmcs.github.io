@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Computing</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/languages.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-03-04T00:00:00+00:00</updated><entry><title>A small Markdown introduction</title><link href="http://pyclub.github.io/a-small-markdown-introduction.html" rel="alternate"></link><updated>2014-03-04T00:00:00+00:00</updated><author><name>Henrik O. Skogmo</name></author><id>tag:pyclub.github.io,2014-03-04:a-small-markdown-introduction.html</id><summary type="html">&lt;p&gt;Giving writers a WYSIWYG makes the assumption that they know how to make stuff
+look good. This is wrong. People who work with words should only have to care
+about words. Leaving the design choices to the designers. Markdown does an
+excellent job in accomplishing this compromise.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Many of the web's most populare publishing tools are now supporting Markdown.
+And you might recognise it from Stack Overflow and GitHub. So maybe it's time
+you get down with the M-down?&lt;/p&gt;
+&lt;p&gt;How the hell do you harvest the sweet markdown nectar? Easy. Kick-start your
+favourite (plain)text editor and fire away. Since Markdown is a lightweight
+markup language, all of you oldschool BBCode forum writers out there will find
+yourselves quite confortable.&lt;/p&gt;
+&lt;p&gt;Even though you can find the reference to &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown's
+syntax&lt;/a&gt; online, I'll walk
+you through some of the basics. Do note that there is alternatives for some of
+the elements, so I encourouge you to gaze over the documenation.&lt;/p&gt;
+&lt;h2&gt;Headers&lt;/h2&gt;
+&lt;p&gt;Use hashtags to mark the level of a header.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# This is an H1&lt;/span&gt;
+&lt;span class="c"&gt;## This is an H2&lt;/span&gt;
+&lt;span class="c"&gt;### This is an H3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Emphasis&lt;/h2&gt;
+&lt;p&gt;Asterisks or underlines&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="n"&gt;quick&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;brown&lt;/span&gt; &lt;span class="n"&gt;fox&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;jumps&lt;/span&gt; &lt;span class="n"&gt;over&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;lazy&lt;/span&gt; &lt;span class="n"&gt;dog&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes "The quick &lt;em&gt;brown fox&lt;/em&gt; jumps over the &lt;strong&gt;lazy dog&lt;/strong&gt;"&lt;/p&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;There are multiple ways of making links in MD, either inline or by reference.
+However here is the most used way.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//example.com &amp;quot;Title&amp;quot;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;p&gt;Simply use something that looks listy (*, + or -).&lt;/p&gt;
+&lt;h3&gt;Unordered&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Red&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;Green&lt;/span&gt;
+&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Blue&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ordered&lt;/h3&gt;
+&lt;p&gt;(What the numbers are does't matter)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="n"&gt;Red&lt;/span&gt;
+&lt;span class="mf"&gt;0.&lt;/span&gt; &lt;span class="n"&gt;Green&lt;/span&gt;
+&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="n"&gt;Blue&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;h3&gt;Inline&lt;/h3&gt;
+&lt;p&gt;Use the backtick quotes (`) for &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Block&lt;/h3&gt;
+&lt;p&gt;4 spaces or 1 tab indention&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;HAI&lt;/span&gt; &lt;span class="mf"&gt;1.2&lt;/span&gt;
+  &lt;span class="n"&gt;CAN&lt;/span&gt; &lt;span class="n"&gt;HAS&lt;/span&gt; &lt;span class="n"&gt;STDIO&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+  &lt;span class="n"&gt;VISIBLE&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;HAI WORLD!!!1!&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;KTHXBYE&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you would like to start using Markdown locally on your own system I have a
+couple of Markdown readers to recommend. Even though you don't strickly need
+anything fancy to write Markdown, you still need something to parse it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mouapp.com/"&gt;Mou&lt;/a&gt; for Mac
+&lt;a href="http://markdownpad.com/"&gt;MarkdownPad&lt;/a&gt; for Windowns
+&lt;a href="http://sourceforge.net/p/retext/home/ReText/"&gt;ReText&lt;/a&gt; for Linux&lt;/p&gt;</summary><category term="markdown"></category><category term="markup"></category><category term="languages"></category></entry></feed>

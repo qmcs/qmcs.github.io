@@ -1,203 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Python Club at Queen Mary - Dmitrijs Milajevs</title>
-        <link rel="stylesheet" href="http://pyclub.github.io/theme/css/main.css" />
-        <link href="http://pyclub.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Python Club at Queen Mary Atom Feed" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-</head>
+    <title>Computing</title>
 
-<body id="index" class="home">
-<a href="https://github.com/pyclub/pyclub.github.io">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
-        <header id="banner" class="body">
-                <h1><a href="http://pyclub.github.io/">Python Club at Queen Mary </a></h1>
-                <nav><ul>
-                    <li><a href="http://pyclub.github.io/category/opportunities.html">opportunities</a></li>
-                    <li><a href="http://pyclub.github.io/category/yeah.html">yeah</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://pyclub.github.io/pyclub-twitter-account.html">Pyclub Twitter account</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2014-02-25T16:47:00">
-                Tue 25 February 2014
-        </abbr>
 
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/yeah.html">yeah</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/twitter.html">twitter</a></p>
-</footer><!-- /.post-info --><p>I'm happy to announce that we have a Twitter account. Follow <a class="reference external" href="https://twitter.com/pyclub_qm">&#64;pyclub_qm</a>.</p>
-<p>There are <a href="http://pyclub.github.io/pyclub-twitter-account.html#disqus_thread">comments</a>.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+    <meta name="twitter:card" content="summary">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://pyclub.github.io/pydata.html" rel="bookmark"
-                           title="Permalink to Pydata">Pydata</a></h1>
-                </header>
+    <meta property="og:type" content="article">
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-02-22T10:21:00">
-                Sat 22 February 2014
-        </abbr>
 
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/yeah.html">yeah</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/pydata.html">pydata</a></p>
-</footer><!-- /.post-info -->                <p>The Pydata conference has started and the venue has a great view to East
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/main.css" />
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/pygment.css" />
+
+    <script src="http://pyclub.github.io/theme/js/jquery.min.js"></script>
+    <script src="http://pyclub.github.io/theme/js/modernizr.js"></script>
+
+    <script src="http://pyclub.github.io/theme/js/imageLoader.js"></script>
+    <script src="http://pyclub.github.io/theme/js/drawer.js"></script>
+    <script src="http://pyclub.github.io/theme/js/scripts.js"></script>
+
+
+        <link href="http://pyclub.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computing Atom Feed" />
+
+  </head>
+  <body class="">
+
+
+    <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
+    <div class="drawer-overlay"></div>
+    <nav class="drawer" tabindex="-1">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul class="drawer-list" role="navigation">
+
+          <li class="drawer-list-item">
+            <a data-pjax="" href="http://pyclub.github.io/">
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/archives.html">
+                <i class="fa fa-file"></i>Archive
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/tags.html">
+                <i class="fa fa-file"></i>Tags
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/authors.html">
+                <i class="fa fa-file"></i>Authors
+              </a>
+            </li>
+
+          <li class="drawer-list-divider"></li>
+
+<li class="drawer-list-item drawer-list-title">Pages</li>
+              <li class="drawer-list-item">
+                <a href="http://pyclub.github.io/pages/about.html">
+                  <i class="fa fa-file"></i>About
+                </a>
+              </li>
+            <li class="drawer-list-divider"></li>
+
+
+          <li class="drawer-list-item drawer-list-title">Follow me</li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://www.facebook.com/groups/723364331026623/">
+                <i class="fa fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://twitter.com/pyclub_qm">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+
+            <li class="drawer-list-divider"></li>
+            <li class="drawer-list-item drawer-list-title">Engage</li>
+            <li class="drawer-list-item">
+              <a target="_blank" href="https://github.com/pyclub/pyclub.github.io">
+                <i class="fa fa-code"></i>Source
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+
+              <aside role="banner" class="cover">
+                <div data-load-image="http://pyclub.github.io/theme/cover.jpg" class="cover-image"></div>
+                <div class="cover-container">
+                  <a href="http://pyclub.github.io" class="cover-logo" data-pjax>
+                    <img src="http://pyclub.github.io/theme/logo.jpg" alt="Blog Logo">
+                  </a>
+                  <h1 class="cover-title">Computing</h1>
+<p class="cover-description">Society at Queen Mary</p>                </div>
+              </aside>
+
+              <section class="wrapper" tabindex="0">
+                <div class="wrapper-container">
+
+  <section>
+    <h2>Dmitrijs Milajevs</h2>
+    <p>
+      <p><a class="reference external" href="http://www.eecs.qmul.ac.uk/~dm303/">Dima</a> is a Ph.D. student at Queen Mary.</p>
+
+    </p>
+    <hr>
+  </section>
+
+    <section class="post-list">
+<article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="Basic git configuration" data-pjax="" itemprop="url" href="http://pyclub.github.io/basic-git-configuration.html">
+        Basic git configuration
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>Git is a powerful tool, though it has to be configured first.</p>
+<p>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-03-04T17:50:00" itemprop="datePublished">
+      Tue 04 March 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/git.html">git</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/basic-git-configuration.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="Middlesex Algorithms Day" data-pjax="" itemprop="url" href="http://pyclub.github.io/middlesex-algorithms-day.html">
+        Middlesex Algorithms Day
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>Middlesex University organizes an <a class="reference external" href="http://www.cs.mdx.ac.uk/foundations/middlesex-algorithms-day-mad-2014/">Algorithms Day</a> in
+the Hendon Town Hall, on Friday the 14th of March. Also, the solutions and
+pictures from the EECS programming competitions are <a class="reference external" href="http://www.eecs.qmul.ac.uk/~pbo/competition/2014/">published</a>.</p>
+
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-02-26T12:02:00" itemprop="datePublished">
+      Wed 26 February 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/algorithms.html">algorithms</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/middlesex-algorithms-day.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="Pyclub Twitter account" data-pjax="" itemprop="url" href="http://pyclub.github.io/pyclub-twitter-account.html">
+        Pyclub Twitter account
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>I'm happy to announce that we have a Twitter account. Follow <a class="reference external" href="https://twitter.com/pyclub_qm">&#64;pyclub_qm</a>.</p>
+
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-02-25T16:47:00" itemprop="datePublished">
+      Tue 25 February 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/twitter.html">twitter</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/pyclub-twitter-account.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="Pydata" data-pjax="" itemprop="url" href="http://pyclub.github.io/pydata.html">
+        Pydata
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>The Pydata conference has started and the venue has a great view to East
 London. If you look carefully, you can spot Queen Mary.</p>
 <a class="reference external image-reference" href="http://pyclub.github.io/static/images/pydata-qmul-large.jpg"><img alt="East London" class="align-center" src="http://pyclub.github.io/static/images/pydata-qmul.jpg" /></a>
 
-                <a class="readmore" href="http://pyclub.github.io/pydata.html">read more</a>
-<p>There are <a href="http://pyclub.github.io/pydata.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-02-22T10:21:00" itemprop="datePublished">
+      Sat 22 February 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/pydata.html">pydata</a></span>
+  </li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://pyclub.github.io/gsoc-project-moinmoin.html" rel="bookmark"
-                           title="Permalink to GSOC project: MoinMoin">GSOC project: MoinMoin</a></h1>
-                </header>
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/pydata.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="GSOC project: MoinMoin" data-pjax="" itemprop="url" href="http://pyclub.github.io/gsoc-project-moinmoin.html">
+        GSOC project: MoinMoin
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p><a class="reference external" href="http://moinmo.in/">MoinMoin</a>, a wiki engine, published <a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas">initial project ideas</a> for the <a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014">Google
+Summer of Code 2014</a>. MoinMoin is a mature project with a wonderful core team.
+They participated in GSOC for many years.</p>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-02-10T11:17:00">
-                Mon 10 February 2014
-        </abbr>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-02-10T11:17:00" itemprop="datePublished">
+      Mon 10 February 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/gsoc.html">gsoc</a></span>
+  </li>
 
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/opportunities.html">opportunities</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/gsoc.html">gsoc</a></p>
-</footer><!-- /.post-info -->                <p><a class="reference external" href="http://moinmo.in/">MoinMoin</a>, a wiki engine, published <a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas">initial project ideas</a> for the <a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014">Google
-Summer of Code 2014</a>.</p>
-<p>MoinMoin is a mature project with a wonderful core team. They participated in
-GSOC for many years.</p>
-
-                <a class="readmore" href="http://pyclub.github.io/gsoc-project-moinmoin.html">read more</a>
-<p>There are <a href="http://pyclub.github.io/gsoc-project-moinmoin.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://pyclub.github.io/qcon-london.html" rel="bookmark"
-                           title="Permalink to QCon London">QCon London</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-01-31T17:42:00">
-                Fri 31 January 2014
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/opportunities.html">opportunities</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/conference.html">conference</a><a href="http://pyclub.github.io/tag/scholarship.html">scholarship</a></p>
-</footer><!-- /.post-info -->                <p><a class="reference external" href="http://qconlondon.com/">QCon London</a> is looking for students to volunteer.
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/gsoc-project-moinmoin.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="QCon London" data-pjax="" itemprop="url" href="http://pyclub.github.io/qcon-london.html">
+        QCon London
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p><a class="reference external" href="http://qconlondon.com/">QCon London</a> is looking for students to volunteer.
 Get more details and fill in the application form <a class="reference external" href="http://qconlondon.com/london-2014/crew/">here</a>.</p>
 
-                <a class="readmore" href="http://pyclub.github.io/qcon-london.html">read more</a>
-<p>There are <a href="http://pyclub.github.io/qcon-london.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-01-31T17:42:00" itemprop="datePublished">
+      Fri 31 January 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/conference.html">conference</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/scholarship.html">scholarship</a></span>
+  </li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://pyclub.github.io/pydata-europython-and-google.html" rel="bookmark"
-                           title="Permalink to PyData, Europython and Google">PyData, Europython and Google</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-01-29T09:03:00">
-                Wed 29 January 2014
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/opportunities.html">opportunities</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/conference.html">conference</a><a href="http://pyclub.github.io/tag/scholarship.html">scholarship</a></p>
-</footer><!-- /.post-info -->                <p>There are several events on the radar that not only give you loads of
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/qcon-london.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="PyData, Europython and Google" data-pjax="" itemprop="url" href="http://pyclub.github.io/pydata-europython-and-google.html">
+        PyData, Europython and Google
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>There are several events on the radar that not only give you loads of
 knowledge, but also give you some money.</p>
-<div class="section" id="pydata-in-london">
-<h2>PyData in London</h2>
-<p><a class="reference external" href="http://pydata.org/ldn2014">PyData</a> is a conference dedicated to the scientific tools in Python. London is
-the first city outside the U.S. that hosts the conference on February ...</p></div>
-                <a class="readmore" href="http://pyclub.github.io/pydata-europython-and-google.html">read more</a>
-<p>There are <a href="http://pyclub.github.io/pydata-europython-and-google.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
+<p>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-01-29T09:03:00" itemprop="datePublished">
+      Wed 29 January 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/conference.html">conference</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/scholarship.html">scholarship</a></span>
+  </li>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://pyclub.github.io/welcome.html" rel="bookmark"
-                           title="Permalink to Welcome to the QM Python club">Welcome to the QM Python club</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2014-01-28T19:49:00">
-                Tue 28 January 2014
-        </abbr>
-
-        <address class="vcard author">
-                By <a class="url fn" href="http://pyclub.github.io/author/dmitrijs-milajevs.html">Dmitrijs Milajevs</a>
-        </address>
-<p>In <a href="http://pyclub.github.io/category/yeah.html">yeah</a>. </p>
-<p>tags: <a href="http://pyclub.github.io/tag/thats.html">thats</a><a href="http://pyclub.github.io/tag/awesome.html">awesome</a></p>
-</footer><!-- /.post-info -->                <p>Follow the <a class="reference external" href="https://github.com/pyclub/pyclub.github.io/blob/pelican/README.rst">instructions</a> if you
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/pydata-europython-and-google.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
+      <a title="Welcome to the QM Python club" data-pjax="" itemprop="url" href="http://pyclub.github.io/welcome.html">
+        Welcome to the QM Python club
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>Follow the <a class="reference external" href="https://github.com/pyclub/pyclub.github.io/blob/pelican/README.rst">instructions</a> if you
 want to add an article.</p>
 
-                <a class="readmore" href="http://pyclub.github.io/welcome.html">read more</a>
-<p>There are <a href="http://pyclub.github.io/welcome.html#disqus_thread">comments</a>.</p>                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
-            </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://pyclub.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-01-28T19:49:00" itemprop="datePublished">
+      Tue 28 January 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/thats.html">thats</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/awesome.html">awesome</a></span>
+  </li>
 
-                            <li><a href="https://www.facebook.com/groups/723364331026623/">Facebook</a></li>
-                            <li><a href="https://twitter.com/pyclub_qm">Twitter</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/welcome.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article>    </section>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+                </div>
+              </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="http://pyclub.github.io/theme/js//56c2364f.foot-scripts.min.js"></script>
 
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -218,5 +411,6 @@ want to add an article.</p>
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
     }());
 </script>
-</body>
+
+  </body>
 </html>

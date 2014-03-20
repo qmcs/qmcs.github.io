@@ -1,16 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Python Club at Queen Mary</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/all.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-02-25T16:47:00+00:00</updated><entry><title>Pyclub Twitter account</title><link href="http://pyclub.github.io/pyclub-twitter-account.html" rel="alternate"></link><updated>2014-02-25T16:47:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-25:pyclub-twitter-account.html</id><summary type="html">&lt;p&gt;I'm happy to announce that we have a Twitter account. Follow &lt;a class="reference external" href="https://twitter.com/pyclub_qm"&gt;&amp;#64;pyclub_qm&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Computing</title><link href="http://pyclub.github.io/" rel="alternate"></link><link href="http://pyclub.github.io/feeds/all.atom.xml" rel="self"></link><id>http://pyclub.github.io/</id><updated>2014-03-04T17:50:00+00:00</updated><entry><title>Basic git configuration</title><link href="http://pyclub.github.io/basic-git-configuration.html" rel="alternate"></link><updated>2014-03-04T17:50:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-03-04:basic-git-configuration.html</id><summary type="html">&lt;p&gt;Git is a powerful tool, though it has to be configured first.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Here is a basic &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.gitconfig&lt;/span&gt;&lt;/tt&gt; file that sets you name, sets up aliases and
+enables highlighting in git output:&lt;/p&gt;
+&lt;pre class="literal-block"&gt;
+[user]
+    name = Dmitrijs Milajevs
+    email = dimazest&amp;#64;gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+    decorate = short
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    unstage = reset HEAD --
+    last = log -1 HEAD
+&lt;/pre&gt;
+&lt;p&gt;Now you can type &lt;tt class="docutils literal"&gt;git st&lt;/tt&gt; instead of &lt;tt class="docutils literal"&gt;git status&lt;/tt&gt;.&lt;/p&gt;
+</summary><category term="git"></category></entry><entry><title>A small Markdown introduction</title><link href="http://pyclub.github.io/a-small-markdown-introduction.html" rel="alternate"></link><updated>2014-03-04T00:00:00+00:00</updated><author><name>Henrik O. Skogmo</name></author><id>tag:pyclub.github.io,2014-03-04:a-small-markdown-introduction.html</id><summary type="html">&lt;p&gt;Giving writers a WYSIWYG makes the assumption that they know how to make stuff
+look good. This is wrong. People who work with words should only have to care
+about words. Leaving the design choices to the designers. Markdown does an
+excellent job in accomplishing this compromise.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Many of the web's most populare publishing tools are now supporting Markdown.
+And you might recognise it from Stack Overflow and GitHub. So maybe it's time
+you get down with the M-down?&lt;/p&gt;
+&lt;p&gt;How the hell do you harvest the sweet markdown nectar? Easy. Kick-start your
+favourite (plain)text editor and fire away. Since Markdown is a lightweight
+markup language, all of you oldschool BBCode forum writers out there will find
+yourselves quite confortable.&lt;/p&gt;
+&lt;p&gt;Even though you can find the reference to &lt;a href="http://daringfireball.net/projects/markdown/syntax"&gt;Markdown's
+syntax&lt;/a&gt; online, I'll walk
+you through some of the basics. Do note that there is alternatives for some of
+the elements, so I encourouge you to gaze over the documenation.&lt;/p&gt;
+&lt;h2&gt;Headers&lt;/h2&gt;
+&lt;p&gt;Use hashtags to mark the level of a header.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# This is an H1&lt;/span&gt;
+&lt;span class="c"&gt;## This is an H2&lt;/span&gt;
+&lt;span class="c"&gt;### This is an H3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Emphasis&lt;/h2&gt;
+&lt;p&gt;Asterisks or underlines&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;The&lt;/span&gt; &lt;span class="n"&gt;quick&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;brown&lt;/span&gt; &lt;span class="n"&gt;fox&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;jumps&lt;/span&gt; &lt;span class="n"&gt;over&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;lazy&lt;/span&gt; &lt;span class="n"&gt;dog&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes "The quick &lt;em&gt;brown fox&lt;/em&gt; jumps over the &lt;strong&gt;lazy dog&lt;/strong&gt;"&lt;/p&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;There are multiple ways of making links in MD, either inline or by reference.
+However here is the most used way.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;an&lt;/span&gt; &lt;span class="n"&gt;example&lt;/span&gt;&lt;span class="p"&gt;](&lt;/span&gt;&lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//example.com &amp;quot;Title&amp;quot;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;p&gt;Simply use something that looks listy (*, + or -).&lt;/p&gt;
+&lt;h3&gt;Unordered&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;Red&lt;/span&gt;
+&lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;Green&lt;/span&gt;
+&lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Blue&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ordered&lt;/h3&gt;
+&lt;p&gt;(What the numbers are does't matter)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="n"&gt;Red&lt;/span&gt;
+&lt;span class="mf"&gt;0.&lt;/span&gt; &lt;span class="n"&gt;Green&lt;/span&gt;
+&lt;span class="mf"&gt;4.&lt;/span&gt; &lt;span class="n"&gt;Blue&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Becomes&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;h3&gt;Inline&lt;/h3&gt;
+&lt;p&gt;Use the backtick quotes (`) for &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Block&lt;/h3&gt;
+&lt;p&gt;4 spaces or 1 tab indention&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;HAI&lt;/span&gt; &lt;span class="mf"&gt;1.2&lt;/span&gt;
+  &lt;span class="n"&gt;CAN&lt;/span&gt; &lt;span class="n"&gt;HAS&lt;/span&gt; &lt;span class="n"&gt;STDIO&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt;
+  &lt;span class="n"&gt;VISIBLE&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;HAI WORLD!!!1!&amp;quot;&lt;/span&gt;
+&lt;span class="n"&gt;KTHXBYE&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you would like to start using Markdown locally on your own system I have a
+couple of Markdown readers to recommend. Even though you don't strickly need
+anything fancy to write Markdown, you still need something to parse it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://mouapp.com/"&gt;Mou&lt;/a&gt; for Mac
+&lt;a href="http://markdownpad.com/"&gt;MarkdownPad&lt;/a&gt; for Windowns
+&lt;a href="http://sourceforge.net/p/retext/home/ReText/"&gt;ReText&lt;/a&gt; for Linux&lt;/p&gt;</summary><category term="markdown"></category><category term="markup"></category><category term="languages"></category></entry><entry><title>Approximating Randomness</title><link href="http://pyclub.github.io/approximating-randomness.html" rel="alternate"></link><updated>2014-03-03T18:00:00+00:00</updated><author><name>Filip Ter</name></author><id>tag:pyclub.github.io,2014-03-03:approximating-randomness.html</id><summary type="html">&lt;p&gt;Generating random numbers from computers is essential to the development
+of certain kinds of software. Anything from modelling the environment, to a
+lottery machine, to determining the value of loot in a chest in an RPG, will
+require random number generation. At first it may seem strange that computers,
+which are capable of producing massive amounts of digits in a short time,
+would not be able to produce random numbers. The difficulty is that the
+computers we use, are constructed specifically to follow logical steps
+deterministically, so to generate numbers that are truly random from a system
+like our computers is virtually impossible. True randomness cannot be obtained
+using arithmetic operations, which is exactly what our computers perform. When
+some sequence of numbers is random then it is not possible to predict what the
+next digit will be, and since computers use a set of logical steps to create
+any new number it is theoretically possible to predict it. Nonetheless
+programmers take advantage of features for creating random numbers all the
+time, the most widely used programming languages, provide libraries that can
+generate 'random' values. Any role-playing game for example, that you might
+use, needs random values to determine the number of gold you'll find from some
+locations, what items dead enemies will drop, etc. So how is it possible that
+even though the very nature of computers makes it impossible to exhibit random
+behaviour, that many programs include simulations of randomness?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The answer is pseudo-random number generators(PRNG), these are programs that
+follow a certain algorithm to simulate random behaviour. The numbers they
+generate, cannot be by definition truly random, however for many uses it is a
+good enough approximation. The libraries in many of todays programming
+languages that generate random digits use PRNG's. The basic idea is to perform
+some arithmetic operations on a number in sequence, to make it seem like it's
+random. A PRNG always starts with an initial value called a seed. It will then
+perform operations on the seed to make the final number different from the
+original value. So when the PRNG is supplied with seeds that are in sequence,
+it will return numbers that seem random, because the operations that are
+performed on each number should change it to make it so the returned numbers
+are no longer following any pattern. PRNG's are also periodical, they have a certain
+amount of numbers they produce, and after that the sequence starts to repeat
+itself. It is usually not a problem to make the period very large, so that the
+application that relies on it will never start to get repeated sequences.&lt;/p&gt;
+&lt;p&gt;A very well known PRNG is the Mersenne Twister(1), it is the default PRNG for
+Python, Ruby, PHP and many others. It has a period of 2^(19937−1), which is a
+Mersenne prime number, hence the name of the generator. Invented in 1997 it
+was largely superior to PRNG's like C's rand or Java's Random. Furthermore it
+passes certain statistical tests for randomness so it is a very reliable
+generator as it is very successful at simulating genuine randomness.&lt;/p&gt;
+&lt;p&gt;These programs have been used extensively and are relied upon by many applications,
+it is important to note that when truly random behaviour is needed then PRNG's
+are not sufficient. John von Neumann famously said: “Anyone who considers
+arithmetical methods of producing random digits is, of course, in a state of
+sin.&amp;quot; In this situation he was referring to depending on PRNG's or other
+arithmetic approaches to create truly random digits, which is not a good idea.
+Rather it is possible to use true random number generators, that are based on
+the idea of extracting physical phenomena that are believed to be random and
+using them to generate random numbers. For example atmospheric noise, or
+radioactive decay, etc. Even though it is possible to extract truly random
+numbers from the outside world, most applications that use random numbers use
+PRNG's. It is because of their convenience, there is no need for any extra
+devices, or input, all it needs is a sequence of numbers that it later
+transforms into a pseudo-random sequence.&lt;/p&gt;
+&lt;p&gt;1: Link to the implementation of Mersenne Twister. This is the latest version from the original creators:
+&lt;a class="reference external" href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c"&gt;http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c&lt;/a&gt;&lt;/p&gt;
+</summary><category term="random"></category><category term="prng"></category><category term="languages"></category></entry><entry><title>Facebook Hackathon</title><link href="http://pyclub.github.io/facebook-hackathon.html" rel="alternate"></link><updated>2014-02-28T19:32:00+00:00</updated><author><name>Umar Qureshi</name></author><id>tag:pyclub.github.io,2014-02-28:facebook-hackathon.html</id><summary type="html">&lt;p&gt;If you havent heard yet, Facebook will be hosting a Hackathon on Saturday, 15
+March 2014. A Hackathon is a (codefest) event where computer programmers and
+others involved in software development, graphic designers, interface
+designers and project managers collaborate intensively on software
+projects.Hackathons tend to have a specific focus, which can include the
+programming language used, the operating, an application, an API, or the
+subject and the demographic group of the programmer. Though for the Facebook
+hackthon, there isnt any restriction on what you can make so aim for the sky.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;So Join Facebook in London as we stay up all night hacking, learning and
+having a some fun! Start brainstorming ideas &amp;amp; forming teams (of up to 4
+people). Facebook will suply us with  food, fun diversions, prizes, and some
+expert guidance in the form of our engineers. Travel will be reimbursed for
+public transportation.You bring your laptop, appetite, skills and ideas.&lt;/p&gt;
+&lt;p&gt;The winning team will get the chance to compete against teams from other
+Hackathons both domestically and internationally at the Hackathon Finals and
+be judged by Facebook executives -- held at Facebook HQ in Menlo Park,
+California in November!&lt;/p&gt;
+&lt;p&gt;Here is a link for registration
+&lt;a class="reference external" href="https://www.surveymonkey.com/s/londonhackathon"&gt;https://www.surveymonkey.com/s/londonhackathon&lt;/a&gt;. Register before the 4th of
+March. The event is over subscribed but you can still apply. Be ready for a
+coding puzzle on the 4th of March, this will be your ticket to the event.&lt;/p&gt;
+</summary><category term="Facebook"></category></entry><entry><title>Middlesex Algorithms Day</title><link href="http://pyclub.github.io/middlesex-algorithms-day.html" rel="alternate"></link><updated>2014-02-26T12:02:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-26:middlesex-algorithms-day.html</id><summary type="html">&lt;p&gt;Middlesex University organizes an &lt;a class="reference external" href="http://www.cs.mdx.ac.uk/foundations/middlesex-algorithms-day-mad-2014/"&gt;Algorithms Day&lt;/a&gt; in
+the Hendon Town Hall, on Friday the 14th of March. Also, the solutions and
+pictures from the EECS programming competitions are &lt;a class="reference external" href="http://www.eecs.qmul.ac.uk/~pbo/competition/2014/"&gt;published&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="algorithms"></category></entry><entry><title>Pyclub Twitter account</title><link href="http://pyclub.github.io/pyclub-twitter-account.html" rel="alternate"></link><updated>2014-02-25T16:47:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-25:pyclub-twitter-account.html</id><summary type="html">&lt;p&gt;I'm happy to announce that we have a Twitter account. Follow &lt;a class="reference external" href="https://twitter.com/pyclub_qm"&gt;&amp;#64;pyclub_qm&lt;/a&gt;.&lt;/p&gt;
 </summary><category term="twitter"></category></entry><entry><title>Pydata</title><link href="http://pyclub.github.io/pydata.html" rel="alternate"></link><updated>2014-02-22T10:21:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-22:pydata.html</id><summary type="html">&lt;p&gt;The Pydata conference has started and the venue has a great view to East
 London. If you look carefully, you can spot Queen Mary.&lt;/p&gt;
 &lt;a class="reference external image-reference" href="http://pyclub.github.io/static/images/pydata-qmul-large.jpg"&gt;&lt;img alt="East London" class="align-center" src="http://pyclub.github.io/static/images/pydata-qmul.jpg" /&gt;&lt;/a&gt;
 </summary><category term="pydata"></category></entry><entry><title>GSOC project: MoinMoin</title><link href="http://pyclub.github.io/gsoc-project-moinmoin.html" rel="alternate"></link><updated>2014-02-10T11:17:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-02-10:gsoc-project-moinmoin.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://moinmo.in/"&gt;MoinMoin&lt;/a&gt;, a wiki engine, published &lt;a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas"&gt;initial project ideas&lt;/a&gt; for the &lt;a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"&gt;Google
-Summer of Code 2014&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;MoinMoin is a mature project with a wonderful core team. They participated in
-GSOC for many years.&lt;/p&gt;
+Summer of Code 2014&lt;/a&gt;. MoinMoin is a mature project with a wonderful core team.
+They participated in GSOC for many years.&lt;/p&gt;
 </summary><category term="gsoc"></category></entry><entry><title>QCon London</title><link href="http://pyclub.github.io/qcon-london.html" rel="alternate"></link><updated>2014-01-31T17:42:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-31:qcon-london.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://qconlondon.com/"&gt;QCon London&lt;/a&gt; is looking for students to volunteer.
 Get more details and fill in the application form &lt;a class="reference external" href="http://qconlondon.com/london-2014/crew/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 </summary><category term="conference"></category><category term="scholarship"></category></entry><entry><title>PyData, Europython and Google</title><link href="http://pyclub.github.io/pydata-europython-and-google.html" rel="alternate"></link><updated>2014-01-29T09:03:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:pyclub.github.io,2014-01-29:pydata-europython-and-google.html</id><summary type="html">&lt;p&gt;There are several events on the radar that not only give you loads of
 knowledge, but also give you some money.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 &lt;div class="section" id="pydata-in-london"&gt;
 &lt;h2&gt;PyData in London&lt;/h2&gt;
 &lt;p&gt;&lt;a class="reference external" href="http://pydata.org/ldn2014"&gt;PyData&lt;/a&gt; is a conference dedicated to the scientific tools in Python. London is

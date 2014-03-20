@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Approximating Randomness</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <meta name="twitter:card" content="summary">
+
+    <meta property="og:type" content="article">
+
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/main.css" />
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/pygment.css" />
+
+    <script src="http://pyclub.github.io/theme/js/jquery.min.js"></script>
+    <script src="http://pyclub.github.io/theme/js/modernizr.js"></script>
+
+    <script src="http://pyclub.github.io/theme/js/imageLoader.js"></script>
+    <script src="http://pyclub.github.io/theme/js/drawer.js"></script>
+    <script src="http://pyclub.github.io/theme/js/scripts.js"></script>
+
+
+        <link href="http://pyclub.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computing Atom Feed" />
+
+  </head>
+  <body class="">
+
+
+    <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
+    <div class="drawer-overlay"></div>
+    <nav class="drawer" tabindex="-1">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul class="drawer-list" role="navigation">
+
+          <li class="drawer-list-item">
+            <a data-pjax="" href="http://pyclub.github.io/">
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/archives.html">
+                <i class="fa fa-file"></i>Archive
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/tags.html">
+                <i class="fa fa-file"></i>Tags
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/authors.html">
+                <i class="fa fa-file"></i>Authors
+              </a>
+            </li>
+
+          <li class="drawer-list-divider"></li>
+
+<li class="drawer-list-item drawer-list-title">Pages</li>
+              <li class="drawer-list-item">
+                <a href="http://pyclub.github.io/pages/about.html">
+                  <i class="fa fa-file"></i>About
+                </a>
+              </li>
+            <li class="drawer-list-divider"></li>
+
+
+          <li class="drawer-list-item drawer-list-title">Follow me</li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://www.facebook.com/groups/723364331026623/">
+                <i class="fa fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://twitter.com/pyclub_qm">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+
+            <li class="drawer-list-divider"></li>
+            <li class="drawer-list-item drawer-list-title">Engage</li>
+            <li class="drawer-list-item">
+              <a target="_blank" href="https://github.com/pyclub/pyclub.github.io">
+                <i class="fa fa-code"></i>Source
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post ">
+      <section class="post-container">
+        <header class="post-header">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-03-03T18:00:00" itemprop="datePublished">
+      Mon 03 March 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/random.html">random</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/prng.html">prng</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/languages.html">languages</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/approximating-randomness.html#disqus_thread">Comments</a>.
+  </li>
+</ul>          <h1 itemprop="name headline" class="post-title"><a href="http://pyclub.github.io/approximating-randomness.html" itemprop="url" data-pjax title="Approximating Randomness">Approximating Randomness</a></h1>
+          <!--h2 itemprop="about" class="post-subtitle"></h2-->
+        </header>
+        <aside class="post-side">
+          <div class="post-author">
+            <div class="post-author-info">
+              <a href="http://pyclub.github.io/author/filip-ter.html" class="post-author-name">
+                Filip Ter
+              </a>
+              <p class="post-author-bio"></p>
+            </div>
+          </div>
+        </aside>
+        <div itemprop="articleBody" class="post-body">
+          <p>Generating random numbers from computers is essential to the development
+of certain kinds of software. Anything from modelling the environment, to a
+lottery machine, to determining the value of loot in a chest in an RPG, will
+require random number generation. At first it may seem strange that computers,
+which are capable of producing massive amounts of digits in a short time,
+would not be able to produce random numbers. The difficulty is that the
+computers we use, are constructed specifically to follow logical steps
+deterministically, so to generate numbers that are truly random from a system
+like our computers is virtually impossible. True randomness cannot be obtained
+using arithmetic operations, which is exactly what our computers perform. When
+some sequence of numbers is random then it is not possible to predict what the
+next digit will be, and since computers use a set of logical steps to create
+any new number it is theoretically possible to predict it. Nonetheless
+programmers take advantage of features for creating random numbers all the
+time, the most widely used programming languages, provide libraries that can
+generate 'random' values. Any role-playing game for example, that you might
+use, needs random values to determine the number of gold you'll find from some
+locations, what items dead enemies will drop, etc. So how is it possible that
+even though the very nature of computers makes it impossible to exhibit random
+behaviour, that many programs include simulations of randomness?</p>
+<p></p>
+<p>The answer is pseudo-random number generators(PRNG), these are programs that
+follow a certain algorithm to simulate random behaviour. The numbers they
+generate, cannot be by definition truly random, however for many uses it is a
+good enough approximation. The libraries in many of todays programming
+languages that generate random digits use PRNG's. The basic idea is to perform
+some arithmetic operations on a number in sequence, to make it seem like it's
+random. A PRNG always starts with an initial value called a seed. It will then
+perform operations on the seed to make the final number different from the
+original value. So when the PRNG is supplied with seeds that are in sequence,
+it will return numbers that seem random, because the operations that are
+performed on each number should change it to make it so the returned numbers
+are no longer following any pattern. PRNG's are also periodical, they have a certain
+amount of numbers they produce, and after that the sequence starts to repeat
+itself. It is usually not a problem to make the period very large, so that the
+application that relies on it will never start to get repeated sequences.</p>
+<p>A very well known PRNG is the Mersenne Twister(1), it is the default PRNG for
+Python, Ruby, PHP and many others. It has a period of 2^(19937−1), which is a
+Mersenne prime number, hence the name of the generator. Invented in 1997 it
+was largely superior to PRNG's like C's rand or Java's Random. Furthermore it
+passes certain statistical tests for randomness so it is a very reliable
+generator as it is very successful at simulating genuine randomness.</p>
+<p>These programs have been used extensively and are relied upon by many applications,
+it is important to note that when truly random behaviour is needed then PRNG's
+are not sufficient. John von Neumann famously said: “Anyone who considers
+arithmetical methods of producing random digits is, of course, in a state of
+sin.&quot; In this situation he was referring to depending on PRNG's or other
+arithmetic approaches to create truly random digits, which is not a good idea.
+Rather it is possible to use true random number generators, that are based on
+the idea of extracting physical phenomena that are believed to be random and
+using them to generate random numbers. For example atmospheric noise, or
+radioactive decay, etc. Even though it is possible to extract truly random
+numbers from the outside world, most applications that use random numbers use
+PRNG's. It is because of their convenience, there is no need for any extra
+devices, or input, all it needs is a sequence of numbers that it later
+transforms into a pseudo-random sequence.</p>
+<p>1: Link to the implementation of Mersenne Twister. This is the latest version from the original creators:
+<a class="reference external" href="http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c">http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/CODES/mt19937ar.c</a></p>
+
+        </div>
+        <footer class="post-footer">
+          <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+            <div class="post-author-info">
+              <h4 class="post-footer-heading">Written By</h4>
+
+              <a href="http://pyclub.github.io/author/filip-ter.html" itemprop="url" class="post-author-name">
+                <span itemprop="name">Filip Ter</span>
+              </a>
+
+              <p itemprop="description" class="post-author-bio"></p>
+
+
+              <p class="post-info">
+                <b class="post-info-title">Published on</b>
+                <time datetime="2014-03-03T18:00:00" class="post-date">
+                  Mon 03 March 2014
+                </time>
+              </p>
+
+            </div>
+          </div>
+          <div class="post-social">
+            <h4 class="post-footer-heading">Spread the word</h4>
+            <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+            <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+            <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+          </div>
+        </footer>
+      </section>
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_identifier = "approximating-randomness.html";
+            var disqus_url = "http://pyclub.github.io/approximating-randomness.html";
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://pyclub.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        </section>
+    </article>
+
+  </div>
+</section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="http://pyclub.github.io/theme/js//56c2364f.foot-scripts.min.js"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47565959-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'pyclub';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+  </body>
+</html>

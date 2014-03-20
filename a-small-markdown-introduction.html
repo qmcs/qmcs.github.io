@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>A small Markdown introduction</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <meta name="twitter:card" content="summary">
+
+    <meta property="og:type" content="article">
+
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/main.css" />
+    <link rel="stylesheet" href="http://pyclub.github.io/theme/css/pygment.css" />
+
+    <script src="http://pyclub.github.io/theme/js/jquery.min.js"></script>
+    <script src="http://pyclub.github.io/theme/js/modernizr.js"></script>
+
+    <script src="http://pyclub.github.io/theme/js/imageLoader.js"></script>
+    <script src="http://pyclub.github.io/theme/js/drawer.js"></script>
+    <script src="http://pyclub.github.io/theme/js/scripts.js"></script>
+
+
+        <link href="http://pyclub.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computing Atom Feed" />
+
+  </head>
+  <body class="">
+
+
+    <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
+    <div class="drawer-overlay"></div>
+    <nav class="drawer" tabindex="-1">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul class="drawer-list" role="navigation">
+
+          <li class="drawer-list-item">
+            <a data-pjax="" href="http://pyclub.github.io/">
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/archives.html">
+                <i class="fa fa-file"></i>Archive
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/tags.html">
+                <i class="fa fa-file"></i>Tags
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://pyclub.github.io/authors.html">
+                <i class="fa fa-file"></i>Authors
+              </a>
+            </li>
+
+          <li class="drawer-list-divider"></li>
+
+<li class="drawer-list-item drawer-list-title">Pages</li>
+              <li class="drawer-list-item">
+                <a href="http://pyclub.github.io/pages/about.html">
+                  <i class="fa fa-file"></i>About
+                </a>
+              </li>
+            <li class="drawer-list-divider"></li>
+
+
+          <li class="drawer-list-item drawer-list-title">Follow me</li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://www.facebook.com/groups/723364331026623/">
+                <i class="fa fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://twitter.com/pyclub_qm">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+
+            <li class="drawer-list-divider"></li>
+            <li class="drawer-list-item drawer-list-title">Engage</li>
+            <li class="drawer-list-item">
+              <a target="_blank" href="https://github.com/pyclub/pyclub.github.io">
+                <i class="fa fa-code"></i>Source
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post ">
+      <section class="post-container">
+        <header class="post-header">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-03-04T00:00:00" itemprop="datePublished">
+      Tue 04 March 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/markdown.html">markdown</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/markup.html">markup</a></span>
+      <span itemprop="keywords"><a href="http://pyclub.github.io/tag/languages.html">languages</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://pyclub.github.io/a-small-markdown-introduction.html#disqus_thread">Comments</a>.
+  </li>
+</ul>          <h1 itemprop="name headline" class="post-title"><a href="http://pyclub.github.io/a-small-markdown-introduction.html" itemprop="url" data-pjax title="A small Markdown introduction">A small Markdown introduction</a></h1>
+          <!--h2 itemprop="about" class="post-subtitle"></h2-->
+        </header>
+        <aside class="post-side">
+          <div class="post-author">
+              <a href="http://pyclub.github.io/author/henrik-o-skogmo.html" class="post-author-avatar">
+                <img src="http://pyclub.github.io/static/author_images/skogmo.jpg" alt="Henrik O. Skogmo">
+              </a>
+            <div class="post-author-info">
+              <a href="http://pyclub.github.io/author/henrik-o-skogmo.html" class="post-author-name">
+                Henrik O. Skogmo
+              </a>
+              <p class="post-author-bio"><p><a class="reference external" href="http://skogmo.me">Henrik</a> is an undergraduate student at Queen Mary studying Computer Science.</p>
+</p>
+            </div>
+          </div>
+        </aside>
+        <div itemprop="articleBody" class="post-body">
+          <p>Giving writers a WYSIWYG makes the assumption that they know how to make stuff
+look good. This is wrong. People who work with words should only have to care
+about words. Leaving the design choices to the designers. Markdown does an
+excellent job in accomplishing this compromise.</p>
+<p></p>
+<p>Many of the web's most populare publishing tools are now supporting Markdown.
+And you might recognise it from Stack Overflow and GitHub. So maybe it's time
+you get down with the M-down?</p>
+<p>How the hell do you harvest the sweet markdown nectar? Easy. Kick-start your
+favourite (plain)text editor and fire away. Since Markdown is a lightweight
+markup language, all of you oldschool BBCode forum writers out there will find
+yourselves quite confortable.</p>
+<p>Even though you can find the reference to <a href="http://daringfireball.net/projects/markdown/syntax">Markdown's
+syntax</a> online, I'll walk
+you through some of the basics. Do note that there is alternatives for some of
+the elements, so I encourouge you to gaze over the documenation.</p>
+<h2>Headers</h2>
+<p>Use hashtags to mark the level of a header.</p>
+<div class="highlight"><pre><span class="c"># This is an H1</span>
+<span class="c">## This is an H2</span>
+<span class="c">### This is an H3</span>
+</pre></div>
+
+
+<h2>Emphasis</h2>
+<p>Asterisks or underlines</p>
+<div class="highlight"><pre><span class="n">The</span> <span class="n">quick</span> <span class="o">*</span><span class="n">brown</span> <span class="n">fox</span><span class="o">*</span> <span class="n">jumps</span> <span class="n">over</span> <span class="n">the</span> <span class="o">**</span><span class="n">lazy</span> <span class="n">dog</span><span class="o">**</span>
+</pre></div>
+
+
+<p>Becomes "The quick <em>brown fox</em> jumps over the <strong>lazy dog</strong>"</p>
+<h2>Links</h2>
+<p>There are multiple ways of making links in MD, either inline or by reference.
+However here is the most used way.</p>
+<div class="highlight"><pre><span class="p">[</span><span class="n">an</span> <span class="n">example</span><span class="p">](</span><span class="n">http</span><span class="o">:</span><span class="c1">//example.com &quot;Title&quot;)</span>
+</pre></div>
+
+
+<h2>Lists</h2>
+<p>Simply use something that looks listy (*, + or -).</p>
+<h3>Unordered</h3>
+<div class="highlight"><pre><span class="o">*</span> <span class="n">Red</span>
+<span class="o">-</span> <span class="n">Green</span>
+<span class="o">+</span> <span class="n">Blue</span>
+</pre></div>
+
+
+<p>Becomes</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<h3>Ordered</h3>
+<p>(What the numbers are does't matter)</p>
+<div class="highlight"><pre><span class="mf">4.</span> <span class="n">Red</span>
+<span class="mf">0.</span> <span class="n">Green</span>
+<span class="mf">4.</span> <span class="n">Blue</span>
+</pre></div>
+
+
+<p>Becomes</p>
+<ol>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ol>
+<h2>Code</h2>
+<h3>Inline</h3>
+<p>Use the backtick quotes (`) for <code>inline code</code>.</p>
+<h3>Block</h3>
+<p>4 spaces or 1 tab indention</p>
+<div class="highlight"><pre><span class="n">HAI</span> <span class="mf">1.2</span>
+  <span class="n">CAN</span> <span class="n">HAS</span> <span class="n">STDIO</span><span class="o">?</span>
+  <span class="n">VISIBLE</span> <span class="s">&quot;HAI WORLD!!!1!&quot;</span>
+<span class="n">KTHXBYE</span>
+</pre></div>
+
+
+<p>If you would like to start using Markdown locally on your own system I have a
+couple of Markdown readers to recommend. Even though you don't strickly need
+anything fancy to write Markdown, you still need something to parse it.</p>
+<p><a href="http://mouapp.com/">Mou</a> for Mac
+<a href="http://markdownpad.com/">MarkdownPad</a> for Windowns
+<a href="http://sourceforge.net/p/retext/home/ReText/">ReText</a> for Linux</p>
+        </div>
+        <footer class="post-footer">
+          <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              <a href="http://pyclub.github.io/author/henrik-o-skogmo.html" class="post-author-avatar">
+                <img src="http://pyclub.github.io/static/author_images/skogmo.jpg" alt="Henrik O. Skogmo">
+              </a>
+            <div class="post-author-info">
+              <h4 class="post-footer-heading">Written By</h4>
+
+              <a href="http://pyclub.github.io/author/henrik-o-skogmo.html" itemprop="url" class="post-author-name">
+                <span itemprop="name">Henrik O. Skogmo</span>
+              </a>
+
+              <p itemprop="description" class="post-author-bio"><p><a class="reference external" href="http://skogmo.me">Henrik</a> is an undergraduate student at Queen Mary studying Computer Science.</p>
+</p>
+
+              <p class="post-author-website">
+                <a rel="nofollow" href="http://skogmo.me">
+                  http://skogmo.me
+                </a>
+              </p>
+
+              <p class="post-info">
+                <b class="post-info-title">Published on</b>
+                <time datetime="2014-03-04T00:00:00" class="post-date">
+                  Tue 04 March 2014
+                </time>
+              </p>
+
+            </div>
+          </div>
+          <div class="post-social">
+            <h4 class="post-footer-heading">Spread the word</h4>
+            <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+            <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+            <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+          </div>
+        </footer>
+      </section>
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+            var disqus_identifier = "a-small-markdown-introduction.html";
+            var disqus_url = "http://pyclub.github.io/a-small-markdown-introduction.html";
+            (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://pyclub.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          </script>
+        </section>
+    </article>
+
+  </div>
+</section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <script src="http://pyclub.github.io/theme/js//56c2364f.foot-scripts.min.js"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-47565959-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'pyclub';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+  </body>
+</html>
