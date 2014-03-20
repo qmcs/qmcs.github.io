@@ -127,17 +127,18 @@ Create a `pull request <https://help.github.com/articles/creating-a-pull-request
 Pull request review
 ~~~~~~~~~~~~~~~~~~~
 
-Every article should be reviewed by two people. You are welcome to go trough
-any open pull request and comment on the things you like or dislike. If you
-find an article ready to be published, write a comment ``looks good``, ``ready
-to be merged`` or something similar. It's completely fine to comment about
-anything, but it's important to be polite, precise and constructive.
+Every article should be reviewed by two people. You are welcome to go trough any
+open pull request and comment on the things you like or dislike. If you find the
+changes to be merged, write a comment::
 
-To speed up the process assign someone from the team to do peer review.
+ :+1:
 
-If your article got comments from someone else, please fix them in a timely
-manner. The sooner you fix all the issues, the sooner the article appears on
-the website.
+It's completely fine to comment about anything, but it's important to be polite,
+precise and constructive.
+
+To speed up the process assign someone from the team to do peer review. If your
+article got comments from someone else, please fix them in a timely manner. The
+sooner you fix all the issues, the sooner the article appears on the website.
 
 Why should I bother?
 --------------------
