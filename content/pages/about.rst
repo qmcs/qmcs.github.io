@@ -4,7 +4,7 @@ About
 
 :date: 2014-03-19 00:51
 
-The Computing Society was established in 2014 as a natural expansion of the
+The Computing Society was established in 2014 as a natural expansion of
 Queen Mary's Python Club. Today the society is dedicated to benefit the students
 and widen their academic horizon by organising social and educational events.
 Technology excites us, and we want to create a community that cultivates this by
