@@ -131,10 +131,11 @@ Create a `pull request <https://help.github.com/articles/creating-a-pull-request
 Developing the theme and plugins
 --------------------------------
 
-Our blog uses custom theme and plugins. The theme and plugin are external
-projects and don't belong to this repository! However, during the ``buildout``
-step they are cloned to the ``src/`` folder, thatnks to
-`Mr. Developer <https://pypi.python.org/pypi/mr.developer>`__:
+Our blog uses a custom theme and plugins. The theme and the plugins are external
+projects and don't belong to this git repository! However, during the
+``buildout`` step they are cloned to the ``src/`` folder, thanks to `Mr.
+Developer <https://pypi.python.org/pypi/mr.developer>`__. Here are the external
+projects we depend on:
 
 .. code-block:: bash
 
@@ -145,8 +146,8 @@ step they are cloned to the ``src/`` folder, thatnks to
     └── pelicanium  # The theme we use.
 
 By default ``pelicanium`` and ``pelican_extended_authors`` are cloned from
-https://github.com/pyclub, but if you want to make changes you need to use your
-own fork.
+https://github.com/pyclub, but if you want to make changes to these projects you
+need to use your own fork.
 
 1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
 2. Modify ``custom.cfg`` to look like:
@@ -168,6 +169,10 @@ change remote urls by yourself, for example:
 
     cd src/pelicanium
     git remote set-url origin git@github.com:dimazest/pyclub.github.io.git
+
+If you want to update the dependencies, run::
+
+    bin/develop up
 
 Add a remote
 ~~~~~~~~~~~~
