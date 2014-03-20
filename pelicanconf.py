@@ -6,9 +6,10 @@ import pelicanium
 
 
 AUTHOR = 'Contributors'
-SITENAME = 'Python Club'
-SITESUBTITLE = 'at Queen Mary'
+SITENAME = 'Computing'
+SITESUBTITLE = 'Society at Queen Mary'
 SITEURL = ''
+SITE_TITLE = 'QM ' + SITENAME + ' Society'
 
 TIMEZONE = 'Europe/London'
 
@@ -56,6 +57,10 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = False
+
+LOGO = "static/images/main.png"
+FAVICON = "static/images/favicon.ico"
+COVER_IMG = 'static/images/cover.jpg'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
