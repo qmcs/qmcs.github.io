@@ -73,7 +73,14 @@ name. The content of the file should be similar to
     :category: yeah
     :author: Dmitrijs Milajevs
 
-    .. Here goes the content of the article.
+    The first paragraph should introduce and possibly summarize the article. It
+    should be relatively short: 2 - 3 sentences.
+
+    .. Explicitly mark the end of the summary/introduciton
+
+    -- PELICAN_END_SUMMARY --
+
+    .. Here goes the rest of the article.
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
