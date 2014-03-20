@@ -152,7 +152,7 @@ need to use your own fork.
 1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
 2. Modify ``custom.cfg`` to look like:
 
-    .. code-block:: bash
+    .. code-block:: config
 
         [bouldout]
         github_username = dimazest  # Put your github username here
