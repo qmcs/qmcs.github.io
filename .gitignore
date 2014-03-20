@@ -42,3 +42,4 @@ pelican.pid
 srv.pid
 
 src/
+.DS_Store
