@@ -244,7 +244,6 @@ Author bibliographies are stored in ``content/authors``. Here is an example of
 
 The cover image is a 461x461 picture of you or an avatar and should be located
 in `content/static/author_images`.
->>>>>>> d/authors_readme
 
 Why should I bother?
 --------------------
