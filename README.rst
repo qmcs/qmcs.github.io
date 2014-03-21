@@ -222,6 +222,30 @@ To speed up the process assign someone from the team to do peer review. If your
 article got comments from someone else, please fix them in a timely manner. The
 sooner you fix all the issues, the sooner the article appears on the website.
 
+Add information about yourself
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can add information about yourself, such as a brief description of who you
+are, your interests, your homepage and contact information, and, most
+importantly, a picture.
+
+Author bibliographies are stored in ``content/authors``. Here is an example of
+``dmitrijs-milajevs.rst``:
+
+.. code-block:: rst
+
+    :slug: dmitrijs-milajevs
+    :cover_image: static/author_images/dmilajevs.jpg
+    :homepage: http://www.eecs.qmul.ac.uk/~dm303/
+
+    `Dima`__ is a Ph.D. student at Queen Mary.
+
+    __ http://www.eecs.qmul.ac.uk/~dm303/
+
+The cover image is a 461x461 picture of you or an avatar and should be located
+in `content/static/author_images`.
+>>>>>>> d/authors_readme
+
 Why should I bother?
 --------------------
 
