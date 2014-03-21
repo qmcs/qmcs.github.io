@@ -91,14 +91,17 @@ name. The content of the file should be similar to
 Refer to `Pelican documentation <http://docs.getpelican.com/en/3.3.0/>`_ and
 `reStructuredText examples <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ if you want nice formatting.
 
-An easy way to see rendered .rst files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+An easy way to see rendered article files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use `restview <https://pypi.python.org/pypi/restview>`_ to see
-rendered ``.rst`` files in your browser. For example, to see the intro
-article, type::
+You can use `restview <https://pypi.python.org/pypi/restview>`_ to see rendered
+``.rst``  or `meow <https://pypi.python.org/pypi/meow/>`_ for ``.md`` files in
+your browser. For example:
 
-    bin/restview content/articles/001-intro.rst
+.. code-block:: bash
+
+    bin/restview content/articles/001-intro.rst  # to see the intro article
+    bin/meow content/articles/009-markdown.md  # to see the Markdown article
 
 There are rumors, that you can feed a directory to restview and then select
 files in the browser::
