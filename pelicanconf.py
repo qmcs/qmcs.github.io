@@ -53,7 +53,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
-    ('Twitter', 'https://twitter.com/pyclub_qm'),
+    ('Twitter', 'https://twitter.com/QMComputing'),
 )
 
 DEFAULT_PAGINATION = False
