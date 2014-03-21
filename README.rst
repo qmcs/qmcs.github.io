@@ -1,13 +1,9 @@
-Python Club at Queen Mary, University of London
-===============================================
+Computing society at Queen Mary University of London
+====================================================
 
 
-This is the content of the `website of the Python club at Queen Mary,
-University of London <http://pyclub.github.io/>`_. You are welcome to
-contribute your articles on any more or less technical topics, not necessarily
-related to Python (for instance, if you know a bit about port forwarding using
-``ssh``, and able to f*ck the system and pretend that the school SQL server is
-running locally, write it here).
+This is the content of the `Computing Society website <http://qmcs.io/>`_. You
+are welcome to contribute your articles on any more or less technical topics.
 
 Getting started
 ---------------
@@ -15,7 +11,7 @@ Getting started
 First of all, get an account at `github <https://github.com>`_, `set up your
 ssh key <https://help.github.com/articles/generating-ssh-keys>`_, and `fork
 <https://help.github.com/articles/fork-a-repo>`_ the `original repo
-<https://github.com/pyclub/pyclub.github.io>`_. Right, you also need to
+<https://github.com/qmcs/qmcs.github.io/>`_. Right, you also need to
 `configure git <https://help.github.com/articles/set- up-git>`_. If you didn't
 use git before, check out `Github tutorial <http://try.github.io>`_ or a
 `tutorial provided by Software Carpentry
@@ -25,8 +21,8 @@ control/tutorial.html>`_ to get a general idea.
 
 Before writing an article, clone the repo::
 
-    git clone git@github.com:username/pyclub.github.io
-    cd pyclub.github.io
+    git clone git@github.com:username/qmcs.github.io
+    cd qmcs.github.io
 
 We use `buildout <https://pypi.python.org/pypi/zc.buildout/2.2.1>`_ to deploy
 needed software. A typical biuldout deployment consists of two steps:
@@ -36,13 +32,15 @@ Bootstraping is simple::
 
     python bootstrap.py
 
-In case you get an error about setuptools, you can install them::
+In case you get an error about setuptools, you can install them:
+
+.. code-block:: bash
 
     # Only if you get an error in the previus step!
     python ez_setup.py --user
     python bootstrap.py
 
-Now you are ready to buildout::
+Now you are ready to ``buildout``::
 
     bin/buildout
 
@@ -62,9 +60,9 @@ name. The content of the file should be similar to
 
     .. The title. It's important to put = from below and above!
 
-    =============================
-    Welcome to the QM Python club
-    =============================
+    =======================
+    Welcome to QM Computing
+    =======================
 
     .. Some metadata
 
@@ -91,9 +89,7 @@ name. The content of the file should be similar to
     est laborum.
 
 Refer to `Pelican documentation <http://docs.getpelican.com/en/3.3.0/>`_ and
-`reStructuredText examples
-<http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ if you want
-nice formatting.
+`reStructuredText examples <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ if you want nice formatting.
 
 An easy way to see rendered .rst files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -112,7 +108,7 @@ files in the browser::
 Generate the HTML version of a blog locally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wow, you can get a local version of the blog:
+Now, you can get a local version of the blog:
 
 .. code-block:: bash
 
@@ -141,7 +137,7 @@ Developing the theme and plugins
 Our blog uses a custom theme and plugins. The theme and the plugins are external
 projects and don't belong to this git repository! However, during the
 ``buildout`` step they are cloned to the ``src/`` folder, thanks to `Mr.
-Developer <https://pypi.python.org/pypi/mr.developer>`__. Here are the external
+Developer <https://pypi.python.org/pypi/mr.developer>`_. Here are the external
 projects we depend on:
 
 .. code-block:: bash
@@ -159,7 +155,7 @@ need to use your own fork.
 1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
 2. Modify ``custom.cfg`` to look like:
 
-    .. code-block:: config
+    .. code-block:: ini
 
         [bouldout]
         github_username = dimazest  # Put your github username here
@@ -175,7 +171,7 @@ change remote urls by yourself, for example:
 .. code-block:: bash
 
     cd src/pelicanium
-    git remote set-url origin git@github.com:dimazest/pyclub.github.io.git
+    git remote set-url origin git@github.com:dimazest/qmcs.github.io
 
 If you want to update the dependencies, run::
 
@@ -184,12 +180,12 @@ If you want to update the dependencies, run::
 Add a remote
 ~~~~~~~~~~~~
 
-In case you want to refer not only to you repo, but to others, you need to add
+In case you want to refer not only to your repo, but to others, you need to add
 another remote:
 
 .. code-block:: bash
 
-    git remote add upstream git@github.com:pyclub/pyclub.github.io.git
+    git remote add upstream git@github.com:qmcs/qmcs.github.io
 
 Now you can merge with the recent ``pelican`` branch:
 
@@ -220,7 +216,7 @@ Updating the web site
 
 In case you are lucky and have write access to the main repo you can upload the
 generated HTML version of the site, however you need to clone
-``git@github.com:pyclub/pyclub.github.io.git``.
+``git@github.com:qmcs/qmcs.github.io``.
 
 To upload the HTML just run::
 
