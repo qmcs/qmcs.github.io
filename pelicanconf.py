@@ -65,8 +65,8 @@ COVER_IMG = 'static/images/cover.jpg'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-DISQUS_SITENAME = 'pyclub'
-GITHUB_URL = 'https://github.com/pyclub/pyclub.github.io'
+DISQUS_SITENAME = 'qmcs'
+GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
 GOOGLE_ANALYTICS = 'UA-47565959-1'
 TWITTER_USERNAME = 'pyclub_qm'
 
