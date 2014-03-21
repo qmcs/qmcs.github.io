@@ -91,14 +91,17 @@ name. The content of the file should be similar to
 Refer to `Pelican documentation <http://docs.getpelican.com/en/3.3.0/>`_ and
 `reStructuredText examples <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ if you want nice formatting.
 
-An easy way to see rendered .rst files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+An easy way to see rendered article files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use `restview <https://pypi.python.org/pypi/restview>`_ to see
-rendered ``.rst`` files in your browser. For example, to see the intro
-article, type::
+You can use `restview <https://pypi.python.org/pypi/restview>`_ to see rendered
+``.rst``  or `meow <https://pypi.python.org/pypi/meow/>`_ for ``.md`` files in
+your browser. For example:
 
-    bin/restview content/articles/001-intro.rst
+.. code-block:: bash
+
+    bin/restview content/articles/001-intro.rst  # to see the intro article
+    bin/meow content/articles/009-markdown.md  # to see the Markdown article
 
 There are rumors, that you can feed a directory to restview and then select
 files in the browser::
@@ -218,6 +221,29 @@ precise and constructive.
 To speed up the process assign someone from the team to do peer review. If your
 article got comments from someone else, please fix them in a timely manner. The
 sooner you fix all the issues, the sooner the article appears on the website.
+
+Add information about yourself
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can add information about yourself, such as a brief description of who you
+are, your interests, your homepage and contact information, and, most
+importantly, a picture.
+
+Author bibliographies are stored in ``content/authors``. Here is an example of
+``dmitrijs-milajevs.rst``:
+
+.. code-block:: rst
+
+    :slug: dmitrijs-milajevs
+    :cover_image: static/author_images/dmilajevs.jpg
+    :homepage: http://www.eecs.qmul.ac.uk/~dm303/
+
+    `Dima`__ is a Ph.D. student at Queen Mary.
+
+    __ http://www.eecs.qmul.ac.uk/~dm303/
+
+The cover image is a 461x461 picture of you or an avatar and should be located
+in `content/static/author_images`.
 
 Why should I bother?
 --------------------
