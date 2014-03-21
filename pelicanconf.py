@@ -67,7 +67,7 @@ COVER_IMG = 'static/images/cover.jpg'
 
 DISQUS_SITENAME = 'qmcs'
 GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
-GOOGLE_ANALYTICS = 'UA-47565959-1'
+GOOGLE_ANALYTICS = 'UA-49253245-1'
 TWITTER_USERNAME = 'pyclub_qm'
 
 STATIC_PATHS = (
