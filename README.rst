@@ -105,7 +105,9 @@ files in the browser::
 Generate the HTML version of a blog locally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Wow, you can get a local version of the blog::
+Wow, you can get a local version of the blog:
+
+.. code-block:: bash
 
     make devserver
     open http://localhost:8000  # gnome-open on Linux
@@ -114,7 +116,9 @@ Wow, you can get a local version of the blog::
 Share with others
 ~~~~~~~~~~~~~~~~~
 
-Commit and push our changes::
+Commit and push your changes:
+
+.. code-block:: bash
 
     git st  # see what you have done
     git diff  # really see what you have done
@@ -123,6 +127,77 @@ Commit and push our changes::
     git push  # send you changes to github
 
 Create a `pull request <https://help.github.com/articles/creating-a-pull-request>`_.
+
+Developing the theme and plugins
+--------------------------------
+
+Our blog uses a custom theme and plugins. The theme and the plugins are external
+projects and don't belong to this git repository! However, during the
+``buildout`` step they are cloned to the ``src/`` folder, thanks to `Mr.
+Developer <https://pypi.python.org/pypi/mr.developer>`__. Here are the external
+projects we depend on:
+
+.. code-block:: bash
+
+    tree -L 1 src/
+    src/
+    ├── pelican-plugins  # Extenal plugins. Don't bother about it.
+    ├── pelican_extended_authors # Our plugin that provided authors' metadata.
+    └── pelicanium  # The theme we use.
+
+By default ``pelicanium`` and ``pelican_extended_authors`` are cloned from
+https://github.com/pyclub, but if you want to make changes to these projects you
+need to use your own fork.
+
+1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
+2. Modify ``custom.cfg`` to look like:
+
+    .. code-block:: config
+
+        [bouldout]
+        github_username = dimazest  # Put your github username here
+
+3. Run ``bin/buildout``
+
+Change remote urls in git repo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In case you want to add changes after you run ``buildout``, you need to
+change remote urls by yourself, for example:
+
+.. code-block:: bash
+
+    cd src/pelicanium
+    git remote set-url origin git@github.com:dimazest/pyclub.github.io.git
+
+If you want to update the dependencies, run::
+
+    bin/develop up
+
+Add a remote
+~~~~~~~~~~~~
+
+In case you want to refer not only to you repo, but to others, you need to add
+another remote:
+
+.. code-block:: bash
+
+    git remote add upstream git@github.com:pyclub/pyclub.github.io.git
+
+Now you can merge with the recent ``pelican`` branch:
+
+.. code-block:: bash
+
+    git checkout pelican
+    git fetch upstream
+    git merge upstream/pelican
+
+You can also checkout feature branches:
+
+.. code-block:: bash
+
+    git checkout -b theme upstream/theme  # Get the theme branch from upstream
+    git push -u theme origin/theme  # Push it to your fork and set it as the default push destination
 
 Why should I bother?
 --------------------
