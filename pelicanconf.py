@@ -73,4 +73,9 @@ TWITTER_USERNAME = 'pyclub_qm'
 STATIC_PATHS = (
     'static/author_images',
     'static/images',
+    'extra/CNAME',
 )
+
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
