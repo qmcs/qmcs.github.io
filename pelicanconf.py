@@ -21,6 +21,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 THEME = pelicanium.theme_path
+EXTRA_TEMPLATES_PATHS = 'templates',
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
