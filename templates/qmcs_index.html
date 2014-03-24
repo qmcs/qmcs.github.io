@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block featured %}
+  <section>
+    <h2>{{ page.title }}</h2>
+
+    {{ page.content }}
+
+    <p class="text-center">
+      <a title="About us" class="btn btn-big" href="{{ SITE_URL }}/pages/about.html">About us</a>
+      <a title="Join QM Computing" class="btn btn-primary btn-big" href="#">Join</a>
+    </p>
+
+    <hr>
+  </section>
+{% endblock %}
