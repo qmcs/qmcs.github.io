@@ -4,9 +4,8 @@ Computing society at Queen Mary
 
 :URL:
 :save_as: index.html
-:date: 2013-12-13 19:24
+:date: 2014-03-24 22:45
 :template: qmcs_index
-:summary: The university page of Dmitrijs Milajevs at Queen Mary, University of London
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 Ipsum has been the industry's standard dummy text ever since the 1500s, when an
