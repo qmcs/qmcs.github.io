@@ -73,6 +73,7 @@ TWITTER_USERNAME = 'pyclub_qm'
 STATIC_PATHS = (
     'static/author_images',
     'static/images',
+    'static/cv',
     'extra/CNAME',
 )
 
