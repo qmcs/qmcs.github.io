@@ -22,8 +22,10 @@ __ http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=d9134d0a355
 Workshops
 =========
 
-Organize workshops on topics related to computing, such as "Introduction to
-version control".
+Organize workshops on topics related to computing, such as `Introduction to
+version control`__.
+
+__ http://apawlik.github.io/2014-02-03-TGAC/lessons/tgac/version-control/tutorial.html
 
 Hackathons
 ==========
@@ -35,16 +37,20 @@ and pizza.
 Competitions
 ============
 
-Prepare ourselves for programming competitions by studying data structures and
+Prepare ourselves for `programming competitions`__ by studying data structures and
 algorithms. Organize such competition to figure out the smartest programmer.
+
+__ http://www.eecs.qmul.ac.uk/news/view/eecs-programming-competition-2014-winners-announced
 
 Project Acceleration
 =====================
 
-Give any kind of help so you could implement your idea.
+Give any kind of help so you could implement `your idea`__.
+
+__ https://github.com/qmcs/qmcs.github.io/issues?labels=project&page=1
 
 Career Guidance
 ===============
 
-Link students with companies. The super star developers need to find a place to
-work after the graduation.
+Link students with companies. Even the super star developers need to find a
+place to work after the graduation!
