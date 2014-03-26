@@ -158,10 +158,10 @@ need to use your own fork.
 1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
 2. Modify ``custom.cfg`` to look like:
 
-    .. code-block:: ini
+.. code-block:: ini
 
-        [bouldout]
-        github_username = dimazest  # Put your github username here
+    [bouldout]
+    github_username = dimazest  # Put your github username here
 
 3. Run ``bin/buildout``
 
