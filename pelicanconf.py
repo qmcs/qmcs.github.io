@@ -53,7 +53,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
-    ('Twitter', 'https://twitter.com/pyclub_qm'),
+    ('Twitter', 'https://twitter.com/QMComputing'),
 )
 
 DEFAULT_PAGINATION = False
@@ -68,7 +68,7 @@ COVER_IMG = 'static/images/cover.jpg'
 DISQUS_SITENAME = 'qmcs'
 GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
 GOOGLE_ANALYTICS = 'UA-49253245-1'
-TWITTER_USERNAME = 'pyclub_qm'
+TWITTER_USERNAME = 'QMComputing'
 
 STATIC_PATHS = (
     'static/author_images',
