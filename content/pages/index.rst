@@ -10,6 +10,17 @@ Computing at EECS
 Our aim is to build a community where knowledge is shared and ideas are
 implemented. The main activities are:
 
+Blog
+====
+
+.. It's ugly, but i don't really know how to refer to arhives.html
+
+Share opinionated articles on technical topics on `our blog </archives.html>`__.
+If you know something special write an article about it. Check the blog
+regularly, as there are articles written by your peers who had to solve the same
+problems as you do. And remember, the best way to learn something is to explain
+it so somebody else.
+
 Taster Sessions
 ===============
 
