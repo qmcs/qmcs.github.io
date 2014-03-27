@@ -241,6 +241,8 @@ Author bibliographies are stored in ``content/authors``. Here is an example of
     :service__bitbucket: https://bitbucket.org/dimazest/
     :service__twitter: https://twitter.com/dimazest
     :service__linkedin-square: https://www.linkedin.com/in/dmitrijsmilajevs
+    :cv: dmilajevs_cv.pdf
+
 
     `Dima <http://www.eecs.qmul.ac.uk/~dm303/>`__ enjoys programming since he was a
     teenager. He is interested in natural language processing.
@@ -266,7 +268,9 @@ websites. Use names of the services that are available in `Font Awesome
 <http://fortawesome.github.io/Font-Awesome/icons/>`__.
 
 The cover image is a 461x461 picture of you or an avatar and should be located
-in `content/static/author_images`.
+in ``content/static/author_images``.
+
+Put you CV to ``content/static/cv`` and add the ``:cv:`` metadata field.
 
 Why should I bother?
 --------------------
