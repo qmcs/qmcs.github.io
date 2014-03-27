@@ -6,8 +6,8 @@ import pelicanium
 
 
 AUTHOR = 'Contributors'
-SITENAME = 'Computing'
-SITESUBTITLE = 'Society at Queen Mary'
+SITENAME = 'EECS Society'
+SITESUBTITLE = 'Queen Mary University of London'
 SITEURL = ''
 SITE_TITLE = 'QM ' + SITENAME + ' Society'
 
@@ -35,12 +35,10 @@ PLUGINS = (
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
 SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
 
-
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
-    ('Archive', 'archives.html'),
-    ('Tags', 'tags.html'),
+    ('Blog', 'archives.html'),
     ('Authors', 'authors.html'),
 )
 
@@ -54,7 +52,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
-    ('Twitter', 'https://twitter.com/pyclub_qm'),
+    ('Twitter', 'https://twitter.com/QMComputing'),
 )
 
 DEFAULT_PAGINATION = False
@@ -69,11 +67,12 @@ COVER_IMG = 'static/images/cover.jpg'
 DISQUS_SITENAME = 'qmcs'
 GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
 GOOGLE_ANALYTICS = 'UA-49253245-1'
-TWITTER_USERNAME = 'pyclub_qm'
+TWITTER_USERNAME = 'QMComputing'
 
 STATIC_PATHS = (
     'static/author_images',
     'static/images',
+    'static/cv',
     'extra/CNAME',
 )
 

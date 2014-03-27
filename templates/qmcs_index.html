@@ -1,15 +1,25 @@
-{% extends "index.html" %}
-{% block featured %}
+{% extends "base.html" %}
+{% block content %}
   <section>
-    <h2>{{ page.title }}</h2>
 
     {{ page.content }}
 
     <p class="text-center">
       <a title="About us" class="btn btn-big" href="{{ SITE_URL }}/pages/about.html">About us</a>
-      <a title="Join QM Computing" class="btn btn-primary btn-big" href="#">Join</a>
+      <a title="Join QM Computing" class="btn btn-primary btn-big" href="http://www.qmsu.org/groups/ESociety/">Join</a>
     </p>
 
     <hr>
+
+    {% set article = articles[0] %}
+
+    <h2 class="post-item-title" itemprop="name">
+      <a title="{{ article.title }}" data-pjax="" itemprop="url" href="{{ SITEURL }}/{{ article.url }}">
+        Latest post: {{ article.title }}
+      </a>
+    </h2>
+
+    {{ article.content }}
+
   </section>
 {% endblock %}
