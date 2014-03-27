@@ -6,8 +6,8 @@ import pelicanium
 
 
 AUTHOR = 'Contributors'
-SITENAME = 'Computing'
-SITESUBTITLE = 'EECS at Queen Mary'
+SITENAME = 'EECS Society'
+SITESUBTITLE = 'Queen Mary University of London'
 SITEURL = ''
 SITE_TITLE = 'QM ' + SITENAME + ' Society'
 
