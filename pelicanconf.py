@@ -39,7 +39,7 @@ SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
     ('Blog', 'archives.html'),
-    ('Authors', 'authors.html'),
+    ('People', 'authors.html'),
 )
 
 # Blogroll
