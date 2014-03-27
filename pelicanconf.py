@@ -73,6 +73,7 @@ TWITTER_USERNAME = 'QMComputing'
 STATIC_PATHS = (
     'static/author_images',
     'static/images',
+    'static/cv',
     'extra/CNAME',
 )
 
