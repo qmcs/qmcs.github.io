@@ -35,12 +35,10 @@ PLUGINS = (
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
 SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
 
-
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
-    ('Archive', 'archives.html'),
-    ('Tags', 'tags.html'),
+    ('Blog', 'archives.html'),
     ('Authors', 'authors.html'),
 )
 
