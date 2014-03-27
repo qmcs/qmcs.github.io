@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>QM Computing Society</title>
+    <title>EECS Society at Queen Mary University of London</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -38,7 +38,7 @@
     <script src="http://qmcs.github.io/theme/js/scripts.js"></script>
 
 
-        <link href="http://qmcs.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Computing Atom Feed" />
+        <link href="http://qmcs.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="EECS Society Atom Feed" />
 
   </head>
   <body class="">
@@ -59,17 +59,12 @@
 
             <li class="drawer-list-item">
               <a data-pjax="" href="http://qmcs.github.io/archives.html">
-                <i class="fa fa-file"></i>Archive
-              </a>
-            </li>
-            <li class="drawer-list-item">
-              <a data-pjax="" href="http://qmcs.github.io/tags.html">
-                <i class="fa fa-file"></i>Tags
+                <i class="fa fa-file"></i>Blog
               </a>
             </li>
             <li class="drawer-list-item">
               <a data-pjax="" href="http://qmcs.github.io/authors.html">
-                <i class="fa fa-file"></i>Authors
+                <i class="fa fa-file"></i>People
               </a>
             </li>
 
@@ -119,387 +114,93 @@
                   <a href="http://qmcs.github.io" class="cover-logo" data-pjax>
                     <img src="http://qmcs.github.io/static/images/main.png" alt="Blog Logo">
                   </a>
-                  <h1 class="cover-title">Computing</h1>
-<p class="cover-description">Society at Queen Mary</p>                </div>
+                  <h1 class="cover-title">EECS Society</h1>
+<p class="cover-description">Queen Mary University of London</p>                </div>
               </aside>
 
               <section class="wrapper" tabindex="0">
                 <div class="wrapper-container">
+  <section>
+
+    <p>Our aim is to build a community where knowledge is shared and ideas are
+implemented. The main activities are:</p>
+<div class="section" id="taster-sessions">
+<h2>Taster Sessions</h2>
+<p>Give an introduction to new technologies that are not yet adopted by the
+industry. For example, <a class="reference external" href="http://hacklang.org/">Hacklang</a>, <a class="reference external" href="http://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=d9134d0a355cfa447adc80db4505d5931084278a">PostgreSQL 9.4
+hstore</a> and anything else you can find promising.</p>
+</div>
+<div class="section" id="workshops">
+<h2>Workshops</h2>
+<p>Organize workshops on topics related to computing, such as <a class="reference external" href="http://apawlik.github.io/2014-02-03-TGAC/lessons/tgac/version-control/tutorial.html">Introduction to
+version control</a>.</p>
+</div>
+<div class="section" id="hackathons">
+<h2>Hackathons</h2>
+<p>Being equipped with leading edge knowledge we test it by organizing programming
+sessions over a weekend to implement a cool idea. Frankly, we just look for beer
+and pizza.</p>
+</div>
+<div class="section" id="competitions">
+<h2>Competitions</h2>
+<p>Prepare ourselves for <a class="reference external" href="http://www.eecs.qmul.ac.uk/news/view/eecs-programming-competition-2014-winners-announced">programming competitions</a> by studying data structures and
+algorithms. Organize such competition to figure out the smartest programmer.</p>
+</div>
+<div class="section" id="project-acceleration">
+<h2>Project Acceleration</h2>
+<p>Give any kind of help so you could implement <a class="reference external" href="https://github.com/qmcs/qmcs.github.io/issues?labels=project&amp;page=1">your idea</a>.</p>
+</div>
+<div class="section" id="career-guidance">
+<h2>Career Guidance</h2>
+<p>Link students with companies. Even the super star developers need to find a
+place to work after the graduation!</p>
+</div>
 
 
-    <section class="post-list">
-<article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
+    <p class="text-center">
+      <a title="About us" class="btn btn-big" href="/pages/about.html">About us</a>
+      <a title="Join QM Computing" class="btn btn-primary btn-big" href="http://www.qmsu.org/groups/ESociety/">Join</a>
+    </p>
+
+    <hr>
+
+
     <h2 class="post-item-title" itemprop="name">
       <a title="Basic git configuration" data-pjax="" itemprop="url" href="http://qmcs.github.io/basic-git-configuration.html">
-        Basic git configuration
+        Latest post: Basic git configuration
       </a>
     </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>Git is a powerful tool, though it has to be configured first.</p>
-<p>
-    </p>
+
+    <p>Git is a powerful tool, though it has to be configured first.</p>
+<p></p>
+<p>Here is a basic <tt class="docutils literal"><span class="pre">~/.gitconfig</span></tt> file that sets you name, sets up aliases and
+enables highlighting in git output:</p>
+<pre class="literal-block">
+[user]
+    name = Dmitrijs Milajevs
+    email = dimazest&#64;gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = auto
+    decorate = short
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    unstage = reset HEAD --
+    last = log -1 HEAD
+</pre>
+<p>Now you can type <tt class="docutils literal">git st</tt> instead of <tt class="docutils literal">git status</tt>.</p>
+
+
   </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-03-04T17:50:00" itemprop="datePublished">
-      Tue 04 March 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/git.html">git</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/basic-git-configuration.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="A small Markdown introduction" data-pjax="" itemprop="url" href="http://qmcs.github.io/a-small-markdown-introduction.html">
-        A small Markdown introduction
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>Giving writers a WYSIWYG makes the assumption that they know how to make stuff
-look good. This is wrong. People who work with words should only have to care
-about words. Leaving the design choices to the designers. Markdown does an
-excellent job in accomplishing this compromise.</p>
-<p>
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-03-04T00:00:00" itemprop="datePublished">
-      Tue 04 March 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/markdown.html">markdown</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/markup.html">markup</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/languages.html">languages</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/a-small-markdown-introduction.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Approximating Randomness" data-pjax="" itemprop="url" href="http://qmcs.github.io/approximating-randomness.html">
-        Approximating Randomness
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>Generating random numbers from computers is essential to the development
-of certain kinds of software. Anything from modelling the environment, to a
-lottery machine, to determining the value of loot in a chest in an RPG, will
-require random number generation. At first it may seem strange that computers,
-which are capable of producing massive amounts of digits in a short time,
-would not be able to produce random numbers. The difficulty is that the
-computers we use, are constructed specifically to follow logical steps
-deterministically, so to generate numbers that are truly random from a system
-like our computers is virtually impossible. True randomness cannot be obtained
-using arithmetic operations, which is exactly what our computers perform. When
-some sequence of numbers is random then it is not possible to predict what the
-next digit will be, and since computers use a set of logical steps to create
-any new number it is theoretically possible to predict it. Nonetheless
-programmers take advantage of features for creating random numbers all the
-time, the most widely used programming languages, provide libraries that can
-generate 'random' values. Any role-playing game for example, that you might
-use, needs random values to determine the number of gold you'll find from some
-locations, what items dead enemies will drop, etc. So how is it possible that
-even though the very nature of computers makes it impossible to exhibit random
-behaviour, that many programs include simulations of randomness?</p>
-<p>
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-03-03T18:00:00" itemprop="datePublished">
-      Mon 03 March 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/random.html">random</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/prng.html">prng</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/languages.html">languages</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/approximating-randomness.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Facebook Hackathon" data-pjax="" itemprop="url" href="http://qmcs.github.io/facebook-hackathon.html">
-        Facebook Hackathon
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>If you havent heard yet, Facebook will be hosting a Hackathon on Saturday, 15
-March 2014. A Hackathon is a (codefest) event where computer programmers and
-others involved in software development, graphic designers, interface
-designers and project managers collaborate intensively on software
-projects.Hackathons tend to have a specific focus, which can include the
-programming language used, the operating, an application, an API, or the
-subject and the demographic group of the programmer. Though for the Facebook
-hackthon, there isnt any restriction on what you can make so aim for the sky.</p>
-<p>
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-02-28T19:32:00" itemprop="datePublished">
-      Fri 28 February 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/facebook.html">Facebook</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/facebook-hackathon.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Middlesex Algorithms Day" data-pjax="" itemprop="url" href="http://qmcs.github.io/middlesex-algorithms-day.html">
-        Middlesex Algorithms Day
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>Middlesex University organizes an <a class="reference external" href="http://www.cs.mdx.ac.uk/foundations/middlesex-algorithms-day-mad-2014/">Algorithms Day</a> in
-the Hendon Town Hall, on Friday the 14th of March. Also, the solutions and
-pictures from the EECS programming competitions are <a class="reference external" href="http://www.eecs.qmul.ac.uk/~pbo/competition/2014/">published</a>.</p>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-02-26T12:02:00" itemprop="datePublished">
-      Wed 26 February 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/algorithms.html">algorithms</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/middlesex-algorithms-day.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Pyclub Twitter account" data-pjax="" itemprop="url" href="http://qmcs.github.io/pyclub-twitter-account.html">
-        Pyclub Twitter account
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>I'm happy to announce that we have a Twitter account. Follow <a class="reference external" href="https://twitter.com/pyclub_qm">&#64;pyclub_qm</a>.</p>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-02-25T16:47:00" itemprop="datePublished">
-      Tue 25 February 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/twitter.html">twitter</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/pyclub-twitter-account.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Pydata" data-pjax="" itemprop="url" href="http://qmcs.github.io/pydata.html">
-        Pydata
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>The Pydata conference has started and the venue has a great view to East
-London. If you look carefully, you can spot Queen Mary.</p>
-<a class="reference external image-reference" href="http://qmcs.github.io/static/images/pydata-qmul-large.jpg"><img alt="East London" class="align-center" src="http://qmcs.github.io/static/images/pydata-qmul.jpg" /></a>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-02-22T10:21:00" itemprop="datePublished">
-      Sat 22 February 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/pydata.html">pydata</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/pydata.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="GSOC project: MoinMoin" data-pjax="" itemprop="url" href="http://qmcs.github.io/gsoc-project-moinmoin.html">
-        GSOC project: MoinMoin
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p><a class="reference external" href="http://moinmo.in/">MoinMoin</a>, a wiki engine, published <a class="reference external" href="https://moinmo.in/GoogleSoc2014/InitialProjectIdeas">initial project ideas</a> for the <a class="reference external" href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014">Google
-Summer of Code 2014</a>. MoinMoin is a mature project with a wonderful core team.
-They participated in GSOC for many years.</p>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-02-10T11:17:00" itemprop="datePublished">
-      Mon 10 February 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/gsoc.html">gsoc</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/gsoc-project-moinmoin.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="QCon London" data-pjax="" itemprop="url" href="http://qmcs.github.io/qcon-london.html">
-        QCon London
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p><a class="reference external" href="http://qconlondon.com/">QCon London</a> is looking for students to volunteer.
-Get more details and fill in the application form <a class="reference external" href="http://qconlondon.com/london-2014/crew/">here</a>.</p>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-01-31T17:42:00" itemprop="datePublished">
-      Fri 31 January 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/conference.html">conference</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/scholarship.html">scholarship</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/qcon-london.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="PyData, Europython and Google" data-pjax="" itemprop="url" href="http://qmcs.github.io/pydata-europython-and-google.html">
-        PyData, Europython and Google
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>There are several events on the radar that not only give you loads of
-knowledge, but also give you some money.</p>
-<p>
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-01-29T09:03:00" itemprop="datePublished">
-      Wed 29 January 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/conference.html">conference</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/scholarship.html">scholarship</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/pydata-europython-and-google.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
-  <header class="post-item-header">
-    <h2 class="post-item-title" itemprop="name">
-      <a title="Welcome to the QM Python club" data-pjax="" itemprop="url" href="http://qmcs.github.io/welcome.html">
-        Welcome to the QM Python club
-      </a>
-    </h2>
-  </header>
-  <section class="post-item-excerpt" itemprop="description">
-    <p>
-      <p>Follow the <a class="reference external" href="https://github.com/pyclub/pyclub.github.io/blob/pelican/README.rst">instructions</a> if you
-want to add an article.</p>
-
-    </p>
-  </section>
-  <footer class="post-item-footer">
-<ul class="post-meta-list">
-  <li class="post-meta-item">
-    <time datetime="2014-01-28T19:49:00" itemprop="datePublished">
-      Tue 28 January 2014
-    </time>
-  </li>
-  <li class="post-meta-item">
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/thats.html">thats</a></span>
-      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/awesome.html">awesome</a></span>
-  </li>
-
-    <li class="post-meta-item">
-      <a href="http://qmcs.github.io/welcome.html#disqus_thread">Comments</a>.
-  </li>
-</ul>  </footer>
-</article>    </section>
-
-
-
 <footer class="footer" role="contentinfo">
   <small>
     <p>
-      Computing | Society at Queen Mary |
+      EECS Society | Queen Mary University of London |
         <a href="https://github.com/qmcs/qmcs.github.io/graphs/contributors"> Contributors
     </p>
     <p>
