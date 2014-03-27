@@ -9,7 +9,7 @@ AUTHOR = 'Contributors'
 SITENAME = 'EECS Society'
 SITESUBTITLE = 'Queen Mary University of London'
 SITEURL = ''
-SITE_TITLE = 'QM ' + SITENAME + ' Society'
+SITE_TITLE = 'EECS Society at Queen Mary University of London'
 
 TIMEZONE = 'Europe/London'
 
