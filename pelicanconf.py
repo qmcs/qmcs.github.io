@@ -6,10 +6,10 @@ import pelicanium
 
 
 AUTHOR = 'Contributors'
-SITENAME = 'Computing'
-SITESUBTITLE = 'Society at Queen Mary'
+SITENAME = 'EECS Society'
+SITESUBTITLE = 'Queen Mary University of London'
 SITEURL = ''
-SITE_TITLE = 'QM ' + SITENAME + ' Society'
+SITE_TITLE = 'EECS Society at Queen Mary University of London'
 
 TIMEZONE = 'Europe/London'
 
@@ -21,6 +21,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 THEME = pelicanium.theme_path
+EXTRA_TEMPLATES_PATHS = 'templates',
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
@@ -34,12 +35,10 @@ PLUGINS = (
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
 SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
 
-
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
-    ('Archive', 'archives.html'),
-    ('Tags', 'tags.html'),
+    ('Blog', 'archives.html'),
     ('Authors', 'authors.html'),
 )
 
