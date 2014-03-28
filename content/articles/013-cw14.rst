@@ -182,7 +182,7 @@ deploy a package on Ubuntu looks like this:
     # Cleaning up...
 
     .env/local/bin/pip install numpy cython pandas
-    .env/local/bin/pip install numexpr
+    .env/local/bin/pip install numexpr scipy patsy
 
     python3 bootstrap.py
     bin/buildout
