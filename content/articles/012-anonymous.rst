@@ -7,7 +7,9 @@ Anonymity
 :author: Anish Patel
 
 
-As the world makes a shift online, from our daily habits increasing our relience on the internet here is an interesting topic that comes up, the aspect of online anonymity. Anonymous apps such as Whisper and Secret have made us aware of the issues we face in the modern world, re-ignited the debate as to whether anoynmity outweights the risk it comes with.
+As the world makes a shift online, from our daily habits increasing our reliance on the internet here is an interesting topic that comes up, the aspect of online anonymity. Anonymous apps such as Whisper and Secret have made us aware of the issues we face in the modern world, reigniting the debate as to whether anonynmity outweights the risk it comes with.
+
+-- PELICAN_BEGIN_SUMMARY --
 
 This is an important topic beyond tech, a question of how humans should treat one another: Can we improve ourselves? Do we want to? Do we have a moral obligation to do so? People in tech are outstanding at building, but at moderating? There we don’t have much of a track record. Even the likes of Facebook have not been able to control that and make favourable decisions most of the time.
 
@@ -18,3 +20,5 @@ Like any other platform there are bound to be issues which we have no control ov
 We all have a story to share, and most of the times we learn from our mistakes but I believe we can learn from other people's mistakes too.
 
 The facts are laid out but I think it's all about making the right choice by figuring out if the positive aspects of this ideas outweigh the negative.
+
+For those who'd like to give it a try, 
