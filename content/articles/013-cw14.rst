@@ -1,0 +1,184 @@
+======================================
+Software in your reproducible research
+======================================
+
+:date: 2014-03-28 17:22
+:tags: cw14, programming
+:category: workshop
+:author: Dmitrijs Milajevs
+
+.. A big not to reviewers!
+
+
+
+`Collaborations Workshop 2014 (CW14) <http://software.ac.uk/cw14>`__ took place
+in Oxford in the end of March and I was lucky to attend the last day of the
+meeting dedicated to ad-hock hacking. I would characterize the main topic of the
+workshop as introduction of qualitative software development in scientific
+environment.  Here are my thoughts, why `reproducibility is a dream that easily
+becomes a nightmare`__.
+
+__ https://twitter.com/dimazest/status/449484586717048832
+
+-- PELICAN_END_SUMMARY --
+
+I'll start by comparing scientists to professional programmers and operations
+and argue that for an experiment to be reproducible the software has to be
+reusable.
+
+Scientists are developers
+=========================
+
+`Mark Basham <http://pydata.org/ldn2014/speakers/#168>`__ at `PyData London
+<http://pydata.org/ldn2014>`__ stated, what I consider, the pain of researchers
+in one sentence. Here is my free recall:
+
+    Nowadays scientists have to process so much data that they **have to**
+    become programmers.
+
+I completely agree with it. It's not possible anymore to successfully run an
+experiment without using highly optimized libraries for computation, IO and
+result representation.
+
+I would go even further and explain the growing popularity of Python and other
+high level languages by the fact that they hide complex implementation behind
+simple interfaces (see `scikit-learn's`__ `cross validation code`__ for an
+example).
+
+__ http://scikit-learn.org/stable/
+__ https://github.com/scikit-learn/scikit-learn/blob/6b38d3b3051b4be298d4df4978dc35b56d5eb3a6/sklearn/cross_validation.py
+
+Therefore, readability and understandability of code plays an important role. To
+the extend that when the code is being written it's very tempting to use the
+development version of a library. `IPython 2`__ together with `Python 3.4`__,
+anyone?
+
+__ https://github.com/ipython/ipython/blob/0485089180ff70feac77bd01bf23a410a787d8e5/docs/source/whatsnew/development.rst
+__ http://docs.python.org/dev/whatsnew/3.4.html
+
+In this mode a scientist behaves like a developer. The more recent is the
+software the better.
+
+Scientists are not operations
+=============================
+
+In a software company, eagerness of developers is usually compensated by wisdom
+of operations, the people responsible for running and supporting software.
+
+In academia, usually, there is much less interest to code. Not everyone is
+interested to study how a method is implemented. The main deliverable from a
+scientist-developer is a result that hopefully beats the current state of the
+art. In addition, scientists-developers have a strong opinion on what tools to
+use and prefer to reinvent a wheel, rather using others code.
+
+The problem is that it's not easy to reuse code. At least it has to be
+documented and well written. Both of the points require time, which could not be
+appreciated.
+
+.. Now it's a bit messy
+
+Scientists should be operations
+===============================
+
+Why should scientist care about quality of their code? The main reason is that
+eventually good code will be reused by someone else, and, finally, safe time.
+Someone else could be yet another person in a group, or a group in another
+research center. Also, having a widely adopted tool minimizes amount of
+surprises. For example `NLTK's BNC reader`__, which takes care of `some corner
+cases`__. (A note for a careful reader: the amount of `regexp based code written
+to process XML`__ is at least 10 times larger than you think.)
+
+__ https://github.com/nltk/nltk/blob/develop/nltk/corpus/reader/bnc.py
+__ https://github.com/nltk/nltk/issues/70
+__ https://twitter.com/dimazest/status/442723017958129664
+
+The bad news is that even `developers are still working on easy code reuse`__, aka
+packaging, to make operations' live easier!
+
+__ http://maurits.vanrees.org/weblog/archive/2013/05/holger-krekel-re-inventing-python-packaging-testing
+
+Since scientists are already developers, they should learn from operations. This
+means that the environment the code runs should be similar from the moment it's
+being developed to the moment it's being deployed. This prevents bugs and
+minimizes works-for-me situations.
+
+Things to consider for your big project
+=======================================
+
+Haha. That's funny. When I develop I want to use Sublime on my laptop with a
+recently updated OS. Once I've finished I want to run the code on a computing
+server which wasn't rebooted for a year.
+
+The key is **isolation** and **control**. Both of them can be achieved in
+different ways and there is no one solution.
+
+By isolation I mean ability to use versions of libraries that are not available
+on the host OS. By control I mean ability to dictate the versions of the
+libraries.
+
+Replicating an environment
+==========================
+
+Now this article become Python specific, since I'll share the experience of
+running software that requires Python 3.3 on Ubuntu 12.04 to recompute a
+scientific experiment.
+
+In the modern Python world, the standard way of isolating an environment is
+`venv`__. `pip`__ is the package manager so, you can use it to install needed
+software, and even specify needed versions using `requirements.txt`__.
+
+__ http://docs.python.org/3/library/venv.html
+__ https://pypi.python.org/pypi/pip
+__ http://www.pip-installer.org/en/latest/user_guide.html#requirements-files
+
+`Buildout`__ is a powerful, but not so widely adopted tool for automated
+deployment. It not only installs software but has plugin infrastructure, so a
+deployment process can include cloning of a package using git, thanks to
+`Mr.Developer`__.
+
+__ https://pypi.python.org/pypi/zc.buildout/2.2.1
+__ https://pypi.python.org/pypi/mr.developer
+
+Unfortunately, scientific libraries have extremely sophisticated setup, and
+require certain packages preinstalled. Finally, by trial and error, the way to
+deploy a package on Ubuntu looks like this:
+
+.. code-block:: bash
+
+    # Get Python 3.3
+    sudo apt-get update
+    sudo apt-get install python-software-properties
+
+    sudo add-apt-repository ppa:fkrull/deadsnakes
+    sudo apt-get update
+
+    # Install it together with other tools
+    sudo apt-get install python3.3 python3.3-dev git mercurial
+
+    # Get all the build dependencies
+    sudo apt-get build-dep python-scipy python-tables python-matplotlib
+
+    # End of the Ubuntu specific part
+
+    # Get the project
+    hg clone https://bitbucket.org/dimazest/phd-buildout
+    cd phd-buildout
+
+    python3.3 -m venv .env
+    source .env/bin/activate
+
+    python3.3 ez_setup.py
+    python3.3 get-pip.py
+    # Notice last lines to figure out pip location:
+    #
+    #     Installing pip3.3 script to .../.env/local/bin
+    #     Installing pip script to .../.env/local/bin
+    #     Installing pip3 script to .../.env/local/bin
+    # Successfully installed pip
+    # Cleaning up...
+
+    .env/local/bin/pip install numpy cython pandas
+    .env/local/bin/pip install numexpr
+
+    python3 bootstrap.py
+    bin/buildout
