@@ -7,7 +7,7 @@ Software in your reproducible research
 :category: workshop
 :author: Dmitrijs Milajevs
 
-.. A big not to reviewers!
+.. A big note to reviewers!
 
     Please write you comments in this pull request
     https://github.com/qmcs/qmcs.github.io/pull/19
