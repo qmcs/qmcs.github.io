@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/all.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-03-04T17:50:00+00:00</updated><entry><title>Basic git configuration</title><link href="http://qmcs.github.io/basic-git-configuration.html" rel="alternate"></link><updated>2014-03-04T17:50:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-03-04:basic-git-configuration.html</id><summary type="html">&lt;p&gt;Git is a powerful tool, though it has to be configured first.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/all.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-03-27T18:00:00+00:00</updated><entry><title>Anonymity</title><link href="http://qmcs.github.io/anonymity.html" rel="alternate"></link><updated>2014-03-27T18:00:00+00:00</updated><author><name>Anish Patel</name></author><id>tag:qmcs.github.io,2014-03-27:anonymity.html</id><summary type="html">&lt;p&gt;As the world makes a shift online, from our daily habits increasing our reliance
+on the internet here is an interesting topic that comes up, the aspect of online
+anonymity. Anonymous apps such as Whisper and Secret have made us aware of the
+issues we face in the modern world, reigniting the debate as to whether
+anonynmity outweights the risk it comes with.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This is an important topic beyond tech, a question of how humans should treat one
+another: Can we improve ourselves? Do we want to? Do we have a moral obligation
+to do so? People in tech are outstanding at building, but at moderating? There
+we don’t have much of a track record. Even the likes of Facebook have not been
+able to control that and make favourable decisions most of the time.&lt;/p&gt;
+&lt;p&gt;People are people, and will exhibit bad behaviour almost anywhere so it's more
+of an individual choice. We have soldiers in Afghanistan, who might not have
+proper resources to get the emotional support they need during combat. This
+platform act as a medium to express feelings. Anonymity facilitates the
+feeling of &amp;quot;I'm not the only one out there...&amp;quot;.&lt;/p&gt;
+&lt;p&gt;Like any other platform there are bound to be issues which we have no control
+over, such systems will always get users. But to what end, and at what cost.
+Sometimes it depends individually such that our personality defines who we
+really are and what we end up doing.&lt;/p&gt;
+&lt;p&gt;We all have a story to share, and most of the times we learn from our mistakes
+but I believe we can learn from other people's mistakes too.&lt;/p&gt;
+&lt;p&gt;The facts are laid out but I think it's all about making the right choice by
+figuring out if the positive aspects of this ideas outweigh the negative.&lt;/p&gt;
+&lt;p&gt;For those who'd like to give it a try, you can visit &lt;a class="reference external" href="https://www.secret.ly"&gt;Secret&lt;/a&gt;
+or &lt;a class="reference external" href="http://whisper.sh"&gt;Whisper&lt;/a&gt; to get a better understanding.&lt;/p&gt;
+</summary><category term="apps"></category><category term="anonymity"></category></entry><entry><title>Basic git configuration</title><link href="http://qmcs.github.io/basic-git-configuration.html" rel="alternate"></link><updated>2014-03-04T17:50:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-03-04:basic-git-configuration.html</id><summary type="html">&lt;p&gt;Git is a powerful tool, though it has to be configured first.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Here is a basic &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.gitconfig&lt;/span&gt;&lt;/tt&gt; file that sets you name, sets up aliases and
 enables highlighting in git output:&lt;/p&gt;
