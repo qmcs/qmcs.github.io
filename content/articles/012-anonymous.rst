@@ -21,4 +21,4 @@ We all have a story to share, and most of the times we learn from our mistakes b
 
 The facts are laid out but I think it's all about making the right choice by figuring out if the positive aspects of this ideas outweigh the negative.
 
-For those who'd like to give it a try, 
+For those who'd like to give it a try, you can visit `Secret <https://www.secret.ly>`_ or `Whisper <http://whisper.sh>`_ to get a better understanding.
