@@ -8,7 +8,7 @@ Computing at EECS
 :template: qmcs_index
 
 Our aim is to build a community where knowledge is shared and ideas are
-implemented. The main activities are:
+implemented. To achieve it we organize the following:
 
 Blog
 ====
@@ -63,5 +63,5 @@ __ https://github.com/qmcs/qmcs.github.io/issues?labels=project&page=1
 Career Guidance
 ===============
 
-Link students with companies. Even the super star developers need to find a
-place to work after the graduation!
+Link students with companies. Even a super star developer needs to find a place
+to work after the graduation!
