@@ -145,22 +145,26 @@ scientific software:
 
     # All system dependencies are installed
     cat README.rst
+
+.. code-block:: rst
+
     ====================
     Dialogue act tagging
     ====================
 
-    The environment to run experiments described in Joe Doe. 2015.
-    The Ultimate Dialogue act tagging.
+    The environment to run experiments described in Joe Doe. 2015. The Ultimate Dialogue act tagging.
 
     Refer to http://project-site.org/ for more information.
 
-    The experiment data is stored ``data/``. To test the setup run::
+    The experiment data is stored ``data/``. To test the setup run:
 
         tox
 
-    To run the experiment run::
+    To run the experiment run:
 
         bin/tagger doe2015
+
+.. code-block:: bash
 
     # Now I know what to do and happily run the experiment
     bin/tagger doe2015
