@@ -28,7 +28,7 @@ __ https://twitter.com/dimazest/status/449484586717048832
 
 I'll start by comparing scientists to professional programmers and operations
 and argue that for an experiment to be reproducible the software has to be
-reusable. Then, I'll give some suggestions on how to make a reproducable setup.
+reusable. Then, I'll give some suggestions on how to make a reproducible setup.
 
 Scientists are developers
 =========================
@@ -53,13 +53,13 @@ __ http://scikit-learn.org/stable/
 __ https://github.com/scikit-learn/scikit-learn/blob/6b38d3b3051b4be298d4df4978dc35b56d5eb3a6/sklearn/cross_validation.py
 
 Therefore, readability and understandability of code plays an important role. To
-the extend that when the code is being written it's very tempting to use the
-development version of a library. `IPython 2`__ together with `Python 3.4`__,
-anyone (bu the moment of writing IPython 2 is still being developed and Python
-3.4 has been recently released)?
+the extent that it's very tempting to use the development version of a library
+when the code is being written. For example, the user interface of `IPython
+2`__, which is still under development at the moment of writing, improved a lot
+in comparison to the current stable version. Quite often development versions
+fix encountered bugs, which might be to small to deserve a dedicated release.
 
 __ https://github.com/ipython/ipython/blob/0485089180ff70feac77bd01bf23a410a787d8e5/docs/source/whatsnew/development.rst
-__ http://docs.python.org/dev/whatsnew/3.4.html
 
 In this mode a scientist behaves like a developer. The more recent is the
 software the better.
@@ -77,31 +77,30 @@ operations:
 
     1. people who are responsible for deploying and monitoring
        services in a company.
-    2. the action of functioning or the fact of being active or in effect
 
 In academia, usually, there is much less interest to code. Not everyone is
 interested to study how an experiment is implemented. The main deliverable from
-a scientist-developer is a result, whcih usually is just a number, that
-hopefully beats the current state of the art. In addition, scientists-developers
-have a strong opinion on what tools to use and prefer to reinvent a wheel,
-rather reuse code writen by other scientists.
+a scientist-developer is a result that hopefully beats the current state of the
+art. In addition, scientists-developers have a strong opinion on what tools to
+use and prefer to reinvent a wheel, rather than reuse code written by other
+scientists.
 
-The problem is that it's not easy to reuse code. At least it has to be
+The problem is that it's not easy to reuse code. It has to at least be
 documented and well written. Both of the points require a lot of effort, which
-could not be appreciated.
+might not be appreciated.
 
 .. Now it's a bit messy
 
 Scientists should be operations
 ===============================
 
-Why should scientist care about quality of their code? The main reason is that
-eventually good code will be reused by someone else, and, finally, safe time.
-Someone else could be yet another person in a group, or in a group in another
-research center. Also, having a widely adopted tool minimizes amount of
-surprises. For example `NLTK's BNC reader`__, which takes care of `some corner
-cases`__. (A note for a careful reader: the amount of `regexp based code written
-to process XML`__ is at least 10 times larger than you think.)
+Why should scientist care about the quality of their code? The main reason is
+that eventually good code will be reused by someone else. Someone else could be
+yet another person in a group, or in a group in another research center. Also,
+having a widely adopted tool minimizes amount of surprises. For example, `NLTK's
+BNC reader`__, which takes care of `some corner cases`__. (A note for a careful
+reader: the amount of `regexp based code written to process XML`__ is at least
+10 times larger than you think.)
 
 __ https://github.com/nltk/nltk/blob/develop/nltk/corpus/reader/bnc.py
 __ https://github.com/nltk/nltk/issues/70
@@ -127,10 +126,10 @@ The process should be automated as much as possible. `Tox
 <http://www.testrun.org/tox/>`__ is a tool that provides a unified interface to
 run tests and hides differences across different test runners.
 
-In the Python word, usage of eggs and listing of the requirements in
-``setpup.py`` and their versions in ``requirements.txt`` make deployment
+In the Python world, usage of eggs and listing of the requirements in
+``setpup.py`` and their versions in ``requirements.txt`` makes deployment
 easier, but solves only half of the problem: it takes care only of Python
-dependencies.
+dependencies and ignores system dependencies, such as libraries written in C.
 
 `Vagrant <http://vagrantup.com>`__ is a great tool for virtual machine
 management. It allows to use a completely isolated environment as if it was
@@ -153,35 +152,28 @@ scientific software:
     vagrant ssh
 
     # All system dependencies are installed
-    cat README.rst
-
-.. code-block:: rst
-
-    ====================
+    cat README
     Dialogue act tagging
-    ====================
 
     The environment to run experiments described in Joe Doe. 2015. The Ultimate Dialogue act tagging.
 
     Refer to http://project-site.org/ for more information.
 
-    The experiment data is stored ``data/``. To test the setup run:
+    The experiment data is stored data/. To test the setup run:
 
         tox
 
-    To run the experiment run:
+    To run the experiment type:
 
         bin/tagger doe2015
-
-.. code-block:: bash
 
     # Now I know what to do and happily run the experiment
     bin/tagger doe2015
     Tagging accuracy is 100%.
 
 All this fancy and clear setup requires loads of love and care. A virtual
-machine image has to be built and hosted somewhere. It has to be updated time to
-time. This is why reproducibility can easily become a nightmare.
+machine image has to be built and hosted somewhere. It has to be updated from
+time to time. This is why reproducibility can easily become a nightmare.
 
-On other side, having a virtual machine image it can be deployed in a cloud, on
-a powerful machine in the matter of minutes.
+On other hand, having a virtual machine image it can be deployed in a cloud on a
+powerful machine in the matter of minutes.
