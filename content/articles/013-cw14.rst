@@ -127,7 +127,7 @@ The process should be automated as much as possible. `Tox
 run tests and hides differences across different test runners.
 
 In the Python world, usage of eggs and listing of the requirements in
-``setpup.py`` and their versions in ``requirements.txt`` makes deployment
+``setup.py`` and their versions in ``requirements.txt`` makes deployment
 easier, but solves only half of the problem: it takes care only of Python
 dependencies and ignores system dependencies, such as libraries written in C.
 
