@@ -16,8 +16,8 @@ Software in your reproducible research
     https://github.com/dimazest/qmcs.github.io/tree/cw14
 
 `Collaborations Workshop 2014 (CW14) <http://software.ac.uk/cw14>`__ took place
-in Oxford in the end of March and I was lucky to attend the last day of the
-meeting dedicated to ad-hock hacking. I would characterize the main topic of the
+in Oxford in the end of March. I was lucky to attend the last day of the meeting
+dedicated to ad-hock hacking. I would characterize the main topic of the
 workshop as introduction of qualitative software development in scientific
 environment.  Here are my thoughts, why `reproducibility is a dream that easily
 becomes a nightmare`__.
@@ -28,7 +28,7 @@ __ https://twitter.com/dimazest/status/449484586717048832
 
 I'll start by comparing scientists to professional programmers and operations
 and argue that for an experiment to be reproducible the software has to be
-reusable.
+reusable. Then, I'll give some suggestions on how to make a reproducable setup.
 
 Scientists are developers
 =========================
@@ -55,7 +55,8 @@ __ https://github.com/scikit-learn/scikit-learn/blob/6b38d3b3051b4be298d4df4978d
 Therefore, readability and understandability of code plays an important role. To
 the extend that when the code is being written it's very tempting to use the
 development version of a library. `IPython 2`__ together with `Python 3.4`__,
-anyone?
+anyone (bu the moment of writing IPython 2 is still being developed and Python
+3.4 has been recently released)?
 
 __ https://github.com/ipython/ipython/blob/0485089180ff70feac77bd01bf23a410a787d8e5/docs/source/whatsnew/development.rst
 __ http://docs.python.org/dev/whatsnew/3.4.html
@@ -70,14 +71,15 @@ In a software company, eagerness of developers is usually compensated by wisdom
 of operations, the people responsible for running and supporting software.
 
 In academia, usually, there is much less interest to code. Not everyone is
-interested to study how a method is implemented. The main deliverable from a
-scientist-developer is a result that hopefully beats the current state of the
-art. In addition, scientists-developers have a strong opinion on what tools to
-use and prefer to reinvent a wheel, rather using others code.
+interested to study how an experiment is implemented. The main deliverable from
+a scientist-developer is a result, whcih usually is just a number, that
+hopefully beats the current state of the art. In addition, scientists-developers
+have a strong opinion on what tools to use and prefer to reinvent a wheel,
+rather reuse code writen by other scientists.
 
 The problem is that it's not easy to reuse code. At least it has to be
-documented and well written. Both of the points require time, which could not be
-appreciated.
+documented and well written. Both of the points require a lot of effort, which
+could not be appreciated.
 
 .. Now it's a bit messy
 
@@ -86,7 +88,7 @@ Scientists should be operations
 
 Why should scientist care about quality of their code? The main reason is that
 eventually good code will be reused by someone else, and, finally, safe time.
-Someone else could be yet another person in a group, or a group in another
+Someone else could be yet another person in a group, or in a group in another
 research center. Also, having a widely adopted tool minimizes amount of
 surprises. For example `NLTK's BNC reader`__, which takes care of `some corner
 cases`__. (A note for a careful reader: the amount of `regexp based code written
@@ -106,83 +108,67 @@ means that the environment the code runs should be similar from the moment it's
 being developed to the moment it's being deployed. This prevents bugs and
 minimizes works-for-me situations.
 
-Things to consider for your big project
-=======================================
+A good project
+==============
 
-Haha. That's funny. When I develop I want to use Sublime on my laptop with a
-recently updated OS. Once I've finished I want to run the code on a computing
-server which wasn't rebooted for a year.
+The documentation of a good project should include testing and deployment
+instructions.
 
-The key is **isolation** and **control**. Both of them can be achieved in
-different ways and there is no one solution.
+The process should be automated as much as possible. `Tox
+<http://www.testrun.org/tox/>`__ is a tool that provides a unified interface to
+run tests and hides differences across different test runners.
 
-By isolation I mean ability to use versions of libraries that are not available
-on the host OS. By control I mean ability to dictate the versions of the
-libraries.
+In the Python word, usage of eggs and listing of the requirements in
+``setpup.py`` and their versions in ``requirements.txt`` make deployment
+easier, but solves only half of the problem: it takes care only of Python
+dependencies.
 
-Replicating an environment
-==========================
+`Vagrant <http://vagrantup.com>`__ is a great tool for virtual machine
+management. It allows to use a completely isolated environment as if it was
+local. For example, on my Mac I can start a vagrant box with CentOS 6.5 and have
+the same environment as the computing server I'll use.
 
-Now this article become Python specific, since I'll share the experience of
-running software that requires Python 3.3 on Ubuntu 12.04 to recompute a
-scientific experiment.
-
-In the modern Python world, the standard way of isolating an environment is
-`venv`__. `pip`__ is the package manager so, you can use it to install needed
-software, and even specify needed versions using `requirements.txt`__.
-
-__ http://docs.python.org/3/library/venv.html
-__ https://pypi.python.org/pypi/pip
-__ http://www.pip-installer.org/en/latest/user_guide.html#requirements-files
-
-`Buildout`__ is a powerful, but not so widely adopted tool for automated
-deployment. It not only installs software but has plugin infrastructure, so a
-deployment process can include cloning of a package using git, thanks to
-`Mr.Developer`__.
-
-__ https://pypi.python.org/pypi/zc.buildout/2.2.1
-__ https://pypi.python.org/pypi/mr.developer
-
-Unfortunately, scientific libraries have extremely sophisticated setup, and
-require certain packages preinstalled. Finally, by trial and error, the way to
-deploy a package on Ubuntu looks like this:
+Taking this into account, this should be necessary steps to run/develop
+scientific software:
 
 .. code-block:: bash
 
-    # Get Python 3.3
-    sudo apt-get update
-    sudo apt-get install python-software-properties
+    # Get the Vagrant config
+    git/hg clone http://project-site.org/project
+    cd project
 
-    sudo add-apt-repository ppa:fkrull/deadsnakes
-    sudo apt-get update
+    # Start the virtual environment
+    vagrant up
 
-    # Install it together with other tools
-    sudo apt-get install python3.3 python3.3-dev git mercurial
+    # Connect to it
+    vagrant ssh
 
-    # Get all the build dependencies
-    sudo apt-get build-dep python-scipy python-tables python-matplotlib
+    # All system dependencies are installed
+    cat README.rst
+    ====================
+    Dialogue act tagging
+    ====================
 
-    # End of the Ubuntu specific part
+    The environment to run experiments described in Joe Doe. 2015.
+    The Ultimate Dialogue act tagging.
 
-    # Get the project
-    hg clone https://bitbucket.org/dimazest/phd-buildout
-    cd phd-buildout
+    Refer to http://project-site.org/ for more information.
 
-    python3.3 -m venv .env
-    source .env/bin/activate
+    The experiment data is stored ``data/``. To test the setup run::
 
-    python3.3 ez_setup.py
-    python3.3 get-pip.py
-    # Notice last lines to figure out pip location:
-    #
-    #     Installing pip3.3 script to .../.env/local/bin
-    #     Installing pip script to .../.env/local/bin
-    #     Installing pip3 script to .../.env/local/bin
-    # Successfully installed pip
-    # Cleaning up...
+        tox
 
-    .env/local/bin/pip install numpy cython pandas
-    .env/local/bin/pip install numexpr scipy patsy
+    To run the experiment run::
 
-    python3 bootstrap.py
-    bin/buildout
+        bin/tagger doe2015
+
+    # Now I know what to do and happily run the experiment
+    bin/tagger doe2015
+    Tagging accuracy is 100%.
+
+All this fancy and clear setup requires loads of love and care. A virtual
+machine image has to be built and hosted somewhere. It has to be updated time to
+time. This is why reproducibility can easily become a nightmare.
+
+On other side, having a virtual machine image it can be deployed in a cloud, on
+a powerful machine in the matter of minutes.
