@@ -37,7 +37,7 @@ Scientists are developers
 <http://pydata.org/ldn2014>`__ stated, what I consider, the pain of researchers
 in one sentence. Here is my free recall:
 
-    Nowadays scientists have to process so much data that they **have to**
+    Nowadays, scientists have to process so much data that they **have to**
     become programmers.
 
 I completely agree with it. It's not possible anymore to successfully run an
@@ -66,6 +66,12 @@ software the better.
 
 Scientists are not operations
 =============================
+
+operations:
+    noun
+
+    people who are responsible for deploying and monitoring
+    services in a company.
 
 In a software company, eagerness of developers is usually compensated by wisdom
 of operations, the people responsible for running and supporting software.
