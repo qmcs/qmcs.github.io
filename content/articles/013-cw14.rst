@@ -67,14 +67,17 @@ software the better.
 Scientists are not operations
 =============================
 
-operations:
-    noun
-
-    people who are responsible for deploying and monitoring
-    services in a company.
-
 In a software company, eagerness of developers is usually compensated by wisdom
 of operations, the people responsible for running and supporting software.
+
+operations:
+    /ɒpəˈreɪʃ(ə)ns/
+
+    `noun`
+
+    1. people who are responsible for deploying and monitoring
+       services in a company.
+    2. the action of functioning or the fact of being active or in effect
 
 In academia, usually, there is much less interest to code. Not everyone is
 interested to study how an experiment is implemented. The main deliverable from
