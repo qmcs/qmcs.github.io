@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/workshop.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-03-28T17:22:00+00:00</updated><entry><title>Software in your reproducible research</title><link href="http://qmcs.github.io/software-in-your-reproducible-research.html" rel="alternate"></link><updated>2014-03-28T17:22:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-03-28:software-in-your-reproducible-research.html</id><summary type="html">&lt;!-- A big note to reviewers!
+
+Please write you comments in this pull request
+https://github.com/qmcs/qmcs.github.io/pull/19
+
+In case you want to contribute, create pull request to this fork (branch cw14)
+https://github.com/dimazest/qmcs.github.io/tree/cw14 --&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://software.ac.uk/cw14"&gt;Collaborations Workshop 2014 (CW14)&lt;/a&gt; took place
+in Oxford in the end of March. I was lucky to attend the last day of the meeting
+dedicated to ad-hock hacking. I would characterize the main topic of the
+workshop as introduction of qualitative software development in scientific
+environment.  Here are my thoughts, why &lt;a class="reference external" href="https://twitter.com/dimazest/status/449484586717048832"&gt;reproducibility is a dream that easily
+becomes a nightmare&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;I'll start by comparing scientists to professional programmers and operations
+and argue that for an experiment to be reproducible the software has to be
+reusable. Then, I'll give some suggestions on how to make a reproducible setup.&lt;/p&gt;
+&lt;div class="section" id="scientists-are-developers"&gt;
+&lt;h2&gt;Scientists are developers&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://pydata.org/ldn2014/speakers/#168"&gt;Mark Basham&lt;/a&gt; at &lt;a class="reference external" href="http://pydata.org/ldn2014"&gt;PyData London&lt;/a&gt; stated, what I consider, the pain of researchers
+in one sentence. Here is my free recall:&lt;/p&gt;
+&lt;blockquote&gt;
+Nowadays, scientists have to process so much data that they &lt;strong&gt;have to&lt;/strong&gt;
+become programmers.&lt;/blockquote&gt;
+&lt;p&gt;I completely agree with it. It's not possible anymore to successfully run an
+experiment without using highly optimized libraries for computation, IO and
+result representation.&lt;/p&gt;
+&lt;p&gt;I would go even further and explain the growing popularity of Python and other
+high level languages by the fact that they hide complex implementation behind
+simple interfaces (see &lt;a class="reference external" href="http://scikit-learn.org/stable/"&gt;scikit-learn's&lt;/a&gt; &lt;a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/6b38d3b3051b4be298d4df4978dc35b56d5eb3a6/sklearn/cross_validation.py"&gt;cross validation code&lt;/a&gt; for an
+example).&lt;/p&gt;
+&lt;p&gt;Therefore, readability and understandability of code plays an important role. To
+the extent that it's very tempting to use the development version of a library
+when the code is being written. For example, the user interface of &lt;a class="reference external" href="https://github.com/ipython/ipython/blob/0485089180ff70feac77bd01bf23a410a787d8e5/docs/source/whatsnew/development.rst"&gt;IPython
+2&lt;/a&gt;, which is still under development at the moment of writing, improved a lot
+in comparison to the current stable version. Quite often development versions
+fix encountered bugs, which might be to small to deserve a dedicated release.&lt;/p&gt;
+&lt;p&gt;In this mode a scientist behaves like a developer. The more recent is the
+software the better.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scientists-are-not-operations"&gt;
+&lt;h2&gt;Scientists are not operations&lt;/h2&gt;
+&lt;p&gt;In a software company, eagerness of developers is usually compensated by wisdom
+of operations, the people responsible for running and supporting software.&lt;/p&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;operations:&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;/ɒpəˈreɪʃ(ə)ns/&lt;/p&gt;
+&lt;p&gt;&lt;cite&gt;noun&lt;/cite&gt;&lt;/p&gt;
+&lt;ol class="last arabic simple"&gt;
+&lt;li&gt;people who are responsible for deploying and monitoring
+services in a company.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;In academia, usually, there is much less interest to code. Not everyone is
+interested to study how an experiment is implemented. The main deliverable from
+a scientist-developer is a result that hopefully beats the current state of the
+art. In addition, scientists-developers have a strong opinion on what tools to
+use and prefer to reinvent a wheel, rather than reuse code written by other
+scientists.&lt;/p&gt;
+&lt;p&gt;The problem is that it's not easy to reuse code. It has to at least be
+documented and well written. Both of the points require a lot of effort, which
+might not be appreciated.&lt;/p&gt;
+&lt;!-- Now it's a bit messy --&gt;
+&lt;/div&gt;
+&lt;div class="section" id="scientists-should-be-operations"&gt;
+&lt;h2&gt;Scientists should be operations&lt;/h2&gt;
+&lt;p&gt;Why should scientist care about the quality of their code? The main reason is
+that eventually good code will be reused by someone else. Someone else could be
+yet another person in a group, or in a group in another research center. Also,
+having a widely adopted tool minimizes amount of surprises. For example, &lt;a class="reference external" href="https://github.com/nltk/nltk/blob/develop/nltk/corpus/reader/bnc.py"&gt;NLTK's
+BNC reader&lt;/a&gt;, which takes care of &lt;a class="reference external" href="https://github.com/nltk/nltk/issues/70"&gt;some corner cases&lt;/a&gt;. (A note for a careful
+reader: the amount of &lt;a class="reference external" href="https://twitter.com/dimazest/status/442723017958129664"&gt;regexp based code written to process XML&lt;/a&gt; is at least
+10 times larger than you think.)&lt;/p&gt;
+&lt;p&gt;The bad news is that even &lt;a class="reference external" href="http://maurits.vanrees.org/weblog/archive/2013/05/holger-krekel-re-inventing-python-packaging-testing"&gt;developers are still working on easy code reuse&lt;/a&gt;, aka
+packaging, to make operations' live easier!&lt;/p&gt;
+&lt;p&gt;Since scientists are already developers, they should learn from operations. This
+means that the environment the code runs should be similar from the moment it's
+being developed to the moment it's being deployed. This prevents bugs and
+minimizes works-for-me situations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="a-good-project"&gt;
+&lt;h2&gt;A good project&lt;/h2&gt;
+&lt;p&gt;The documentation of a good project should include testing and deployment
+instructions.&lt;/p&gt;
+&lt;p&gt;The process should be automated as much as possible. &lt;a class="reference external" href="http://www.testrun.org/tox/"&gt;Tox&lt;/a&gt; is a tool that provides a unified interface to
+run tests and hides differences across different test runners.&lt;/p&gt;
+&lt;p&gt;In the Python world, usage of eggs and listing of the requirements in
+&lt;tt class="docutils literal"&gt;setup.py&lt;/tt&gt; and their versions in &lt;tt class="docutils literal"&gt;requirements.txt&lt;/tt&gt; makes deployment
+easier, but solves only half of the problem: it takes care only of Python
+dependencies and ignores system dependencies, such as libraries written in C.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://vagrantup.com"&gt;Vagrant&lt;/a&gt; is a great tool for virtual machine
+management. It allows to use a completely isolated environment as if it was
+local. For example, on my Mac I can start a vagrant box with CentOS 6.5 and have
+the same environment as the computing server I'll use.&lt;/p&gt;
+&lt;p&gt;Taking this into account, this should be necessary steps to run/develop
+scientific software:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Get the Vagrant config&lt;/span&gt;
+git/hg clone http://project-site.org/project
+&lt;span class="nb"&gt;cd &lt;/span&gt;project
+
+&lt;span class="c"&gt;# Start the virtual environment&lt;/span&gt;
+vagrant up
+
+&lt;span class="c"&gt;# Connect to it&lt;/span&gt;
+vagrant ssh
+
+&lt;span class="c"&gt;# All system dependencies are installed&lt;/span&gt;
+cat README
+Dialogue act tagging
+
+The environment to run experiments described in Joe Doe. 2015. The Ultimate Dialogue act tagging.
+
+Refer to http://project-site.org/ &lt;span class="k"&gt;for &lt;/span&gt;more information.
+
+The experiment data is stored data/. To &lt;span class="nb"&gt;test &lt;/span&gt;the setup run:
+
+    tox
+
+To run the experiment &lt;span class="nb"&gt;type&lt;/span&gt;:
+
+    bin/tagger doe2015
+
+&lt;span class="c"&gt;# Now I know what to do and happily run the experiment&lt;/span&gt;
+bin/tagger doe2015
+Tagging accuracy is 100%.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;All this fancy and clear setup requires loads of love and care. A virtual
+machine image has to be built and hosted somewhere. It has to be updated from
+time to time. This is why reproducibility can easily become a nightmare.&lt;/p&gt;
+&lt;p&gt;On other hand, having a virtual machine image it can be deployed in a cloud on a
+powerful machine in the matter of minutes.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="cw14"></category><category term="programming"></category></entry></feed>
