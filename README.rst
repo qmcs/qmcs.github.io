@@ -28,45 +28,45 @@ To add an article using the web based interface follow these steps:
 
 3. Name the file as ``nnn-slug.rst``, where
 
-  * ``nnn`` is a number of the article. Articles are numbered sequentially, pick
-    the next integer from the the `articles`_ directory.
+   * ``nnn`` is a number of the article. Articles are numbered sequentially, pick
+     the next integer from the the `articles`_ directory.
 
-  * ``slug`` is an informative but short identifier of the article.
+   * ``slug`` is an informative but short identifier of the article.
 
-  * ``.rst`` is the file format we are using. It allows to define basic
-    formatting, such as headers, links or references. Refer to the
-    `reStructuredText quick reference`_ for examples.
+   * ``.rst`` is the file format we are using. It allows to define basic
+     formatting, such as headers, links or references. Refer to the
+     `reStructuredText quick reference`_ for examples.
 
 4. Apart form the article, the file should contain some meta information, such
    as the name of the author, the date the article was written, its tags and
    category. Here is an example, copy, paste and modify it:
 
-    .. code-block:: rst
+   .. code-block:: rst
 
-        ==========================================
-        An example of an article in the rst format
-        ==========================================
+       ==========================================
+       An example of an article in the rst format
+       ==========================================
 
-        .. Some metadata
+       .. Some metadata
 
-        :date: 2014-04-02 15:00
-        :tags: technology, example
-        :category: blog
-        :author: Dmitrijs Milajevs
+       :date: 2014-04-02 15:00
+       :tags: technology, example
+       :category: blog
+       :author: Dmitrijs Milajevs
 
-        The first paragraph should introduce and possibly summarize the article.
-        It should be relatively short: 2 - 3 sentences.
+       The first paragraph should introduce and possibly summarize the article.
+       It should be relatively short: 2 - 3 sentences.
 
-        .. Explicitly mark the end of the summary/introduction
+       .. Explicitly mark the end of the summary/introduction
 
-        -- PELICAN_END_SUMMARY --
+       -- PELICAN_END_SUMMARY --
 
-        .. Here goes the rest of the article.
+       .. Here goes the rest of the article.
 
-        This is a header
-        ----------------
+       This is a header
+       ----------------
 
-        This is the second paragraph. You can mark some text as **bold** or `italic`.
+       This is the second paragraph. You can mark some text as **bold** or `italic`.
 
 5. Write the article!
 
