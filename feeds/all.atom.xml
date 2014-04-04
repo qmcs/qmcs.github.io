@@ -132,7 +132,7 @@ time to time. This is why reproducibility can easily become a nightmare.&lt;/p&g
 &lt;p&gt;On other hand, having a virtual machine image it can be deployed in a cloud on a
 powerful machine in the matter of minutes.&lt;/p&gt;
 &lt;/div&gt;
-</summary><category term="cw14"></category><category term="programming"></category></entry><entry><title>Anonymity</title><link href="http://qmcs.github.io/anonymity.html" rel="alternate"></link><updated>2014-03-27T18:00:00+00:00</updated><author><name>Anish Patel</name></author><id>tag:qmcs.github.io,2014-03-27:anonymity.html</id><summary type="html">&lt;p&gt;As the world makes a shift online, from our daily habits increasing our reliance
+</summary><category term="cw14"></category><category term="programming"></category><category term="reproducibility"></category></entry><entry><title>Anonymity</title><link href="http://qmcs.github.io/anonymity.html" rel="alternate"></link><updated>2014-03-27T18:00:00+00:00</updated><author><name>Anish Patel</name></author><id>tag:qmcs.github.io,2014-03-27:anonymity.html</id><summary type="html">&lt;p&gt;As the world makes a shift online, from our daily habits increasing our reliance
 on the internet here is an interesting topic that comes up, the aspect of online
 anonymity. Anonymous apps such as Whisper and Secret have made us aware of the
 issues we face in the modern world, reigniting the debate as to whether
