@@ -3,7 +3,7 @@ Software in your reproducible research
 ======================================
 
 :date: 2014-03-28 17:22
-:tags: cw14, programming
+:tags: cw14, programming, reproducibility
 :category: workshop
 :author: Dmitrijs Milajevs
 
