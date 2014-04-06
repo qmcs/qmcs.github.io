@@ -10,7 +10,7 @@ Dmitrijs Milajevs
 :service__linkedin-square: https://www.linkedin.com/in/dmitrijsmilajevs
 :cv: dmilajevs_cv.pdf
 
-`Dima <http://www.eecs.qmul.ac.uk/~dm303/>`__ enjoys programming since he was a
+`Dima <http://www.eecs.qmul.ac.uk/~dm303/>`_ enjoys programming since he was a
 teenager. He is interested in natural language processing.
 
 -- PELICAN_END_SUMMARY --

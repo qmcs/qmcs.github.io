@@ -4,16 +4,8 @@ Software in your reproducible research
 
 :date: 2014-03-28 17:22
 :tags: cw14, programming, reproducibility
-:category: workshop
+:category: reproducibility
 :author: Dmitrijs Milajevs
-
-.. A big note to reviewers!
-
-    Please write you comments in this pull request
-    https://github.com/qmcs/qmcs.github.io/pull/19
-
-    In case you want to contribute, create pull request to this fork (branch cw14)
-    https://github.com/dimazest/qmcs.github.io/tree/cw14
 
 `Collaborations Workshop 2014 (CW14) <http://software.ac.uk/cw14>`__ took place
 in Oxford in the end of March. I was lucky to attend the last day of the meeting

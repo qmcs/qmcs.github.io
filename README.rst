@@ -135,6 +135,10 @@ Author bibliographies are stored in ``content/authors``. Here is an example of
 
 .. code-block:: rst
 
+    =================
+    Dmitrijs Milajevs
+    =================
+
     :slug: dmitrijs-milajevs
     :cover_image: static/author_images/dmilajevs.jpg
     :homepage: http://www.eecs.qmul.ac.uk/~dm303/
@@ -145,7 +149,7 @@ Author bibliographies are stored in ``content/authors``. Here is an example of
     :cv: dmilajevs_cv.pdf
 
 
-    `Dima <http://www.eecs.qmul.ac.uk/~dm303/>`__ enjoys programming since he was a
+    `Dima <http://www.eecs.qmul.ac.uk/~dm303/>`_ enjoys programming since he was a
     teenager. He is interested in natural language processing.
 
     -- PELICAN_END_SUMMARY --
