@@ -64,7 +64,7 @@ To add an article using the web based interface follow these steps:
        .. Here goes the rest of the article.
 
        This is a header
-       ----------------
+       ================
 
        This is the second paragraph. You can mark some text as **bold** or `italic`.
 
