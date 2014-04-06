@@ -17,8 +17,13 @@ div .highlight {
     -ms-hyphens: none;
     hyphens: none;
     font-size: 14px;
+    overflow: auto;
 }
 
 div .highlight, pre {
     background: #f5f2f0;
+}
+
+div .highlight, pre, span {
+    white-space: pre;
 }
