@@ -9,7 +9,7 @@ The practical side of reproducibility
 
 In the `previous post <{filename}/articles/013-cw14.rst>`_ I pointed out some
 difficulties of developing a reproducible experiment. Over a weekend, I've
-applied some of that ideas to `my paper`__ and I would like to share my
+applied some of that ideas to `my paper`__ and would like to share my
 experience.
 
 __ http://www.eecs.qmul.ac.uk/~dm303/cvsc14.html
@@ -50,14 +50,15 @@ Vagrant`__, allows to do exactly this.
 .. _salt: https://salt.readthedocs.org/en/latest/
 __ http://docs.vagrantup.com/v2/provisioning/salt.html
 
-While vagrant abstracts away all the difficulty and diversity of visualization
+While vagrant abstracts away all the difficulty and diversity of virtualization
 software, salt hides away the quirks of the guest OS. Salt describes the desired
 OS configuration as a set of `states`_. A state can be an installed package, a
-file or `almost anything else`__. In `my setup`_, I got 4 kinds of states.
+file or `almost anything else`__. In `my Vagrant setup`__, I got `4 kinds of salt states`__.
 
 .. _states: http://salt.readthedocs.org/en/latest/topics/tutorials/starting_states.html
 __ http://salt.readthedocs.org/en/v0.17.5/ref/states/all/index.html
-.. _my setup: https://bitbucket.org/dimazest/phd-buildout/src/722ad58af0e3b8a3987758204b9bc78f46395b30/salt/roots/salt/basic.sls
+__ https://bitbucket.org/dimazest/phd-buildout/src/722ad58af0e3b8a3987758204b9bc78f46395b30/Vagrantfile
+__ https://bitbucket.org/dimazest/phd-buildout/src/722ad58af0e3b8a3987758204b9bc78f46395b30/salt/roots/salt/basic.sls
 
 System packages
 ---------------
