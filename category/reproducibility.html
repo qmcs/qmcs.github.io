@@ -131,6 +131,51 @@
 <article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
   <header class="post-item-header">
     <h2 class="post-item-title" itemprop="name">
+      <a title="The practical side of reproducibility" data-pjax="" itemprop="url" href="http://qmcs.github.io/the-practical-side-of-reproducibility.html">
+        The practical side of reproducibility
+      </a>
+    </h2>
+  </header>
+  <section class="post-item-excerpt" itemprop="description">
+    <p>
+      <p>In the <a class="reference external" href="http://qmcs.github.io/software-in-your-reproducible-research.html">previous post</a> I pointed out some
+difficulties of developing a reproducible experiment. Over a weekend, I've
+applied some of that ideas to <a class="reference external" href="http://www.eecs.qmul.ac.uk/~dm303/cvsc14.html">my paper</a> and would like to share my
+experience.</p>
+<p>This is the second attempt of making this work reproducible. The first was done
+by <a class="reference external" href="http://docs.vagrantup.com/v2/boxes.html">Alexander Konovalov</a>, <a class="reference external" href="http://alexk.host.cs.st-andrews.ac.uk">Devasena Inupakutika</a>, <a class="reference external" href="http://www.software.ac.uk/about/people/devasena-inupakutika">Steve Crouch</a> and me at
+the <a class="reference external" href="http://www.software.ac.uk/about/people/steve-crouch">Collaborations Workshop</a>. Our aim was to reproduce an experiment and run
+it in <a class="reference external" href="http://azure.microsoft.com/">Microsoft Azure</a>.</p>
+<p>By that time I'd already had a <a class="reference external" href="http://www.software.ac.uk/collaborations-workshop-2014-cw14-software-your-reproducible-research">Vagrant box</a> that contained all the necessary
+software. However, Fedora 20, the OS I used, is not supported by Azure, so we
+had to use another OS.</p>
+<p>Finally, we managed to create a VM image and run the experiment in the cloud.
+However, deployment took most of the time, because we had to install the system
+dependencies manually. It was a messy list of development libraries and Python
+3.3.</p>
+<p>
+    </p>
+  </section>
+  <footer class="post-item-footer">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-04-06T16:12:00" itemprop="datePublished">
+      Sun 06 April 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/vagrant.html">vagrant</a></span>
+      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/salt.html">salt</a></span>
+      <span itemprop="keywords"><a href="http://qmcs.github.io/tag/deployment.html">deployment</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://qmcs.github.io/the-practical-side-of-reproducibility.html#disqus_thread">Comments</a>.
+  </li>
+</ul>  </footer>
+</article><article class="post-item post tag-docs" role="article" itemtype="http://schema.org/BlogPosting" itemscope="">
+  <header class="post-item-header">
+    <h2 class="post-item-title" itemprop="name">
       <a title="Software in your reproducible research" data-pjax="" itemprop="url" href="http://qmcs.github.io/software-in-your-reproducible-research.html">
         Software in your reproducible research
       </a>
