@@ -17,7 +17,7 @@ Virtualizations and isolation
 -----------------------------
 
 * http://www.vagrantup.com/ provides an easy way of deploying virtual machine.
-* https://www.docker.io/ isolated, lightweight environment in Linux
+* https://www.docker.io/ isolated, lightweight environment in Linux.
 
 Data sharing
 ------------
@@ -27,6 +27,7 @@ Data sharing
 Other
 -----
 
+* http://www.vldb.org/2013/experimental_reproducibility.html VLDB guidelines.
 * http://www.software.ac.uk/
 * http://software-carpentry.org/
 * http://numfocus.org/
