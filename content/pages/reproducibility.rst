@@ -32,3 +32,4 @@ Other
 * http://software-carpentry.org/
 * http://numfocus.org/
 * http://recomputation.org/
+* https://osf.io/
