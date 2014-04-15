@@ -73,6 +73,7 @@ STATIC_PATHS = (
     'static/author_images',
     'static/images',
     'static/cv',
+    'static/article_covers',
     'extra/CNAME',
 )
 
