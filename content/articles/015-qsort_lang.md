@@ -28,7 +28,7 @@ As for my initial expectations, they coincided with the usual belief about these
 
 * A graph which shows how long each language took to sort the numbers in the file with 100 million integers
 
-<img src="https://raw.githubusercontent.com/Filip-Ter/QSortTest/master/LangGraph.png" alt="Graph comparing time taken to sort 100 million integers for 5 languages"width="100%" height="350px" align="right"/>
+<img src="https://raw.githubusercontent.com/Filip-Ter/QSortTest/master/LangGraph.png" alt="Graph comparing time taken to sort 100 million integers for 5 languages"width="100%" height="450px" align="right"/>
 
 
 The results, of this test agree with the general belief that interpreted languages tend to be far slower than compiled ones. For example PHP took slightly over half an hour to do the same thing that took 27 seconds in C. I did expect that there would be a greater difference between the times of Java and C++. Perhaps part of the reason for this is that I tried to avoid the use of C libraries for file I/O in C++ which tend to be faster than actual C++ ones.
@@ -44,7 +44,7 @@ If anything this little comparison shows how it is useful to have knowledge of t
 
 [^mt]: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html>
 
-[^c]: My C implementation of Quicksort (ANSI C, compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/QsortC.c>
+[^c]: My C implementation of Quicksort (ANSI C, compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master				/QsortC.c>
 
 [^cpp]: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.cc>
 
