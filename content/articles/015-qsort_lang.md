@@ -1,5 +1,3 @@
-#Comparing languages with Quicksort
-
 Title: Comparing Languages with Quicksort
 Date: 2014-04-20
 Tags: Quicksort, languages, speed
