@@ -10,9 +10,9 @@ Language speed is often a major factor when determining how useful a programming
 
 -- PELICAN_END_SUMMARY --
 
-I decided to conduct a comparison of programming languages by using them to implement an algorithm and then timing how long each one would take to execute. For the purposes of this article, a faster program is one which can execute an implementation of an algorithm in less time. The algorithm used was quicksort, which is a well-known sorting algorithm invented by Tony Hoare in 1961.[^thoare] The algorithm is recursive, and it works by finding a pivot value in an array, moving all elements smaller than it to one side and the larger ones to the other, this process is repeated on the sub-sections around the pivot until the whole array is sorted. 
+I decided to conduct a comparison of programming languages by using them to implement an algorithm and then timing how long each one would take to execute. For the purposes of this article, a faster program is one which can execute an implementation of an algorithm in less time. The algorithm used was quicksort, which is a well-known sorting algorithm invented by Tony Hoare in 1961.[<sup>1</sup>](#thoare) The algorithm is recursive, and it works by finding a pivot value in an array, moving all elements smaller than it to one side and the larger ones to the other, this process is repeated on the sub-sections around the pivot until the whole array is sorted. 
 
-Following up from my previous article, I thought of using the Mersenne Twister[^mt] algorithm to generate random 32bit integers that I would then sort using quicksort in 5 different languages, specifically: C[^c], C++[^cpp], Java[^java], Python 3[^py], and PHP[^php]. For the quicksort algorithm, I found a reasonably good pseudo-code description of it on Wikipedia.[^wiki] Using a Java implementation of Mersenne Twister[^mtjava], I generated 7 files all containing pseudo-random 32bit ints. The files contained 100 to 100 million integers, with each file containing 10 times as many integers as the previous one. Using the description from Wikipedia, I then implemented the algorithm in the 5 languages used in the test, adding functions for reading the numbers from files and printing them for checking.  In the actual test each program was to read the contents of the file, store them in an array, sort the array using quicksort, and finally print a message that the array was sorted. The time of execution would be measured by the Bash time function.[^bashtime] This was mainly done so that the same function would be measuring all programs,  as using timing from different languages might produce unreliable results. In order to obtain more precise results each run instance of sorting was done 10 times, and the average time was taken. In an effort to automate the task slightly more, I wrote a Bash script that would run each instance of the program 10 times, time it and write down the sum to a file.[^bashscript] Then another program would read the values, divide them, and format the output into a csv table.[^writetable]
+Following up from my previous article, I thought of using the Mersenne Twister[<sup>2</sup>](#mt) algorithm to generate random 32bit integers that I would then sort using quicksort in 5 different languages, specifically: C[<sup>3</sup>](#c), C++[<sup>4</sup>](#cpp), Java[<sup>5</sup>](#java), Python 3[<sup>6</sup>](#py), and PHP[<sup>7</sup>](#php). For the quicksort algorithm, I found a reasonably good pseudo-code description of it on Wikipedia[<sup>8</sup>](#wiki). Using a Java implementation of Mersenne Twister[<sup>9</sup>](#mtjava), I generated 7 files all containing pseudo-random 32bit ints. The files contained 100 to 100 million integers, with each file containing 10 times as many integers as the previous one. Using the description from Wikipedia, I then implemented the algorithm in the 5 languages used in the test, adding functions for reading the numbers from files and printing them for checking.  In the actual test each program was to read the contents of the file, store them in an array, sort the array using quicksort, and finally print a message that the array was sorted. The time of execution would be measured by the Bash time function.[<sup>10</sup>](#bashtime) This was mainly done so that the same function would be measuring all programs,  as using timing from different languages might produce unreliable results. In order to obtain more precise results each run instance of sorting was done 10 times, and the average time was taken. In an effort to automate the task slightly more, I wrote a Bash script that would run each instance of the program 10 times, time it and write down the sum to a file.[<sup>11</sup>](#bashscript) Then another program would read the values, divide them, and format the output into a csv table.[<sup>12</sup>](#writetable)
 
 As for my initial expectations, they coincided with the usual belief about these languages. I expected the compiled languages(C, C++, Java) to be faster, while the interpreted languages should be slower. This basically follows common knowledge about these languages, but the point of the test is to see how they would actually compare, and how significant the difference would be. 
 	
@@ -40,28 +40,28 @@ If anything this little comparison shows how it is useful to have knowledge of t
 
 ####Footnotes
 
-[^thoare]: <http://cs.stanford.edu/people/eroberts/courses/soco/projects/2008-09/tony-hoare/quicksort.html>
+<a id="thoare">1</a>: <http://cs.stanford.edu/people/eroberts/courses/soco/projects/2008-09/tony-hoare/quicksort.html>
 
-[^mt]: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html>
+<a id="mt">2</a>: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html>
 
-[^c]: My C implementation of Quicksort (ANSI C, compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master				/QsortC.c>
+<a id="c">3</a>: My C implementation of Quicksort (compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/QsortC.c>
 
-[^cpp]: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.cc>
+<a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.cc>
 
-[^java]: My Java Quicksort implementation, complied and executed with jdk 8: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java>
+<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 8: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java>
 
-[^py]: My Python Quicksort implementation(Python 3.3.4): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py>
+<a id="py">6</a>: My Python Quicksort implementation(Python 3.3.4): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py>
 
-[^php]: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.php>
+<a id="php">7</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.php>
 
-[^mtjava]: Official Java implementation of Mersenne Twister: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/JAVA/MTRandom.java>
+<a id="mtjava">8</a>:The pseudocode description of the algorithm that is implemented in my programs: <http://en.wikipedia.org/wiki/Quicksort#In-place_version> 
 
-[^wiki]: The pseudocode description of the algorithm that is implemented in my programs: <http://en.wikipedia.org/wiki/Quicksort#In-place_version>
+<a id="wiki">9</a>: Java implementation of Mersenne Twister: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/JAVA/MTRandom.java>
 
-[^bashtime]: The bash built-in time function was used, so not /usr/bin/time (GNU time)
+<a id="bashtime">10</a>: The bash built-in time function was used, so not /usr/bin/time (GNU time)
 
-[^bashscript]: The script used to run and time the programs: <https://github.com/Filip-Ter/QSortTest/blob/master/TestTime.sh>
+<a id="bashscript">11</a>: The script used to run and time the programs: <https://github.com/Filip-Ter/QSortTest/blob/master/TestTime.sh>
 
-[^writetable]: The script used to format the output of time and print a csv table: <https://github.com/Filip-Ter/QSortTest/blob/master/WriteTable.py>
+<a id="writetable">12</a>: The script used to format the output of time and print a csv table: <https://github.com/Filip-Ter/QSortTest/blob/master/WriteTable.py>
 
 
