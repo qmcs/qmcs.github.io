@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+  <section>
+
+    {{ page.content }}
+
+    <p class="text-center">
+      <a title="About us" class="btn btn-big" href="{{ SITE_URL }}/pages/about.html">About us</a>
+      <a title="Write an article" class="btn btn-primary btn-big" href="https://github.com/qmcs/qmcs.github.io#writing-an-article">Write an article</a>
+    </p>
+
+    <hr>
+
+    {% set article = articles[0] %}
+
+    <h2 class="post-item-title" itemprop="name">
+      <a title="{{ article.title }}" data-pjax="" itemprop="url" href="{{ SITEURL }}/{{ article.url }}">
+        Latest post: {{ article.title }}
+      </a>
+    </h2>
+
+    {{ article.content }}
+
+  </section>
+{% endblock %}

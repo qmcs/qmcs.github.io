@@ -6,10 +6,10 @@ import pelicanium
 
 
 AUTHOR = 'Contributors'
-SITENAME = 'Computing'
-SITESUBTITLE = 'Society at Queen Mary'
+SITENAME = 'EECS Society'
+SITESUBTITLE = 'Queen Mary University of London'
 SITEURL = ''
-SITE_TITLE = 'QM ' + SITENAME + ' Society'
+SITE_TITLE = 'EECS Society at Queen Mary University of London'
 
 TIMEZONE = 'Europe/London'
 
@@ -21,6 +21,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 THEME = pelicanium.theme_path
+EXTRA_TEMPLATES_PATHS = 'templates',
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
@@ -34,13 +35,11 @@ PLUGINS = (
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
 SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
 
-
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = (
-    ('Archive', 'archives.html'),
-    ('Tags', 'tags.html'),
-    ('Authors', 'authors.html'),
+    ('Blog', 'archives.html'),
+    ('People', 'authors.html'),
 )
 
 # Blogroll
@@ -53,7 +52,7 @@ LINKS = (
 # Social widget
 SOCIAL = (
     ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
-    ('Twitter', 'https://twitter.com/pyclub_qm'),
+    ('Twitter', 'https://twitter.com/QMComputing'),
 )
 
 DEFAULT_PAGINATION = False
@@ -65,12 +64,18 @@ COVER_IMG = 'static/images/cover.jpg'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-DISQUS_SITENAME = 'pyclub'
-GITHUB_URL = 'https://github.com/pyclub/pyclub.github.io'
-GOOGLE_ANALYTICS = 'UA-47565959-1'
-TWITTER_USERNAME = 'pyclub_qm'
+DISQUS_SITENAME = 'qmcs'
+GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
+GOOGLE_ANALYTICS = 'UA-49253245-1'
+TWITTER_USERNAME = 'QMComputing'
 
 STATIC_PATHS = (
     'static/author_images',
     'static/images',
+    'static/cv',
+    'extra/CNAME',
 )
+
+EXTRA_PATH_METADATA = {
+    'extra/CNAME': {'path': 'CNAME'},
+}
