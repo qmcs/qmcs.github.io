@@ -16,13 +16,33 @@ As for my initial expectations, they coincided with the usual belief about these
 	
 * The table which contains the average times for all runs of each program.
 
-| Language | Time taken to sort 10^2 integers (seconds) | Time taken to sort 10^3 integers (seconds) | Time taken to sort 10^4 integers (seconds) | Time taken to sort 10^5 integers (seconds) | Time taken to sort 10^6 integers (seconds) | Time taken to sort 10^7 integers (seconds) | Time taken to sort 10^8 integers (seconds) |
-|----------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|
-| C        | 0.0020                                      | 0.0030                                      | 0.0092                                     | 0.0227                                     | 0.2242                                     | 2.5311                                     | 27.8197                                    |
-| C++      | 0.0037                                     | 0.0055                                     | 0.0111                                     | 0.0573                                     | 0.5693                                     | 5.9676                                     | 62.1247                                    |
-| Java     | 0.0603                                     | 0.0813                                     | 0.1079                                     | 0.2279                                     | 0.8806                                     | 7.2826                                     | 71.9754                                    |
-| Python 3 | 0.0145                                     | 0.0170                                     | 0.0458                                     | 0.3803                                     | 4.8301                                     | 60.1167                                    | 757.3374                                   |
-| PHP      | 0.0092                                     | 0.0161                                     | 0.1014                                     | 1.1316                                     | 13.9871                                    | 174.4720                                    | 2091.9820                                   |
+
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th colspan="7">Seconds taken to sort array</th>
+		</tr>
+		<tr>
+			<th>Language</th>
+			<th>10^2 integers</th>
+			<th>10^3 integers</th>
+			<th>10^4 integers</th>
+			<th>10^5 integers</th>
+			<th>10^6 integers</th>
+			<th>10^7 integers</th>
+			<th>10^8 integers</th>
+		</tr>
+	</thead>
+	<tbody>	
+
+<tr><td>C</td><td>0.002</td><td>0.003</td><td>0.0092</td><td>0.0227</td><td>0.2242</td><td>2.5311</td><td>27.8197</td></tr>
+<tr><td>C++</td><td>0.0037</td><td>0.0055</td><td>0.0111</td><td>0.0573</td><td>0.5693</td><td>5.9676</td><td>62.1247</td></tr>
+<tr><td>Java</td><td>0.0603</td><td>0.0813</td><td>0.1079</td><td>0.2279</td><td>0.8806</td><td>7.2826</td><td>71.9754</td></tr>
+<tr><td>Python 3</td><td>0.0145</td><td>0.017</td><td>0.0458</td><td>0.3803</td><td>4.8301</td><td>60.1167</td><td>757.3374</td></tr>
+<tr><td>PHP</td><td>0.0092</td><td>0.0161</td><td>0.1014</td><td>1.1316</td><td>13.9871</td><td>174.472</td><td>2091.982</td></tr>
+</tbody>
+</table>
 
 * A graph which shows how long each language took to sort the numbers in the file with 100 million integers
 
