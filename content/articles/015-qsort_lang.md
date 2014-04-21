@@ -21,7 +21,7 @@ As for my initial expectations, they coincided with the usual belief about these
 	<thead>
 		<tr>
 			<th></th>
-			<th colspan="7">Seconds taken to sort array</th>
+			<th colspan="7" align="center">Seconds taken to sort array</th>
 		</tr>
 		<tr>
 			<th>Language</th>
