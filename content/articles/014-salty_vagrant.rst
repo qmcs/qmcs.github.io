@@ -6,6 +6,8 @@ The practical side of reproducibility
 :tags: vagrant, salt, deployment
 :category: reproducibility
 :author: Dmitrijs Milajevs
+:template: article_cover
+:cover: 014-salty_vagrant.jpg
 
 In the `previous post <{filename}/articles/013-cw14.rst>`_ I pointed out some
 difficulties of developing a reproducible experiment. Over a weekend, I've
