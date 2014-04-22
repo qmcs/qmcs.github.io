@@ -73,7 +73,7 @@ If anything this little comparison shows how useful it is to have knowledge of t
 
 <a id="wiki">8</a>:The pseudocode description of the algorithm that is implemented in my programs: <http://en.wikipedia.org/wiki/Quicksort#In-place_version> [&#x21a9;](#wiki_back)
 
-<a id="mt_java">9</a>: Java implementation of Mersenne Twister: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/JAVA/MTRandom.java> [&#x21a9;](#mtjava_back)
+<a id="mtjava">9</a>: Java implementation of Mersenne Twister: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/VERSIONS/JAVA/MTRandom.java> [&#x21a9;](#mtjava_back)
 
 <a id="bashtime">10</a>: The bash built-in time function was used, so not /usr/bin/time (GNU time) [&#x21a9;](#bashtime_back)
 
