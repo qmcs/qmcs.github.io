@@ -180,8 +180,8 @@ Put you CV to ``content/static/cv`` and add the ``:cv:`` metadata field.
 Article with Cover Photo (alternative)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can, instead of using the standard article template, use a template with 
-which includes a cover photo – much inspired from medium.com. Here is how to use
+You can, instead of using the standard article template, use a template which
+includes a cover photo – much inspired from medium.com. Here is how to use
 it. Beware, the procedure looks different in Markdown and RST.
 
 Meta header in Markdown:
