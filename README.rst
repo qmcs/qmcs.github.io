@@ -177,6 +177,54 @@ in ``content/static/author_images``.
 
 Put you CV to ``content/static/cv`` and add the ``:cv:`` metadata field.
 
+Article with Cover Photo (alternative)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can, instead of using the standard article template, use a template which
+includes a cover photo – much inspired from medium.com. Here is how to use
+it. Beware, the procedure looks different in Markdown and RST.
+
+Meta header in Markdown:
+
+.. code-block:: md
+
+    Title: Space Kittens
+    Date: 2014-04-15
+    Tags: markdown, markup, languages
+    Category: languages
+    Author: Henrik O. Skogmo
+    Template: article_cover
+    Cover: space-cat.png
+
+Meta header in RST:
+
+.. code-block:: rst
+
+    =============
+    Space Kittens
+    =============
+
+    :date: 2014-04-15
+    :tags: markdown, markup, languages
+    :category: languages
+    :author: Henrik O. Skogmo
+    :template: article_cover
+    :cover: space-cat.png
+
+1. Write your article as you would otherwise, following the ``Writing an
+article`` guide in this readme.
+
+2. Change the meta ``template`` line to look like this
+``Template: article_cover`` instead of ``Template: article``. This will trigger
+the system to use the alternative template.
+
+3. Add the line ``Cover: space-cat.png`` underneath. Here I use the photo named
+``space-cat.png`` which I added in the folder ``content/static/article_covers``.
+This is how we tell the system which photo to use as a cover photo.
+
+Now all you have to do is commit and push your article, together with your 
+desired photo.
+
 Peer review
 -----------
 
