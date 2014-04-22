@@ -47,7 +47,9 @@ As for my initial expectations, they coincided with the usual belief about these
 
 * A graph which shows how long each language took to sort the numbers in the file with 100 million integers
 
-<img src="https://raw.githubusercontent.com/Filip-Ter/QSortTest/master/LangGraph.png" alt="Graph comparing time taken to sort 100 million integers for 5 languages"width="100%" height="450px" align="right"/>
+![Graph comparing time taken to sort 100 million integers for 5 languages](/content/static/images/lang_graph.png)
+
+<!--<img src="https://raw.githubusercontent.com/Filip-Ter/QSortTest/master/LangGraph.png" alt="Graph comparing time taken to sort 100 million integers for 5 languages"width="100%" height="450px" align="right"/>-->
 
 
 The results, of this test agree with the general belief that interpreted languages tend to be far slower than compiled ones. C and C++ were almost the same, which could be partly because the same IO libraries were used for those languages. PyPy turned out to be practically 10 times faster than CPython, which was much more than I had expected. This could be because the jit compilation starts making a greater difference with a greater number of ints. Jython was the slowest out of all, which is not surprising at all since it is running Python code on top of the Java Virtual Machine. 
