@@ -10,9 +10,9 @@ Language speed is often a major factor when determining how useful a programming
 
 I decided to conduct a comparison of programming languages by using them to implement practically the same task and then timing how long each one would take to execute. For the purposes of this article, a faster program is one which can execute an implementation of an algorithm in less time. The algorithm used was quicksort, which is a well-known sorting algorithm invented by Tony Hoare in 1961.[<sup>1</sup>](#thoare) It is recursive, and it works by finding a pivot value in an array, moving all elements smaller than it to one side and the larger ones to the other, this process is repeated on the sub-sections around the pivot until the whole array is sorted.
 
-Following up from my previous article, I thought of using the Mersenne Twister[<sup>2</sup>](#mt) algorithm to generate random 32bit integers that I would then sort using quicksort in 5 different languages, specifically: C[<sup>3</sup>](#c), C++[<sup>4</sup>](#cpp), Java[<sup>5</sup>](#java), Python 3[<sup>6</sup>](#py), and PHP[<sup>7</sup>](#php). For the quicksort algorithm, I found a pseudo-code description of it on Wikipedia[<sup>8</sup>](#wiki). Using a Java implementation of Mersenne Twister[<sup>9</sup>](#mtjava), I generated 7 files all containing pseudo-random positive 32-bit integers. The files contained 100 to 100 million integers, with each file containing 10 times as many integers as the previous one. Using the description from Wikipedia, I then implemented the algorithm in the 5 languages used in the test, adding functions for reading the numbers from files and printing them for checking.  In the actual test each program was to read the contents of the file, store them in an array, sort the array using quicksort, and finally print a message that the array was sorted. The time of execution would be measured by the Bash time function.[<sup>10</sup>](#bashtime) This was mainly done so that the same function would be measuring all programs,  as using timing from different languages might produce unreliable results. In order to obtain more precise results each instance of sorting was done 10 times, and the average time was taken. In an effort to automate the task slightly more, I wrote a Bash script that would run each instance of the program 10 times, and time the execution for each run, it would then calculate the average of the times and write to a CSV table.[<sup>11</sup>](#bashscript) 
+Following up from my previous article, I thought of using the Mersenne Twister[<sup>2</sup>](#mt) algorithm to generate random 32bit integers that I would then sort using quicksort in 7 different implementations, specifically: C[<sup>3</sup>](#c), C++[<sup>4</sup>](#cpp), Java[<sup>5</sup>](#java), Python 3[<sup>6</sup>](#py), Python with PyPY[<sup>6</sup>](#py), Jython[<sup>6</sup>](#py), and PHP[<sup>7</sup>](#php). For the quicksort algorithm, I found a pseudo-code description of it on Wikipedia[<sup>8</sup>](#wiki). Using a Java implementation of Mersenne Twister[<sup>9</sup>](#mtjava), I generated 7 files all containing pseudo-random positive 32-bit integers. The files contained 100 to 100 million integers, with each file containing 10 times as many integers as the previous one. Using the description from Wikipedia, I then implemented the algorithm in the 5 languages used in the test, adding functions for reading the numbers from files and printing them for checking.  In the actual test each program was to read the contents of the file, store them in an array, sort the array using quicksort, and finally print a message that the array was sorted. The time of execution would be measured by the Bash time function.[<sup>10</sup>](#bashtime) This was mainly done so that the same function would be measuring all programs,  as using timing from different languages might produce unreliable results. In order to obtain more precise results each instance of sorting was done 5 times, and the average time was taken. In an effort to automate the task slightly more, I wrote a Bash script that would run each instance of the program 5 times, and time the execution for each run, it would then calculate the average of the times and write to a CSV table.[<sup>11</sup>](#bashscript) 
 
-As for my initial expectations, they coincided with the usual belief about these languages. I expected the compiled languages(C, C++, Java) to be fast, and the interpreted languages to be slower. This basically follows common knowledge about these languages, but the point of the test is to see how they would actually compare, and how significant the differences would be. 
+As for my initial expectations, they coincided with the usual belief about these languages. I expected the compiled languages(C, C++, Java) to be fast, and the interpreted languages to be slower. This basically follows common knowledge about these languages, but the point of the test is to see how they would actually compare, and how significant the differences would be. When it comes to the Python variants I thought that PyPy would be the fastest out of them as it was designed specifically to make python code run faster, and uses just-in-time(jit) compilation. 
 	
 * The table which contains the average times for all runs of each program.
 
@@ -35,12 +35,13 @@ As for my initial expectations, they coincided with the usual belief about these
 		</tr>
 	</thead>
 	<tbody>	
-
-<tr><td>C</td><td>0.002</td><td>0.003</td><td>0.0092</td><td>0.0227</td><td>0.2242</td><td>2.5311</td><td>27.8197</td></tr>
-<tr><td>C++</td><td>0.0037</td><td>0.0055</td><td>0.0111</td><td>0.0573</td><td>0.5693</td><td>5.9676</td><td>62.1247</td></tr>
-<tr><td>Java</td><td>0.0603</td><td>0.0813</td><td>0.1079</td><td>0.2279</td><td>0.8806</td><td>7.2826</td><td>71.9754</td></tr>
-<tr><td>Python 3</td><td>0.0145</td><td>0.017</td><td>0.0458</td><td>0.3803</td><td>4.8301</td><td>60.1167</td><td>757.3374</td></tr>
-<tr><td>PHP</td><td>0.0092</td><td>0.0161</td><td>0.1014</td><td>1.1316</td><td>13.9871</td><td>174.472</td><td>2091.982</td></tr>
+<tr><td>C</td><td>0.0030</td><td>0.0020</td><td>0.0045</td><td>0.0235</td><td>0.2115</td><td>2.2315</td><td>23.4800</td></tr>
+<tr><td>C++</td><td>0.0020</td><td>0.0030</td><td>0.0040</td><td>0.0245</td><td>0.2130</td><td>2.2295</td><td>23.4535</td></tr>
+<tr><td>Java</td><td>0.1390</td><td>0.1690</td><td>0.2550</td><td>0.3735</td><td>1.4050</td><td>9.9225</td><td>95.5925</td></tr>
+<tr><td>Python 3</td><td>0.0700</td><td>0.0440</td><td>0.0810</td><td>0.4890</td><td>5.6820</td><td>73.1470</td><td>989.4360</td></tr>
+<tr><td>PyPy2.2.1</td><td>0.3210</td><td>0.0540</td><td>0.1320</td><td>0.2240</td><td>1.5340</td><td>9.1640</td><td>94.2570</td></tr>
+<tr><td>PHP</td><td>0.2520</td><td>0.0760</td><td>0.1210</td><td>0.6650</td><td>7.5990</td><td>96.5950</td><td>1198.0580</td></tr>
+<tr><td>Jython</td><td>2.0810</td><td>1.6210</td><td>2.3460</td><td>2.8450</td><td>9.5880</td><td>88.1560</td><td>1585.4810</td></tr>
 </tbody>
 </table>
 
@@ -49,7 +50,7 @@ As for my initial expectations, they coincided with the usual belief about these
 <img src="https://raw.githubusercontent.com/Filip-Ter/QSortTest/master/LangGraph.png" alt="Graph comparing time taken to sort 100 million integers for 5 languages"width="100%" height="450px" align="right"/>
 
 
-The results, of this test agree with the general belief that interpreted languages tend to be far slower than compiled ones. For example PHP took slightly over half an hour to sort the same amount of numbers that took 27 seconds to sort in C. I did expect that there would be a greater difference between the times of Java and C++. Perhaps part of the reason for this is that I tried to avoid the use of C libraries for file I/O in C++ which tend to be faster than actual C++ ones.
+The results, of this test agree with the general belief that interpreted languages tend to be far slower than compiled ones. C and C++ were almost the same, which could be partly because the same IO libraries were used for those languages. PyPy turned out to be practically 10 times faster than CPython, which was much more than I had expected. This could be because the jit compilation starts making a greater difference with a greater number of ints. Jython was the slowest out of all, which is not surprising at all since it is running Python code on top of the Java Virtual Machine. 
 
 While this test showed interesting outcomes, it has many weaknesses. One of these is the use of libraries for file I/O, this means that the test was also measuring the implementation of the libraries, which could have affected the results. For example if a file I/O library in Java was better written than the other ones, it could give that language a skewed advantage. Another issue with this test is that it only considers languages which have their syntax influenced by C, and have many major similarities. It would have been interesting to conduct the test while including languages, which are less similar to one another, for example some of the functional languages.
 
@@ -69,7 +70,7 @@ If anything this little comparison shows how useful it is to have knowledge of t
 
 <a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 8: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java>
 
-<a id="py">6</a>: My Python Quicksort implementation(Python 3.3.4): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py>
+<a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py>
 
 <a id="php">7</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.php>
 
