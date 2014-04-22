@@ -14,19 +14,17 @@ Following up from my previous article, I thought of using the Mersenne Twister[<
 
 As for my initial expectations, they coincided with the usual belief about these languages. I expected the compiled languages(C, C++, Java) to be fast, and the interpreted languages to be slower. This basically follows common knowledge about these languages, but the point of the test is to see how they would actually compare, and how significant the differences would be. When it comes to the Python variants I thought that PyPy would be the fastest out of them as it was designed specifically to make python code run faster, and uses just-in-time(jit) compilation. 
 	
-* The table which contains the average times for all runs of each program.
+* The table which contains the average times for all runs of each program, on the five largest files.
 
 
 <table>
 	<thead>
 		<tr>
 			<th></th>
-			<th colspan="7" align="center">Seconds taken to sort array</th>
+			<th colspan="5" align="center">Seconds taken to sort array</th>
 		</tr>
 		<tr>
 			<th>Language</th>
-			<th>10^2 integers</th>
-			<th>10^3 integers</th>
 			<th>10^4 integers</th>
 			<th>10^5 integers</th>
 			<th>10^6 integers</th>
@@ -35,17 +33,17 @@ As for my initial expectations, they coincided with the usual belief about these
 		</tr>
 	</thead>
 	<tbody>	
-<tr><td>C</td><td>0.0030</td><td>0.0020</td><td>0.0045</td><td>0.0235</td><td>0.2115</td><td>2.2315</td><td>23.4800</td></tr>
-<tr><td>C++</td><td>0.0020</td><td>0.0030</td><td>0.0040</td><td>0.0245</td><td>0.2130</td><td>2.2295</td><td>23.4535</td></tr>
-<tr><td>Java</td><td>0.1390</td><td>0.1690</td><td>0.2550</td><td>0.3735</td><td>1.4050</td><td>9.9225</td><td>95.5925</td></tr>
-<tr><td>Python 3</td><td>0.0700</td><td>0.0440</td><td>0.0810</td><td>0.4890</td><td>5.6820</td><td>73.1470</td><td>989.4360</td></tr>
-<tr><td>PyPy2.2.1</td><td>0.3210</td><td>0.0540</td><td>0.1320</td><td>0.2240</td><td>1.5340</td><td>9.1640</td><td>94.2570</td></tr>
-<tr><td>PHP</td><td>0.2520</td><td>0.0760</td><td>0.1210</td><td>0.6650</td><td>7.5990</td><td>96.5950</td><td>1198.0580</td></tr>
-<tr><td>Jython</td><td>2.0810</td><td>1.6210</td><td>2.3460</td><td>2.8450</td><td>9.5880</td><td>88.1560</td><td>1585.4810</td></tr>
+<tr><td>C</td><td>0.0045</td><td>0.0235</td><td>0.2115</td><td>2.2315</td><td>23.4800</td></tr>
+<tr><td>C++</td><td>0.0040</td><td>0.0245</td><td>0.2130</td><td>2.2295</td><td>23.4535</td></tr>
+<tr><td>Java</td><td>0.2550</td><td>0.3735</td><td>1.4050</td><td>9.9225</td><td>95.5925</td></tr>
+<tr><td>Python 3</td><td>0.0810</td><td>0.4890</td><td>5.6820</td><td>73.1470</td><td>989.4360</td></tr>
+<tr><td>PyPy2.2.1</td><td>0.1320</td><td>0.2240</td><td>1.5340</td><td>9.1640</td><td>94.2570</td></tr>
+<tr><td>PHP</td><td>0.1210</td><td>0.6650</td><td>7.5990</td><td>96.5950</td><td>1198.0580</td></tr>
+<tr><td>Jython</td><td>2.3460</td><td>2.8450</td><td>9.5880</td><td>88.1560</td><td>1585.4810</td></tr>
 </tbody>
 </table>
 
-* A graph which shows how long each language took to sort the numbers in the file with 100 million integers
+* A graph which shows the comparison of how long each language took to sort N number of ints, the three largest files are considered
 
 ![Graph comparing time taken to sort 100 million integers for 5 languages](static/images/lang_graph.png)
 
