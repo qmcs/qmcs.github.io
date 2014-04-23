@@ -65,7 +65,7 @@ If anything this little comparison shows how useful it is to have knowledge of t
 
 <a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.cc> [&#x21a9;](#cpp_back)
 
-<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 8: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java> [&#x21a9;](#java_back)
+<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java> [&#x21a9;](#java_back)
 
 <a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py> [&#x21a9;](#py_back)
 
