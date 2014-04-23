@@ -310,31 +310,54 @@ projects we depend on:
     ├── pelican_extended_authors # Our plugin that provided authors' metadata.
     └── pelicanium  # The theme we use.
 
-By default ``pelicanium`` and ``pelican_extended_authors`` are cloned from
-https://github.com/pyclub, but if you want to make changes to these projects you
-need to use your own fork.
+Note that, by default ``pelicanium`` and ``pelican_extended_authors`` are clones
+of https://github.com/pyclub, but if you want to make changes to these projects
+you need to use your own fork! These are the steps you need to perform, to be
+able to push to your own fork:
 
-1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface
+1. Fork ``pelicanium`` and ``pelican_extended_authors`` in github web interface.
+   Refer to the ``[sources]`` section of ``buildout.cfg`` to see what projects
+   you should fork. Such projects are located under ``https://github.com/qmcs/``.
 
-2. Modify ``custom.cfg`` to look like:
+2. Create ``.mr.developer-options.cfg`` with the following content:
 
 .. code-block:: ini
 
-    [buildout]
-    github_username = dimazest  # Put your github username here
+    [rewrites]
+    # Use your own forks instead of the upstream repos for the ``qmcs``projects.
+    qmcs =
+        url ~ ^https://github.com/qmcs/
+        git@github.com:YOUR_USERNAME/
+        kind = git
 
-3. Run ``bin/buildout``
+    # Use ssh instead of https for all github repos.
+    github =
+        url ~ ^https://github.com/
+        git@github.com:
+        kind = git
+
+3. Remove the ``src`` folder. Be sure that there are no any changes you want to
+   keep. If there are, `change remote urls in git repo`_.
+
+.. code-block:: bash
+
+    rm src/ -rf  # Again, be vary careful!
+
+4. Run ``bin/buildout``.
 
 Change remote urls in git repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In case you want to add changes after you run ``buildout``, you need to
+In case you want to push to github after you run ``buildout``, you need to
 change remote urls by yourself, for example:
 
 .. code-block:: bash
 
     cd src/pelicanium
-    git remote set-url origin git@github.com:dimazest/qmcs.github.io
+    git remote set-url origin git@github.com:YOUR_USERNAME/qmcs.github.io
+
+Update dependencies
+~~~~~~~~~~~~~~~~~~~
 
 If you want to update the dependencies, run::
 
