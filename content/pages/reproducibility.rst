@@ -17,6 +17,7 @@ Virtualizations and isolation
 -----------------------------
 
 * http://www.vagrantup.com/ provides an easy way of deploying virtual machine.
+* http://mitchellh.com/the-tao-of-vagrant a high-level description of Vagrant.
 * https://www.docker.io/ isolated, lightweight environment in Linux.
 
 Data sharing
