@@ -121,7 +121,7 @@ I used manifold learning to provide a visualization for a bigger set of words
 Sprint
 ------
 
-`@_spyreto_ <https://twitter.com/_spyreto_>`_ and
+`Spyros Ioakeimidis <https://twitter.com/_spyreto_>`_ and
 `Sjoerd de Haan <https://www.linkedin.com/profile/view?id=22830170>`_ liked the
 idea of counting word frequencies among various languages and see how they
 compare in relation to Zipf's law.
@@ -131,21 +131,36 @@ however, the website was down, and we were kindly redirected to
 `this page <http://sorry.ec.europa.eu/>`_ every time we wanted to get a legal
 document.
 
-Luckily, we found an already prepared `word frequencies for a many languages
-<http://invokeit.wordpress.com/frequency-word-lists/>`_ and reused them.
+Luckily, we found an already prepared `word frequencies for many languages
+<http://invokeit.wordpress.com/frequency-word-lists/>`_ and reused them. We
+wrote a simple function to plot the frequency of the words against the rank of
+the words in the frequency table. Here is the top 10 most frequently used words
+in English, Dutch and Latvian:
 
-The task was to
+==== ======== ========= ======== ========= ======== =========
+\    English            Dutch              Latvian
+---- ------------------ ------------------ ------------------
+Rank Word     Frequency Word     Frequency Word     Frequency
+==== ======== ========= ======== ========= ======== =========
+1    you      6281002   ik       2091479   ir       20182
+2    i        5685306   je       1995150   es       19042
+3    the      4768490   het      1428477   un       12737
+4    to       3453407   de       1399236   tu       12141
+5    a        3048287   is       1202489   tas      8601
+6    it       2879962   dat      1188131   ka       7964
+7    and      2127187   een      1011496   man      7725
+8    that     2030642   niet     997681    to       7535
+9    of       1847884   en       774098    vai      7527
+10   in       1554103   wat      618627    ko       6906
+==== ======== ========= ======== ========= ======== =========
 
-* plot the ranked frequency distribution on the log-log scale
-* estimate the slope :math:`\alpha`, the ratio of the frequencies between the
-  neighboring words in the rank.
-
-`We tried`__ English, Dutch, Russian, Latvian, Spanish and Italian. All languages
-obey Zipf's law, at least visually. Here is a plot for English (see `the notebook`__
-for other plots):
-
-__ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/Word%20frequencies.ipynb
-__ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/Word%20frequencies.ipynb
+If you plot the word rank on the x axis and the word frequency on the y axis on
+a log-log scale you should see a straight line. A straight line on a log-log
+plot implies that the quantities on the two axis are related trough a power law.
+Thus, if our data would fit straight line perfectly, that would mean that the
+frequency of a word occurring is exactly proportional to a power of the rank of
+that word in the frequency table. This is the content of Zipf's law, but
+of course, such laws are never exact.
 
 .. image:: {filename}/static/images/016-en_zipf.png
     :align: center
@@ -153,17 +168,27 @@ __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/
     :target: {filename}/static/images/016-en_zipf.png
 
 The blue line is the provided frequencies, the green is a regression line.
-Theory [Li1992]_ says that the slope coefficient should be close to -1. As the
-table shows, the values deviate from -1 quite drastically (-1.7 for Spanish).
-Also, the `slope estimate`__ for English from the `British National Corpus`__ is
--1.18.
 
-__ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb#estimating-the-slope
-__ http://www.natcorp.ox.ac.uk/
+One thing we can compare amongst languages is how well this plot follows a
+straight line. Also the slope of the line contains interesting information. It
+tells what kind of power law we are dealing with exactly.
+
+The slope is related to the morphology of a language. For example, in Latvian,
+which has quite rich morphology, the word `"city"` is `"pilsēta"`, but the
+English phrase `"in a city"` is `"pilsētā"`. All the occurrences of "`pilsēta`"
+in a Latvian text will be distributed over several morphological forms, lowering
+the counts. As a result, the slope for a Latvian text will be less steep
+comparing to English.
+
+We `tried`__ English, Ukrainian, Dutch, Russian, Latvian, Spanish and Italian. All
+languages obey Zipf's law, at least visually.
+
+__ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/Word%20frequencies.ipynb
 
 =========  ========= ===========
 Language   Slope     Intercept
 =========  ========= ===========
+en         -1.717729 21.934904
 uk         -1.044263 11.212273
 nl         -1.566664 19.635268
 ru         -1.395736 17.781756
@@ -172,8 +197,28 @@ es         -1.707326 22.161790
 it         -1.601567 20.000540
 =========  ========= ===========
 
+Theory [Li1992]_ says that the slope coefficient should be close to -1. As the
+table below shows, the values deviate from -1 quite drastically (-1.57 for
+Dutch, for example). Also, the `slope estimate`__ for English from the `British
+National Corpus`__ is -1.18 in contrary to -1.72. Here is the Zipf's law
+visualization for English extracted from the BNC.
+
+__ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb#estimating-the-slope
+__ http://www.natcorp.ox.ac.uk/
+
+.. image:: {filename}/static/images/016-en_bnc_zipf.png
+    :align: center
+    :alt: Actual and estimated English word frequencies from the BNC.
+    :target: {filename}/static/images/016-en_bnc_zipf.png
+
 Conclusion
 ----------
+
+Pygrunn is a great conference that start attracting not only (professional web)
+developers, but also scientists. I was really surprised that my talk got a bit
+of attention and people were willing to hack around a linguistic phenomena. I
+hope that next year this trend continues. And the two communities become closer
+to each other.
 
 .. [Li1992] Li, Wentian.
             `Random texts exhibit Zipf's-law-like word frequency distribution.`__
