@@ -53,25 +53,78 @@ __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/
 However, I find the technical talks with a lot of code rather boring, so I
 decided to show how these libraries are used to solve simple CL tasks.
 
-First, I `covered`__ `Zipf's law <http://en.wikipedia.org/wiki/Zipf%27s_law>`_
-and showed that it holds for an English text. As a homework, I asked whether the
-same behavior is observed in other languages and what the differences are.
+A universal pattern behind natural languages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+First, I `covered`__ `Zipf's law <http://en.wikipedia.org/wiki/Zipf%27s_law>`_,
+which states that the frequency of any word in a corpus of texts is inversely
+proportional to its rank in the frequency table. To show that the law holds for
+an English text, I loaded `the BNC frequency list`__ provided by `Adam
+Kilgarriff`__ into `Pandas <http://pandas.pydata.org/>`_ `DataFrame`__ and
+plotted the sorted frequencies on the log-log scale.
 
 __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb#english-word-frequencies
+__ http://www.kilgarriff.co.uk/BNClists/lemma.num
+__ http://www.kilgarriff.co.uk/bnc-readme.html
+__ http://pandas.pydata.org/pandas-docs/version/0.13.1/generated/pandas.DataFrame.html
 
-I could not resist and presented my `research area`__ :) by extracting co-
-occurrence counts and projecting the word vectors to 2 dimensions. I managed to
-get a plot where ``girl`` is close to ``boy`` but far to ``manager``.
+.. image:: {filename}/static/images/016-bnc_freq.png
+    :align: center
+    :alt: English word frequency counts extracted from the British National Corpus on the log-log scale.
+    :target: {filename}/static/images/016-bnc_freq.png
+
+As a homework, I asked whether the same behavior is observed in
+other languages and what the differences are.
+
+Distributional semantics
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+I could not resist and `presented`__ my `research area`__ :) by extracting word
+co-occurrence counts and projecting the word vectors to 2 dimensions using
+`scikit-learn`__ implementation of `manifold learning`__.
 
 __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb#distributional-semantics
+__ http://www.eecs.qmul.ac.uk/~dm303/
+__ http://scikit-learn.org/stable/
+__ http://scikit-learn.org/stable/modules/manifold.html
+
+In distributional semantics, words are represented as rows in a matrix. The
+columns correspond to other words the word co-occurs with. The values of the
+matrix are the frequencies the words co-occurred together. For example, here are
+the vectors for the words ``idea``, ``notion``, ``boy`` and ``girl``.
+
+======= ========== ==== ======
+\       philosophy book school
+======= ========== ==== ======
+idea    10         47   39
+notion  7          3    15
+boy     0          12   146
+girl    0          19   93
+======= ========== ==== ======
+
+So, ``idea`` was seen with ``philosophy`` 10 times in the corpus I used. An
+occurrence in this case means that ``philosophy`` was not more than 5 words
+further from ``idea``.
+
+The number patterns for ``boy`` and ``girl`` are much more similar than for
+``boy`` and ``notion``, suggesting that ``boy`` is much more similar to ``girl``
+than to ``notion``.
+
+.. image:: {filename}/static/images/016-ds.png
+    :align: center
+    :alt: Word semantic relatedness.
+    :target: {filename}/static/images/016-ds.png
+
+I used manifold learning to provide a visualization for a bigger set of words
+(and a much bigger set of contexts).
 
 Sprint
 ------
 
 `@_spyreto_ <https://twitter.com/_spyreto_>`_ and
 `Sjoerd de Haan <https://www.linkedin.com/profile/view?id=22830170>`_ liked the
-idea of counting word frequencies among various languages and see the behavior
-of the slope.
+idea of counting word frequencies among various languages and see how they
+compare in relation to Zipf's law.
 
 Initially, we wanted to take EU directives and compare the official EU languages,
 however, the website was down, and we were kindly redirected to
