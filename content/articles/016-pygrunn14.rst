@@ -38,16 +38,16 @@ tools (my subjective classification):
 __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb
 
 1. Data structures
-    * `numpy <http://www.numpy.org/>`_
-    * `scipy <http://www.scipy.org/scipylib/index.html>`_
-    * `pandas <http://pandas.pydata.org/>`_
+    * `NumPy <http://www.numpy.org/>`_
+    * `SciPy <http://www.scipy.org/scipylib/index.html>`_
+    * `Pandas <http://pandas.pydata.org/>`_
 2. Algorithms
     * `scikit-learn <http://scikit-learn.org/>`_
-    * `nltk <http://www.nltk.org/>`_,
-    * `textblob <http://textblob.readthedocs.org>`_
+    * `NLTK <http://www.nltk.org/>`_,
+    * `TextBlob <http://textblob.readthedocs.org>`_
     * `gensim <http://radimrehurek.com/gensim/>`_
 3. Reporting
-    * `ipython <http://ipython.org/>`__
+    * `IPython <http://ipython.org/>`__
     * `matplotlib <http://matplotlib.org/), [seaborn](http://www.stanford.edu/~mwaskom/software/seaborn/>`__
 
 However, I find the technical talks with a lot of code rather boring, so I
