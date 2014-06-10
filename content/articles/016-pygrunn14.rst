@@ -105,21 +105,40 @@ boy     0          12   146
 girl    0          19   93
 ======= ========== ==== ======
 
-So, ``idea`` was seen with ``philosophy`` 10 times in the corpus I used. An
-occurrence in this case means that ``philosophy`` was not more than 5 words
+So, ``idea`` was seen with ``philosophy`` 10 times in the corpus I used. A
+co-occurrence in this case means that ``philosophy`` was not more than 5 words
 further from ``idea``.
 
 The number patterns for ``boy`` and ``girl`` are much more similar than for
 ``boy`` and ``notion``, suggesting that ``boy`` is much more similar to ``girl``
-than to ``notion``.
+than to ``notion``. Clearly, we can select much more words to label rows, making
+the similarity reasoning more precise.
+
+We can reason on word semantic similarity from a geometrical point of view using
+a distance measure (for example, Euclidean distance). The closer are two vectors
+to each other in the vector space, the closer are the words semantically.
+
+Unfortunately, it's difficult for humans to reason in more than 3 dimensions.
+While the multidimensional space is useful to perform computations, it's useless
+to present the patterns words share. If we could imagine the space, we would
+discover areas (or directions) that correspond to the girlish/boylish words and
+to the more abstract idea/notion.
+
+To overcome the issue, we can reduce the dimensionality of the space in such a
+way that the distance between the elements is respected. Clearly, we can't
+completely preserve the distances, but it's possible to respect the distances to
+some degree.
+
+Manifold learning is one of many techniques to perform dimensionality reduction.
+If we apply it to the extracted co-occurrence counts for some of the words and
+reduce to two dimensions (so we can plot it), we will notice that related words
+cluster around each other.
 
 .. image:: {filename}/static/images/016-ds.png
     :align: center
     :alt: Word semantic relatedness.
     :target: {filename}/static/images/016-ds.png
 
-I used manifold learning to provide a visualization for a bigger set of words
-(and a much bigger set of contexts).
 
 Sprint
 ------
