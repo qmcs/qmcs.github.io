@@ -37,18 +37,21 @@ tools (my subjective classification):
 
 __ http://nbviewer.ipython.org/urls/bitbucket.org/dimazest/phd-buildout/raw/tip/notebooks/pygrunn14.ipynb
 
-1. Data structures
-    * `NumPy <http://www.numpy.org/>`_
-    * `SciPy <http://www.scipy.org/scipylib/index.html>`_
-    * `Pandas <http://pandas.pydata.org/>`_
-2. Algorithms
-    * `scikit-learn <http://scikit-learn.org/>`_
-    * `NLTK <http://www.nltk.org/>`_,
-    * `TextBlob <http://textblob.readthedocs.org>`_
-    * `gensim <http://radimrehurek.com/gensim/>`_
-3. Reporting
-    * `IPython <http://ipython.org/>`__
-    * `matplotlib <http://matplotlib.org/), [seaborn](http://www.stanford.edu/~mwaskom/software/seaborn/>`__
+1. Data structures: NumPy_, SciPy_, Pandas_
+2. Algorithms: scikit-learn_, NLTK_, TextBlob_, gensim_
+3. Reporting: IPython_, matplotlib_ seaborn_
+
+.. _NumPy: http://www.numpy.org/
+.. _SciPy: http://www.scipy.org/scipylib/index.html
+.. _Pandas: http://pandas.pydata.org/
+.. _scikit-learn: http://scikit-learn.org/
+.. _NLTK: http://www.nltk.org/
+.. _TextBlob: http://textblob.readthedocs.org
+.. _gensim: http://radimrehurek.com/gensim/
+.. _IPython: ttp://ipython.org/
+.. _matplotlib: http://matplotlib.org/
+.. _seaborn: http://www.stanford.edu/~mwaskom/software/seaborn/
+
 
 However, I find the technical talks with a lot of code rather boring, so I
 decided to show how these libraries are used to solve simple CL tasks.
