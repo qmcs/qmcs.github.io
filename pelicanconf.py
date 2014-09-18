@@ -51,8 +51,8 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('Facebook', 'https://www.facebook.com/groups/723364331026623/'),
-    ('Twitter', 'https://twitter.com/QMComputing'),
+    ('Facebook', 'https://www.facebook.com/groups/738390366227299/'),
+    ('Twitter', 'https://twitter.com/EECSSoc'),
 )
 
 DEFAULT_PAGINATION = False
@@ -62,7 +62,7 @@ FAVICON = "static/images/favicon.ico"
 COVER_IMG = 'static/images/cover.jpg'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
 
 DISQUS_SITENAME = 'qmcs'
 GITHUB_URL = 'https://github.com/qmcs/qmcs.github.io'
