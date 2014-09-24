@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/all.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-04-20T00:00:00+01:00</updated><entry><title>Comparing Languages with Quicksort</title><link href="http://qmcs.github.io/comparing-languages-with-quicksort.html" rel="alternate"></link><updated>2014-04-20T00:00:00+01:00</updated><author><name>Filip Ter</name></author><id>tag:qmcs.github.io,2014-04-20:comparing-languages-with-quicksort.html</id><summary type="html">&lt;p&gt;Language speed is often a major factor when determining how useful a programming language can be. Some applications rely on languages that can execute a large amount of instructions in a short amount of time, and programmers may in some cases use languages which have many unpleasant features, just because they can execute an algorithm faster. It would be interesting to see how some languages would fare when it comes to how long it takes them to execute the same algorithm. &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/all.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-09-24T16:22:00+01:00</updated><entry><title>The UK/IE Programming Contest</title><link href="http://qmcs.github.io/the-ukie-programming-contest.html" rel="alternate"></link><updated>2014-09-24T16:22:00+01:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-09-24:the-ukie-programming-contest.html</id><summary type="html">&lt;p&gt;On Oct 4th, the ACM UK/IE Programming Contest, part of the ACM ICPC, will have
+its second distributed annual event in several locations across the UK and
+Ireland. This year sponsored by Google, Paypal &amp;amp; EF.&lt;/p&gt;
+&lt;p&gt;The contest (which runs from 10  a.m. to 3p.m.) is a UK/IE preliminary event,
+for NWERC - the NorthWestern European Regional Contest, which is a  preliminary
+to the world final.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu"&gt;http://ukiepc.nwerc.eu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://nwerc.eu"&gt;http://nwerc.eu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://icpc.baylor.edu/"&gt;http://icpc.baylor.edu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Undergraduate students take part in teams of 3, trying to solve around 10
+problems using 1 computer in 5 hours, with no internet access. These
+problems are solved by finding the most relevant and optimal algorithm for
+a solution. Solutions are submitted to an automatic judge, that runs the
+code, and compares the result with an official expected output.&lt;/p&gt;
+&lt;p&gt;This year, the contest has 3 sponsors: Google, Paypal, &amp;amp; EF&lt;/p&gt;
+&lt;div class="section" id="prizes"&gt;
+&lt;h2&gt;Prizes&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;all contestants will get a free contest T-Shirt (with thanks to Google),&lt;/li&gt;
+&lt;li&gt;the top 5 teams in the UK &amp;amp; Ireland win Leap Motions (thanks to Paypal)&lt;/li&gt;
+&lt;li&gt;the top team at Nott, Bath &amp;amp; Imperial win £50pp (with thanks to EF)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-information"&gt;
+&lt;h2&gt;More information&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu/2014"&gt;Home page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://icpc.baylor.edu/regionals/finder/ukiepc-2014"&gt;Registration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu/2013"&gt;Last year’s event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://plus.google.com/u/1/events/gallery/c6u8t0ro5lp2c2j1m8qk7tbn2gc"&gt;Photos of 2013&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="taking-part"&gt;
+&lt;h2&gt;Taking part&lt;/h2&gt;
+&lt;p&gt;In case you are interested, Queen Mary can host the competition. Please contact
+Dmitrijs Milajevs &amp;lt;&lt;a class="reference external" href="mailto:d.milajevs&amp;#64;qmul.ac.uk"&gt;d.milajevs&amp;#64;qmul.ac.uk&lt;/a&gt;&amp;gt; to get more information.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="competition"></category></entry><entry><title>Comparing Languages with Quicksort</title><link href="http://qmcs.github.io/comparing-languages-with-quicksort.html" rel="alternate"></link><updated>2014-04-20T00:00:00+01:00</updated><author><name>Filip Ter</name></author><id>tag:qmcs.github.io,2014-04-20:comparing-languages-with-quicksort.html</id><summary type="html">&lt;p&gt;Language speed is often a major factor when determining how useful a programming language can be. Some applications rely on languages that can execute a large amount of instructions in a short amount of time, and programmers may in some cases use languages which have many unpleasant features, just because they can execute an algorithm faster. It would be interesting to see how some languages would fare when it comes to how long it takes them to execute the same algorithm. &lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;I decided to conduct a comparison of programming languages by using them to implement practically the same task and then timing how long each one would take to execute. For the purposes of this article, a faster program is one which can execute an implementation of an algorithm in less time. The algorithm used was quicksort, which is a well-known sorting algorithm invented by Tony Hoare in 1961.&lt;a href="#thoare"&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;a id="thoare_back"&gt;&lt;/a&gt; It can be implemented recursively, and it works by finding a pivot value in an array, moving all elements smaller than it to one side and the larger ones to the other, this process is repeated on the sub-sections around the pivot until the whole array is sorted.&lt;/p&gt;
 &lt;p&gt;Following up from my previous article, I thought of using the Mersenne Twister&lt;a href="#mt"&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;a id="mt_back"&gt;&lt;/a&gt; algorithm to generate random 32bit integers that I would then sort using quicksort in 7 different implementations, specifically: C&lt;a href="#c"&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;&lt;a id="c_back"&gt;&lt;/a&gt;, C++&lt;a href="#cpp"&gt;&lt;sup&gt;4&lt;/sup&gt;&lt;/a&gt;&lt;a id="cpp_back"&gt;&lt;/a&gt;, Java&lt;a href="#java"&gt;&lt;sup&gt;5&lt;/sup&gt;&lt;/a&gt;&lt;a id="java_back"&gt;&lt;/a&gt;, Python 3&lt;a href="#py"&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;a id="py_back"&gt;&lt;/a&gt;, Python with PyPy&lt;a href="#py"&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;a id="py_back"&gt;&lt;/a&gt;, Jython&lt;a href="#py"&gt;&lt;sup&gt;6&lt;/sup&gt;&lt;/a&gt;&lt;a id="py_back"&gt;&lt;/a&gt;, and PHP&lt;a href="#php"&gt;&lt;sup&gt;7&lt;/sup&gt;&lt;/a&gt;&lt;a id="php_back"&gt;&lt;/a&gt;. For the quicksort algorithm, I found a pseudo-code description of it on Wikipedia&lt;a href="#wiki"&gt;&lt;sup&gt;8&lt;/sup&gt;&lt;/a&gt;&lt;a id="wiki_back"&gt;&lt;/a&gt;. Using a Java implementation of Mersenne Twister&lt;a href="#mtjava"&gt;&lt;sup&gt;9&lt;/sup&gt;&lt;/a&gt;&lt;a id="mtjava_back"&gt;&lt;/a&gt;, I generated 7 files all containing pseudo-random positive 32-bit integers. The files contained 100 to 100 million integers, with each file containing 10 times as many integers as the previous one. Using the description from Wikipedia, I then implemented the algorithm in the languages used in the test, adding functions for reading the numbers from files and printing them for checking.  In the actual test each program was to read the contents of the file, store them in an array, sort the array using quicksort, and finally print a message that the array was sorted. The time of execution would be measured by the Bash time function.&lt;a href="#bashtime"&gt;&lt;sup&gt;10&lt;/sup&gt;&lt;/a&gt;&lt;a id="bashtime_back"&gt;&lt;/a&gt; This was mainly done so that the same function would be measuring all programs, as using timing from different languages can produce unreliable results. In order to obtain more precise results each instance of sorting was done 5 times, and the average time was taken. In an effort to automate the task more, I wrote a Bash script that would run each instance of the program 5 times, time the execution for each run, and then calculate the average of the times and write it to a CSV table.&lt;a href="#bashscript"&gt;&lt;sup&gt;11&lt;/sup&gt;&lt;/a&gt;&lt;a id="bashscript_back"&gt;&lt;/a&gt;&lt;/p&gt;

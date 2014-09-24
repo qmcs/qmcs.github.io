@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/coding.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-03-04T17:50:00+00:00</updated><entry><title>Basic git configuration</title><link href="http://qmcs.github.io/basic-git-configuration.html" rel="alternate"></link><updated>2014-03-04T17:50:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-03-04:basic-git-configuration.html</id><summary type="html">&lt;p&gt;Git is a powerful tool, though it has to be configured first.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://qmcs.github.io/" rel="alternate"></link><link href="http://qmcs.github.io/feeds/coding.atom.xml" rel="self"></link><id>http://qmcs.github.io/</id><updated>2014-09-24T16:22:00+01:00</updated><entry><title>The UK/IE Programming Contest</title><link href="http://qmcs.github.io/the-ukie-programming-contest.html" rel="alternate"></link><updated>2014-09-24T16:22:00+01:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-09-24:the-ukie-programming-contest.html</id><summary type="html">&lt;p&gt;On Oct 4th, the ACM UK/IE Programming Contest, part of the ACM ICPC, will have
+its second distributed annual event in several locations across the UK and
+Ireland. This year sponsored by Google, Paypal &amp;amp; EF.&lt;/p&gt;
+&lt;p&gt;The contest (which runs from 10  a.m. to 3p.m.) is a UK/IE preliminary event,
+for NWERC - the NorthWestern European Regional Contest, which is a  preliminary
+to the world final.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu"&gt;http://ukiepc.nwerc.eu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://nwerc.eu"&gt;http://nwerc.eu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://icpc.baylor.edu/"&gt;http://icpc.baylor.edu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Undergraduate students take part in teams of 3, trying to solve around 10
+problems using 1 computer in 5 hours, with no internet access. These
+problems are solved by finding the most relevant and optimal algorithm for
+a solution. Solutions are submitted to an automatic judge, that runs the
+code, and compares the result with an official expected output.&lt;/p&gt;
+&lt;p&gt;This year, the contest has 3 sponsors: Google, Paypal, &amp;amp; EF&lt;/p&gt;
+&lt;div class="section" id="prizes"&gt;
+&lt;h2&gt;Prizes&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;all contestants will get a free contest T-Shirt (with thanks to Google),&lt;/li&gt;
+&lt;li&gt;the top 5 teams in the UK &amp;amp; Ireland win Leap Motions (thanks to Paypal)&lt;/li&gt;
+&lt;li&gt;the top team at Nott, Bath &amp;amp; Imperial win £50pp (with thanks to EF)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="more-information"&gt;
+&lt;h2&gt;More information&lt;/h2&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu/2014"&gt;Home page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://icpc.baylor.edu/regionals/finder/ukiepc-2014"&gt;Registration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://ukiepc.nwerc.eu/2013"&gt;Last year’s event&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://plus.google.com/u/1/events/gallery/c6u8t0ro5lp2c2j1m8qk7tbn2gc"&gt;Photos of 2013&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="taking-part"&gt;
+&lt;h2&gt;Taking part&lt;/h2&gt;
+&lt;p&gt;In case you are interested, Queen Mary can host the competition. Please contact
+Dmitrijs Milajevs &amp;lt;&lt;a class="reference external" href="mailto:d.milajevs&amp;#64;qmul.ac.uk"&gt;d.milajevs&amp;#64;qmul.ac.uk&lt;/a&gt;&amp;gt; to get more information.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="competition"></category></entry><entry><title>Basic git configuration</title><link href="http://qmcs.github.io/basic-git-configuration.html" rel="alternate"></link><updated>2014-03-04T17:50:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:qmcs.github.io,2014-03-04:basic-git-configuration.html</id><summary type="html">&lt;p&gt;Git is a powerful tool, though it has to be configured first.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;p&gt;Here is a basic &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;~/.gitconfig&lt;/span&gt;&lt;/tt&gt; file that sets you name, sets up aliases and
 enables highlighting in git output:&lt;/p&gt;
