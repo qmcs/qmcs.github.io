@@ -28,8 +28,9 @@ PAGE_EXCLUDES = ('authors',)
 
 PLUGIN_PATH = 'src/pelican-plugins'
 PLUGINS = (
-    'summary',
+    'pelican_edit_url',
     'pelican_extended_authors',
+    'summary',
 )
 
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
@@ -80,3 +81,5 @@ STATIC_PATHS = (
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
 }
+
+EDIT_CONTENT_URL = 'https://github.com/qmcs/qmcs.github.io/edit/pelican/{file_path}'
