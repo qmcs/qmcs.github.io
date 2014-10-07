@@ -1,0 +1,22 @@
+==========================
+Scientific coding workshop
+==========================
+
+:date: 2014-10-07 12:49
+
+The idea is to organize a series of meeting and get familiar with modern
+scientific libraries and tools. In the beginning we can go trough `the materials
+provided by Software Carpentry`__.
+
+__ http://software-carpentry.org/lessons.html
+
+Please fill in `the doodle`__ do decide the best meeting time.
+
+__ http://doodle.com/d7bee9i467w3kphc
+
+Once we get familiar with basic topics (for example, array operations, storage, plotting). We
+can have a look to specific problems from linguistics, biology, physics or any
+other field.
+
+Anyone interested in the subject is very welcome to come! Please contact
+Dmitrijs Milajevs <d.milajevs@qmul.ac.uk> if you have any question.
