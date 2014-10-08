@@ -48,7 +48,7 @@ Meeting idea: Estimate n-gram probabilities from the BNC
 After the `first meeting of the NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6>`_ there was an idea to replicate Table 6.3 in [statistical-nlp]_.
 
 During this meeting we can estimate the n-gram probabilities using MLE from the
-BNC corpus. To make things more interesting (and faster) the n-grmas can be stored as `Pandas DataFrames`__.
+BNC corpus. To make things more interesting (and faster) the n-grams counts can be stored as `Pandas DataFrames`__.
 
 __ http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe
 
