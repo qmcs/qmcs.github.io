@@ -31,11 +31,11 @@ Thanks everyone for showing up! Follow our Twitter_ and Facebook_ for more
 information about events and the society.
 
 You can contribute with technical articles in our GitHub_ repo. We have made a
-guide there for you to follow. Also you can check the “issues”_ section to read
+guide there for you to follow. Also you can check the issues_ section to read
 and comment on projects and events for consideration.
 
 .. _Robocode: http://robocode.sourceforge.net/
 .. _Twitter: http://twitter.com/eecssoc
 .. _Facebook: http://facebook.com/groups/eecssoc
 .. _GitHub: https://github.com/qmcs/qmcs.github.io
-.. _"issues": https://github.com/qmcs/qmcs.github.io/issues
+.. _issues: https://github.com/qmcs/qmcs.github.io/issues
