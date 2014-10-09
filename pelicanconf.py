@@ -52,7 +52,7 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ('Facebook', 'https://www.facebook.com/groups/738390366227299/'),
+    ('Facebook', 'https://www.facebook.com/groups/eecssoc/'),
     ('Twitter', 'https://twitter.com/EECSSoc'),
 )
 
