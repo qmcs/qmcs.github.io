@@ -37,7 +37,25 @@ __ http://software-carpentry.org/v5/novice/python/01-numpy.html
 
 Please `install Python and NumPy <http://software-carpentry.org/v5/setup.html>`_
 before the meeting! It might be tricky to get the packages, contact Dima, if you
-have any problems.
+have any problems. You need to have Anaconda installed, ignore instructions
+about the text editor and everything else. After a successful install you should
+be able to do the following in a terminal (the version numbers are not that
+important):
+
+.. code-block:: bash
+
+    ipython  # or iPython on ipython-2.7
+    Python 2.7.8 (default, Oct  3 2014, 02:34:26)
+    Type "copyright", "credits" or "license" for more information.
+
+    IPython 2.3.0 -- An enhanced Interactive Python.
+    ?         -> Introduction and overview of IPython's features.
+    %quickref -> Quick reference.
+    help      -> Python's own help system.
+    object?   -> Details about 'object', use 'object??' for extra details.
+
+    In [1]: import numpy
+    In [2]: quit()
 
 Meeting idea: Estimate n-gram probabilities from the BNC
 ========================================================
