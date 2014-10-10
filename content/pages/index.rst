@@ -10,5 +10,5 @@ Computing at EECS
 `Events <{filename}/pages/events.rst>`_
 =======================================
 
-* **TBA**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Analyzing Patient Data with Python.
+* **October 14 (17:00)** `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Analyzing Patient Data with Python at the seminar room in the ITL (top floor).
 * **TBA**: `Robocode <https://github.com/qmcs/qmcs.github.io/issues/39>`_.
