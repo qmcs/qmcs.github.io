@@ -13,9 +13,6 @@ Year students. We welcome you to our great campus!
 
 -- PELICAN_END_SUMMARY --
 
-Meet and Greet
-==============
-
 It is a tradition for all societies to have a meet and greet event in the start
 of the year. But this was not only a meet and greet for us. This was our very
 first official meeting. And seeing it go so well and to have students we have
