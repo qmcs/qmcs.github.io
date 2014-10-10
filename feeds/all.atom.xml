@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2014-09-24T16:22:00+01:00</updated><entry><title>The UK/IE Programming Contest</title><link href="http://eecs.io/the-ukie-programming-contest.html" rel="alternate"></link><updated>2014-09-24T16:22:00+01:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2014-09-24:the-ukie-programming-contest.html</id><summary type="html">&lt;p&gt;On Oct 4th, the ACM UK/IE Programming Contest, part of the ACM ICPC, will have
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2014-10-09T23:00:00+01:00</updated><entry><title>Meet and Greet</title><link href="http://eecs.io/meet-and-greet.html" rel="alternate"></link><updated>2014-10-09T23:00:00+01:00</updated><author><name>Henrik O. Skogmo</name></author><id>tag:eecs.io,2014-10-09:meet-and-greet.html</id><summary type="html">&lt;p&gt;To celebrate our very first socity meeting we gave free drinks and pizza to all
+attendees. We got to know some really cool people, and a lot of you were 1st
+Year students. We welcome you to our great campus!&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class="section" id="id1"&gt;
+&lt;h2&gt;Meet and Greet&lt;/h2&gt;
+&lt;p&gt;It is a tradition for all societies to have a meet and greet event in the start
+of the year. But this was not only a meet and greet for us. This was our very
+first official meeting. And seeing it go so well and to have students we have
+never met before walk in that door and say they are here for the EECS Society
+makes me proud. I am glad to see that there are other students that want a
+society like this one.&lt;/p&gt;
+&lt;p&gt;We want to create an awesome community where we all can have fun and learn from
+each other. To do so we need to talk to you to know what you guys want. And that
+was what this evening was all about.&lt;/p&gt;
+&lt;p&gt;We are planning a programming competition for our next event. If you have ever
+heard about &lt;a class="reference external" href="http://robocode.sourceforge.net/"&gt;Robocode&lt;/a&gt;, then you might take a look into it ;)&lt;/p&gt;
+&lt;p&gt;Thanks everyone for showing up! Follow our &lt;a class="reference external" href="http://twitter.com/eecssoc"&gt;Twitter&lt;/a&gt; and &lt;a class="reference external" href="http://facebook.com/groups/eecssoc"&gt;Facebook&lt;/a&gt; for more
+information about events and the society.&lt;/p&gt;
+&lt;p&gt;You can contribute with technical articles in our &lt;a class="reference external" href="https://github.com/qmcs/qmcs.github.io"&gt;GitHub&lt;/a&gt; repo. We have made a
+guide there for you to follow. Also you can check the &lt;a class="reference external" href="https://github.com/qmcs/qmcs.github.io/issues"&gt;issues&lt;/a&gt; section to read
+and comment on projects and events for consideration.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="social"></category><category term="meeting"></category></entry><entry><title>The UK/IE Programming Contest</title><link href="http://eecs.io/the-ukie-programming-contest.html" rel="alternate"></link><updated>2014-09-24T16:22:00+01:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2014-09-24:the-ukie-programming-contest.html</id><summary type="html">&lt;p&gt;On Oct 4th, the ACM UK/IE Programming Contest, part of the ACM ICPC, will have
 its second distributed annual event in several locations across the UK and
 Ireland. This year sponsored by Google, Paypal &amp;amp; EF.&lt;/p&gt;
 &lt;p&gt;The contest (which runs from 10  a.m. to 3p.m.) is a UK/IE preliminary event,
