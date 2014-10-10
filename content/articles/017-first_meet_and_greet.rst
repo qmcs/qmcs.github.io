@@ -2,7 +2,10 @@
 Meet and Greet
 ==============
 
-:date 2014-10-09 2300 tags social, meeting category blog author Henrik O. Skogmo
+:date: 2014-10-09 23:00
+:tags: social, meeting
+:category: blog
+:author: Henrik O. Skogmo
 
 To celebrate our very first socity meeting we gave free drinks and pizza to all
 attendees. We got to know some really cool people, and a lot of you were 1st
