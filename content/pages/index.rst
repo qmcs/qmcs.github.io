@@ -11,3 +11,4 @@ Computing at EECS
 =======================================
 
 * **TBA**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Analyzing Patient Data with Python.
+* **TBA**: `Robocode <https://github.com/qmcs/qmcs.github.io/issues/39>`_.
