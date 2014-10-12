@@ -131,7 +131,7 @@ After testing it you might figure out that it does not work like you first inten
 Where can I find more methods and commands?
 --------------------
 
-Robocode have a bunch of built in methods and commands you can use to control your robot. So far we have only touched a few very basic ones. If you want to read more on how these method works or need to look up how to do certain things, take a look at these sistes:
+Robocode has a bunch of built in methods and commands you can use to control your robot. So far we have only touched a few very basic ones. If you want to read more on how these method work or need to look up how to do certain things, take a look at these sites:
 
 - [Robot Methods](http://robocode.sourceforge.net/docs/robocode/)
 - [Robocode Wiki](http://robowiki.net/wiki/Robocode)
