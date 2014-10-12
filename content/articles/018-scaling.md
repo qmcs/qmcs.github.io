@@ -4,7 +4,7 @@ Tags: Algorithms,Fibonacci,Quicksort, languages, speed, scaling
 Category: algorithms
 Author: Filip Ter
 
-Scaling of applications is a common problem that many programmers have to deal with. Just because a solution works on a given input, doesn't mean it's going to work,with satisfactory performance, for input of any size. The same algorithm that sorts 100 integers quickly might scale so badly that if given a 100 000 000 integers it might be so slow that it would become practically useless, or at least a big drawback to the application it's used in. Given this fact, one has to be aware, on what scale their algorithms and programs will be used.
+Scaling of applications is a common problem that many programmers have to deal with. Just because a solution works on a given input, doesn't mean it's going to work,with satisfactory performance, for input of any size. The same algorithm that sorts 100 integers quickly might scale so badly that if given a 1,000,000 integers it might be so slow that it would become practically useless, or at least a big drawback to the application it's used in. Given this fact, one has to be aware, on what scale their algorithms and programs will be used.
 
 -- PELICAN_END_SUMMARY --
 
@@ -71,14 +71,14 @@ This test demonstrates that there are not only differences in how algorithms sca
 
 <a id="book">1</a>:Dasgupta, Sanjoy, Christos H. Papadimitriou, and Umesh Virkumar. Vazirani. "Enter Fibonacci." Algorithms. Boston: McGraw-Hill Higher Education, 2008. 2-4. Print. [&#x21a9;](#book_back)
 
-<a id="timing">1</a>:Script used to time fibonacci functions: <https://github.com/Filip-Ter/qmcs.articles.res/blob/master/018-scaling/TimeFib.py> [&#x21a9;](#timing_back)
+<a id="timing">2</a>:Script used to time fibonacci functions: <https://github.com/Filip-Ter/qmcs.articles.res/blob/master/018-scaling/TimeFib.py> [&#x21a9;](#timing_back)
 
-<a id="c">2</a>: My C implementation of Quicksort (compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/QsortC.c> [&#x21a9;](#c_back)
+<a id="c">3</a>: My C implementation of Quicksort (compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/QsortC.c> [&#x21a9;](#c_back)
 
-<a id="cpp">3</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src//Qsort.cc> [&#x21a9;](#cpp_back)
+<a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src//Qsort.cc> [&#x21a9;](#cpp_back)
 
-<a id="java">4</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.java> [&#x21a9;](#java_back)
+<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.java> [&#x21a9;](#java_back)
 
-<a id="py">5</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.py> [&#x21a9;](#py_back)
+<a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.py> [&#x21a9;](#py_back)
 
-<a id="php">6</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.php> [&#x21a9;](#php_back)
+<a id="php">7</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.php> [&#x21a9;](#php_back)
