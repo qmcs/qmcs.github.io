@@ -1,4 +1,3 @@
-#The problem of Scaling
 Title: The problem of Scaling
 Date: 2014-09-12
 Tags: Algorithms,Fibonacci,Quicksort, languages, speed, scaling
