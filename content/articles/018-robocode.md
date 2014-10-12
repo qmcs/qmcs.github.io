@@ -146,9 +146,8 @@ When the time is up, you will have to deliver your robot. Remember it needs to b
 1. To find it, locate the folder **"Robocode"** where you installed robocode.
 2. Navigate to **Robots** and find the folder **"your team's name"**.
 3. Make a copy of it and put it on your desktop.
-4. Make sure:
-- It only contains the robot you want to submit, only 1 robot per team.
-- It should contain **yourRobot.java** and **yourRobot.class**.
+4. Make sure it only contains the robot you want to submit, only 1 robot per team.
+5. It **must** contain **yourRobot.java** and **yourRobot.class**.
 5. We will pass around USB sticks, put the folder onto it.
 
 Good luck!
