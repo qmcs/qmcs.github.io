@@ -1,12 +1,13 @@
 Robocode
 ===================
+**Title:** Robocode
 **Date:** October 12th, 2014
 **Tags:** Robocode, Tutorial
 **Category:** Introduction
 **Author:** René Birkeland
 
 
-Robocode is a simple robot simulator, designed to give insight how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.
+Robocode is a simple robot simulator, designed to give insight into how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.
 
 -- PELICAN_END_SUMMARY --
 
