@@ -1,21 +1,16 @@
-Robocode
-===================
-**Title:** Robocode
-**Date:** October 12th, 2014
-**Tags:** Robocode, Tutorial
-**Category:** Introduction
-**Author:** René Birkeland
+Title: Robocode
+Date: 2014-10-12
+Tags: Robocode, Tutorial
+Category: Introduction
+Author: René Birkeland
 
 
 Robocode is a simple robot simulator, designed to give insight into how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.
 
 -- PELICAN_END_SUMMARY --
 
-----------
+## How to install
 
-
-How to install
--------------
 
 Robocode is written in Java, and can easily be installed simply by running the **.jar file**.
 
@@ -24,11 +19,7 @@ Robocode is written in Java, and can easily be installed simply by running the *
 3. Run the file, and follow the instruction. Install it somewhere you will remember (you will need to know later).
 4. After completion, you will have a desktop icon, double click it to run Robocode.
 
-----------
-
-
-Get familiar
--------------------
+## Get familiar
 
 To get a feeling how Robocode works, let's do a quick demonstration how the robots act.
 
@@ -49,23 +40,20 @@ A match consists of 10 rounds, and the robots gather points based on how well th
 
 Spend some time testing the different sample robots, gather ideas on how you want your robot to work.
 
----------
-
-Make your own robot
--------------
+## Make your own robot
 
 Now that you have seen how Robocode works, it's time to make your own!
 
 1. Click on **Robot** -> **Source Editor** to open the editor.
 2. To make a new robot simply click **File** -> **New** -> **Robot**.
-3. Give your robot a good name. 
+3. Give your robot a good name.
 4. Use your team's name package name
 
 You will now be presented with the editor. It has already some code in it to give you a start. Take a look through it, and make sure to read the comments, they have a lot of useful information.
 
 Lets go through the most important methods.
 
-###Methods
+### Methods
 
 ```java
 public void run() {}
@@ -74,7 +62,7 @@ public void run() {}
 This is the main method. This is were the majority of your robots behavior is defined. It should have a while-loop that continues to run forever, for example by using **while(true)**, like in the example code.
 
 > **Note:**
-> A while-loop is a loop that will run as long as the statement between the brackets is true. If you put **true**, it will run forever. If you put **i < 2**, it will only run as long as the variable **i** is less than 2. 
+> A while-loop is a loop that will run as long as the statement between the brackets is true. If you put **true**, it will run forever. If you put **i < 2**, it will only run as long as the variable **i** is less than 2.
 
 What you write before the while-loop will only get executed once. Here you can have your initialization of your robot. You can change the color of the robot, set a starting position of the gun, or get information about the battlefield size and heading (this is more complicated).
 
