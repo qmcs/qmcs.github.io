@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>The problem of Scaling</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <meta name="twitter:card" content="summary">
+
+    <meta property="og:type" content="article">
+
+
+    <link href="http://eecs.io/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link href="//fonts.googleapis.com/" rel="dns-prefetch">
+    <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://eecs.io/theme/css/main.css" />
+    <link rel="stylesheet" href="http://eecs.io/theme/css/pygment.css" />
+    <link rel="stylesheet" href="http://eecs.io/theme/css/custom.css" />
+
+
+    <script src="http://eecs.io/theme/js/jquery.min.js"></script>
+    <script src="http://eecs.io/theme/js/modernizr.js"></script>
+
+    <script src="http://eecs.io/theme/js/imageLoader.js"></script>
+    <script src="http://eecs.io/theme/js/drawer.js"></script>
+    <script src="http://eecs.io/theme/js/scripts.js"></script>
+
+
+        <link href="http://eecs.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="EECS Society Atom Feed" />
+
+  </head>
+  <body class="">
+
+
+    <button class="drawer-button" id="drawer-button" data-action="open-drawer"><i class="fa fa-bars"></i></button>
+    <div class="drawer-overlay"></div>
+    <nav class="drawer" tabindex="-1">
+      <div class="drawer-container">
+        <!--.drawer-search(role="search")-->
+        <ul class="drawer-list" role="navigation">
+
+          <li class="drawer-list-item">
+            <a data-pjax="" href="http://eecs.io/">
+              <i class="fa fa-home"></i>Home
+            </a>
+          </li>
+
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://eecs.io/archives.html">
+                <i class="fa fa-file"></i>Blog
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="http://eecs.io/authors.html">
+                <i class="fa fa-file"></i>People
+              </a>
+            </li>
+
+          <li class="drawer-list-divider"></li>
+
+            <li class="drawer-list-item drawer-list-title">Pages</li>
+              <li class="drawer-list-item">
+                <a href="http://eecs.io/pages/about.html">
+                  <i class="fa fa-file"></i>About
+                </a>
+              </li>
+              <li class="drawer-list-item">
+                <a href="http://eecs.io/pages/events.html">
+                  <i class="fa fa-file"></i>Events
+                </a>
+              </li>
+              <li class="drawer-list-item">
+                <a href="http://eecs.io/pages/reproducibility.html">
+                  <i class="fa fa-file"></i>Reproducibility
+                </a>
+              </li>
+              <li class="drawer-list-item">
+                <a href="http://eecs.io/pages/scientific-coding-workshop.html">
+                  <i class="fa fa-file"></i>Scientific coding workshop
+                </a>
+              </li>
+            <li class="drawer-list-divider"></li>
+
+
+          <li class="drawer-list-item drawer-list-title">Follow</li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://www.facebook.com/groups/eecssoc/">
+                <i class="fa fa-facebook"></i> Facebook
+              </a>
+            </li>
+            <li class="drawer-list-item">
+              <a data-pjax="" href="https://twitter.com/EECSSoc">
+                <i class="fa fa-twitter"></i> Twitter
+              </a>
+            </li>
+
+            <li class="drawer-list-divider"></li>
+            <li class="drawer-list-item drawer-list-title">Engage</li>
+            <li class="drawer-list-item">
+              <a target="_blank" href="https://github.com/qmcs/qmcs.github.io">
+                <i class="fa fa-code"></i>Source
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+
+    <main id="container" role="main" class="container">
+      <div class="surface">
+        <div class="surface-container">
+          <div data-pjax-container class="content">
+
+
+
+<section class="wrapper wrapper-post">
+  <div class="wrapper-container">
+    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post ">
+      <section class="post-container">
+        <header class="post-header">
+<ul class="post-meta-list">
+  <li class="post-meta-item">
+    <time datetime="2014-09-12T00:00:00" itemprop="datePublished">
+      Fri 12 September 2014
+    </time>
+  </li>
+  <li class="post-meta-item">
+      <span itemprop="keywords"><a href="http://eecs.io/tag/algorithms.html">Algorithms</a></span>
+      <span itemprop="keywords"><a href="http://eecs.io/tag/fibonacci.html">Fibonacci</a></span>
+      <span itemprop="keywords"><a href="http://eecs.io/tag/quicksort.html">Quicksort</a></span>
+      <span itemprop="keywords"><a href="http://eecs.io/tag/languages.html">languages</a></span>
+      <span itemprop="keywords"><a href="http://eecs.io/tag/speed.html">speed</a></span>
+      <span itemprop="keywords"><a href="http://eecs.io/tag/scaling.html">scaling</a></span>
+  </li>
+
+    <li class="post-meta-item">
+      <a href="http://eecs.io/the-problem-of-scaling.html#disqus_thread">Comments</a>
+    </li>
+
+    <li class="post-meta-item">
+      <a href="https://github.com/qmcs/qmcs.github.io/edit/pelican/content/articles/018-scaling.md">Edit</a>
+    </li>
+</ul>            <h1 itemprop="name headline" class="post-title"><a href="http://eecs.io/the-problem-of-scaling.html" itemprop="url" data-pjax title="The problem of Scaling">The problem of Scaling</a></h1>
+          <!--h2 itemprop="about" class="post-subtitle"></h2-->
+        </header>
+        <aside class="post-side">
+          <div class="post-author">
+              <a href="http://eecs.io/author/filip-ter.html" class="post-author-avatar">
+                <img src="http://eecs.io/static/author_images/filipt.jpg" alt="Filip Ter">
+              </a>
+            <div class="post-author-info">
+              <a href="http://eecs.io/author/filip-ter.html" class="post-author-name">
+                Filip Ter
+              </a>
+              <p class="post-author-bio"><p><a class="reference external" href="http://about.me/filipt">Filip</a> is an undergraduate at QMUL studying Computer Science</p>
+</p>
+            </div>
+          </div>
+        </aside>
+        <div itemprop="articleBody" class="post-body">
+          <p>Scaling of applications is a common problem that many programmers have to deal with. Just because a solution works on a given input; doesn't mean it's going to work,with satisfactory performance, for input of any size. The same algorithm that sorts 100 integers quickly, might scale so badly that if given a 1,000,000 integers it might be so slow that it would become practically useless, or at least a big drawback to the application it's used in. Given this fact, one has to be aware on what scale their algorithms and programs will be used.</p>
+<p></p>
+<p>For example, consider the following function, which implements an algorithm from the book <em>Algorithms</em><a href="#book"><sup>1</sup></a><a id="book_back"></a>, for calculating the nth Fibbonacci's number(using Python):</p>
+<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">fib1</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">fib1</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib1</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+
+<p>This algorithm does the job but it has two recursive invocations for every <code>n &gt; 2</code>, this is really going to stack up as <code>n</code> gets large, and the runtime of the algorithm will grow exponentially. To show this experimentally, the function was executed and timed for the 10th, 20th, 30th, and 40th Fibonacci numbers. This was done with a script<a href="#timing"><sup>2</sup></a><a id="timig_back"></a> using the python <code>timeit</code> module. Each case was carried out 5 times and the average was taken, see the table below:</p>
+<table><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
+<tr><th>Algorithm</th><th>n = 10</th><th>n = 20</th><th>n = 30</th><th>n = 40</th></tr></thead>
+<tbody><tr><td>fib1</td><td>0.0</td><td>0.0023</td><td>0.2874</td><td>35.33</td></tr></tbody></table>
+
+<p>The algorithm is so inefficient that practically, it can only be used for very small numbers of <code>n</code>. Thankfully there are more efficient solutions such as the one below:</p>
+<div class="highlight"><pre>    <span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="k">return</span> <span class="n">b</span>
+</pre></div>
+
+
+<p>Here, the obvious improvement is that the function actually stores the two previous values, so there is no need to recursively find every value below <code>n</code>, which is a massive performance benefit. With this algorithm it is possible to calculate values that would take years with the previous one to compute. See below the results of the same test as before, except with <code>fib2</code> and much larger input:</p>
+<table><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
+<tr><th>Algorithm</th><th>n = 10,000</th><th>n = 20,000</th><th>n = 30,000</th><th>n = 40,000</th></tr></thead>
+<tbody><tr><td>fib2</td><td>0.0018</td><td>0.0057</td><td>0.0112</td><td>0.0187</td></tr></tbody></table>
+
+<p>It's obvious that the second algorithm is on a completely different level, it would be meaningless to even try to compute the values in the second table with the first algorithm. </p>
+<p>Even an example as trivial as this illustrates the significance of knowing how an algorithm scales, as it places limits on how an algorithm can be used. Python was chosen for this test, because it natively supports arbitrarily large numbers so the algorithm would produce genuine results. It should be noted that this has a drawback, since for significantly larger values of <code>n</code> the result will get so large that storing the variables in the function will actually slow down the whole process.</p>
+<p>Another of many cases where scaling is relevant is the experiment in my previous article about using the Quicksort algorithm to compare different languages(C<a href="#c"><sup>3</sup></a><a id="c_back"></a>, C++<a href="#cpp"><sup>4</sup></a><a id="cpp_back"></a>, Java<a href="#java"><sup>5</sup></a><a id="java_back"></a>, Python 3<a href="#py"><sup>6</sup></a><a id="py_back"></a>, Python with PyPy<a href="#py"><sup>6</sup></a><a id="py_back"></a>, Jython<a href="#py"><sup>6</sup></a><a id="py_back"></a>, and PHP<a href="#php"><sup>7</sup></a><a id="php_back"></a>). This comparison can now be taken a step further, by examining how well the different languages scale. The average case complexity of quicksort is: <code>O(n * log(n))</code>, this means the theoretical runtime of the algorithm given <code>n</code> integers is <code>n*log(n)</code>. Knowing this, it is possible to take the data from the test that was performed in the last article, and compare the run-times of each language with the theoretical runtime obtained by the equation for the complexity. This will give deeper insight into the performance of each language, as opposed to just observing the runtime itself.</p>
+<p>Below is a graph showing the theoretical runtime (<code>n*log(n)</code>) divided by the actual runtime:</p>
+<p><img alt="&quot;Quicksort log-plot for acutal runtime /nlogn&quot;" src="static/images/qsLogPlot.png" title="Qsort Log Plot" /></p>
+<p>Jython was omitted from this graph as it's performance is so bad that it would skew the graph and make the other results hardly readable. </p>
+<p>The curves on this graph could loosely be classified into three groups. The first is the compiled languages, the group that contains C, and C++. These languages perform very well and their ratio of runtime to theoretical runtime, decreases very slightly with more integers, but compared to the others it seems almost constant. The second group(PyPy and Java) start off with a much higher ratio, but as the number of integers increases the graphs for both of these decrease quickly. In the final group are the interpreters, which perform badly to start with, however unlike the rest they actually get worse as the input grows.</p>
+<p>In these results what is particularly noteworthy is the way the graphs of PyPy and Java sharply decrease, whereas the other languages get worse and C/C++ decrease very slowly, if at all. The reason for this, is that PyPy and Java both use JIT(Just In Time) compilation, as mentioned last time. JIT is a kind of compilation that occurs at run time, as the program is running the JIT compiler will compile and optimize parts of the code when they are needed by the running program. So in the beginning PyPy and Java don't perform so well, as the number of integers is small and there is barely any time for JIT to make any difference, but as the number of integers increases the JIT compilation kicks in and this leads to a dramatic performance improvement. Consequently this can be seen in the graphs, of course it still doesn't make them as fast as C/C++ which compile everything to machine code in the beginning, but it makes them scale very well, note the difference between PyPy and CPython 3. </p>
+<p>This test demonstrates that there are not only differences in how algorithms scale, but even languages themselves. Therefore it can also play a role in deciding which language to use, as a particular language might scale badly for a large number of input. The aim of this article is to illustrate that it's best to make pragmatic choices about which language and/or algorithm to use. This is of course not to say that only the best scaling solution should be chosen all the time, rather the one that best meets the needs of the designer. For example if a programmer uses quick sort and knows the input will never exceed 10,000 then they don't need to worry how the implementation scales beyond that, and may focus on other considerations such as ease of implementation, etc. The point is one needs to be aware of how they need their application to scale, since this will help determine which kinds of solutions are suitable. As per the Quick Sort example, if you want to sort 1000 integers it's fine to use PHP, but if you want to sort 100 million, and not wait for half an hour, you should probably use a compiled/JIT language. Being aware of this can save a developer a lot of work later, as they won't find in the middle of a project that it must be rewritten, because it performs poorly on a scale not previously tested.</p>
+<h4>Footnotes</h4>
+<p><a id="book">1</a>:Dasgupta, Sanjoy, Christos H. Papadimitriou, and Umesh Virkumar. Vazirani. "Enter Fibonacci." Algorithms. Boston: McGraw-Hill Higher Education, 2008. 2-4. Print. <a href="#book_back">&#x21a9;</a></p>
+<p><a id="timing">2</a>:Script used to time fibonacci functions: <a href="https://github.com/Filip-Ter/qmcs.articles.res/blob/master/018-scaling/TimeFib.py">https://github.com/Filip-Ter/qmcs.articles.res/blob/master/018-scaling/TimeFib.py</a> <a href="#timing_back">&#x21a9;</a></p>
+<p><a id="c">3</a>: My C implementation of Quicksort (compiled with gcc): <a href="https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/QsortC.c">https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/QsortC.c</a> <a href="#c_back">&#x21a9;</a></p>
+<p><a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <a href="https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src//Qsort.cc">https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src//Qsort.cc</a> <a href="#cpp_back">&#x21a9;</a></p>
+<p><a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <a href="https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.java">https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.java</a> <a href="#java_back">&#x21a9;</a></p>
+<p><a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <a href="https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.py">https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.py</a> <a href="#py_back">&#x21a9;</a></p>
+<p><a id="php">7</a>: My PHP Quicksort implementation: <a href="https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.php">https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.php</a> <a href="#php_back">&#x21a9;</a></p>
+        </div>
+        <footer class="post-footer">
+          <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
+              <a href="http://eecs.io/author/filip-ter.html" class="post-author-avatar">
+                <img src="http://eecs.io/static/author_images/filipt.jpg" alt="Filip Ter">
+              </a>
+            <div class="post-author-info">
+              <h4 class="post-footer-heading">Written By</h4>
+
+              <a href="http://eecs.io/author/filip-ter.html" itemprop="url" class="post-author-name">
+                <span itemprop="name">Filip Ter</span>
+              </a>
+
+              <p itemprop="description" class="post-author-bio"><p><a class="reference external" href="http://about.me/filipt">Filip</a> is an undergraduate at QMUL studying Computer Science</p>
+</p>
+
+              <p class="post-author-website">
+                <a rel="nofollow" href="http://about.me/filipt">
+                  http://about.me/filipt
+                </a>
+              </p>
+
+                <p class="post-info">
+                  <b class="post-info-title">Published in</b>
+                  <a href="http://eecs.io/category/algorithms.html">
+                    algorithms
+                  </a>
+                </p>
+
+              <p class="post-info">
+                <b class="post-info-title">Published on</b>
+                <time datetime="2014-09-12T00:00:00" class="post-date">
+                  Fri 12 September 2014
+                </time>
+              </p>
+
+            </div>
+          </div>
+          <div class="post-social">
+            <h4 class="post-footer-heading">Spread the word</h4>
+            <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+            <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+            <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+          </div>
+        </footer>
+      </section>
+
+  <section class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_identifier = "the-problem-of-scaling.html";
+      var disqus_url = "http://eecs.io/the-problem-of-scaling.html";
+      (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://qmcs.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  </section>
+
+    </article>
+
+<footer class="footer" role="contentinfo">
+  <small>
+    <p>
+      EECS Society | Queen Mary University of London |
+        <a href="https://github.com/qmcs/qmcs.github.io/graphs/contributors"> Contributors
+    </p>
+    <p>
+      <a href="https://github.com/qmcs/pelicanium">Pelicanium</a>, a theme based on
+      <a href="http://ghostium.oswaldoacauan.com/">Ghostium Theme</a>.
+      Proudly powered by  <a href="http://getpelican.com/">Pelican</a>.
+    </p>
+  </small>
+</footer>
+  </div>
+</section>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="http://eecs.io/theme/js//56c2364f.foot-scripts.min.js"></script>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49253245-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'qmcs';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+  </body>
+</html>
