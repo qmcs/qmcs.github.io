@@ -23,7 +23,7 @@ For example, consider the following function, which implements an algorithm from
 
 This algorithm does the job but it has two recursive invocations for every `n > 2`, this is really going to stack up as `n` gets large and the runtime of the algorithm will grow exponentially. To show this experimentally, the function was executed and timed for the 10th, 20th, 30th, and 40th Fibonacci numbers. Each case was carried out 5 times and the average was taken, see the table below:
  
-<table border="1"><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
+<table><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
 <tr><th>Algorithm</th><th>n = 10</th><th>n = 20</th><th>n = 30</th><th>n = 40</th></tr></thead>
 <tbody><tr><td>fib1</td><td>0.0</td><td>0.0023</td><td>0.2874</td><td>35.33</td></tr></tbody></table>
 
@@ -42,7 +42,7 @@ The algorithm is so inefficient that practically, it can only be used for very s
 
 Here, the obvious improvement is that the function actually stores the two previous values, so there is no need to recursively find every value below `n`, which is a massive performance benefit. With this algorithm it is possible to calculate values that would take years with the previous one to compute. See below the results of the same test, except with much larger numbers:
 
-<table border="1"><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
+<table><thead><tr><th></th><th colspan="4" align="center">Seconds taken to find the nth Fibonacci number</th></tr>
 <tr><th>Algorithm</th><th>n = 10,000</th><th>n = 20,000</th><th>n = 30,000</th><th>n = 40,000</th></tr></thead>
 <tbody><tr><td>fib2</td><td>0.0018</td><td>0.0057</td><td>0.0112</td><td>0.0187</td></tr></tbody></table>
 
