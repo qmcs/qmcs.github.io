@@ -20,7 +20,7 @@ Robocode is written in Java, and can easily be installed simply by running the *
 
 1. Go to [this link](http://sourceforge.net/projects/robocode/files/robocode/1.9.2.3/).
 2. Choose **robocode-1.9.2.3-setup.jar** and save it somewhere you can easily find it, like your desktop.
-3. Run the file, and follow the instruction.
+3. Run the file, and follow the instruction. Install it somewhere you will remember (you will need to know later).
 4. After completion, you will have a desktop icon, double click it to run Robocode.
 
 ----------
@@ -37,7 +37,7 @@ When you've selected your desired contestants. Click **Start Battle** to begin.
 
 The robots will start to fight. In the window you will have several buttons and sliders. In the left bottom corner you find your typical **Start/Stop/Pause** functionality among others. On the bottom of the screen you will have a slider to control the speed of the match.
 
-A match consists of 10 rounds, and the robots gather points based on how well they do. The total scored is calculated from:
+A match consists of 10 rounds, and the robots gather points based on how well they do. The total score is calculated from:
 
  - How long it survives.
  - How much damage it deals to other robots (bullets or ramming).
@@ -86,6 +86,8 @@ Inside the while-loop you will write the algorithm that control your robot. Don'
 > **Note:** 
 > You choose the values, depending how much you want to move or turn. They are not set in stone.
 
+You can put as many lines as you want in the loop, but remember the loop will be repeated infinitely. It does not need to be very long to be effective.
+
 --------
 
 ```java
@@ -105,7 +107,7 @@ This get executed if you get hit. Is this the time to run away or fire all your 
 ```java
 public void onHitWall(HitWallEvent e) {}
 ```
-This get executed if you hit a wall. You know at this point you can't go further, maybe it's best to back up, or turn 90 degrees to get away.
+This get executed if you hit a wall. You know at this point you can't go any further, maybe it's best to back up, or turn 90 degrees to get away.
 
 ----------
 
@@ -133,3 +135,20 @@ Robocode have a bunch of built in methods and commands you can use to control yo
 
 - [Robot Methods](http://robocode.sourceforge.net/docs/robocode/)
 - [Robocode Wiki](http://robowiki.net/wiki/Robocode)
+
+-----------------
+
+Fight in the tournament (Robocode event)
+----------------
+
+When the time is up, you will have to deliver your robot. Remember it needs to be compiled!
+
+1. To find it, locate the folder **"Robocode"** where you installed robocode.
+2. Navigate to **Robots** and find the folder **"your team's name"**.
+3. Make a copy of it and put it on your desktop.
+4. Make sure:
+- It only contains the robot you want to submit, only 1 robot per team.
+- It should contain **yourRobot.java** and **yourRobot.class**.
+5. We will pass around USB sticks, put the folder onto it.
+
+Good luck!
