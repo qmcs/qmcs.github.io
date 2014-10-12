@@ -61,15 +61,15 @@ If anything this little comparison shows how useful it is to have knowledge of t
 
 <a id="mt">2</a>: <http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html> [&#x21a9;](#mt_back)
 
-<a id="c">3</a>: My C implementation of Quicksort (compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/QsortC.c> [&#x21a9;](#c_back)
+<a id="c">3</a>: My C implementation of Quicksort (compiled with gcc): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/QsortC.c> [&#x21a9;](#c_back)
 
-<a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.cc> [&#x21a9;](#cpp_back)
+<a id="cpp">4</a>: My C++ Quicksort implementation (compiled with g++): <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.cc> [&#x21a9;](#cpp_back)
 
-<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.java> [&#x21a9;](#java_back)
+<a id="java">5</a>: My Java Quicksort implementation, complied and executed with jdk 7u51: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.java> [&#x21a9;](#java_back)
 
-<a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.py> [&#x21a9;](#py_back)
+<a id="py">6</a>: My Python Quicksort implementation, the same source file was used for Python 3.3.4, PyPy, and Jython: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.py> [&#x21a9;](#py_back)
 
-<a id="php">7</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/Qsort.php> [&#x21a9;](#php_back)
+<a id="php">7</a>: My PHP Quicksort implementation: <https://github.com/Filip-Ter/QSortTest/blob/master/cmplang/src/Qsort.php> [&#x21a9;](#php_back)
 
 <a id="wiki">8</a>:The pseudocode description of the algorithm that is implemented in my programs: <http://en.wikipedia.org/wiki/Quicksort#In-place_version> [&#x21a9;](#wiki_back)
 
