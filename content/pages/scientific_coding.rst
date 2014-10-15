@@ -78,3 +78,4 @@ Useful links
 
 * http://software-carpentry.org/lessons.html
 * http://scipy-lectures.github.io
+* McKinney, Wes. Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython. "O'Reilly Media, Inc.", 2012.
