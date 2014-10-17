@@ -6,9 +6,16 @@ Events
 :save_as: events/index.html
 :URL: events/index.html
 
-* **TBA**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Analyzing Patient Data with Python.
+* **21 October, 16:15 (CS308)**:
+  `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Python iterators and Pandas_.
 
-If you want to organize an event, `open an issue <https://github.com/qmcs/qmcs.github.io/issues/new>`_.
+  .. _Pandas: http://pandas.pydata.org/pandas-docs/stable/10min.html
+* **22 October, 14:00**: `Robocode <{filename}/articles/019-robocode.md>`_.
+
+
+If you want to organize an event, `open an issue`__.
+
+__ https://github.com/qmcs/qmcs.github.io/issues/new
 
 Past events
 ===========

@@ -10,4 +10,8 @@ Computing at EECS
 `Events <{filename}/pages/events.rst>`_
 =======================================
 
-* **October 22 (14:00)**: `Robocode <https://github.com/qmcs/qmcs.github.io/issues/39>`_.
+* **21 October, 16:15 (CS308)**:
+  `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Python iterators and Pandas_.
+
+  .. _Pandas: http://pandas.pydata.org/pandas-docs/stable/10min.html
+* **22 October, 14:00**: `Robocode <{filename}/articles/019-robocode.md>`_.
