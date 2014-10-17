@@ -3,6 +3,8 @@ Events
 ======
 
 :date: 2014-10-09 20:48
+:save_as: events/index.html
+:URL: events/index.html
 
 * **TBA**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Analyzing Patient Data with Python.
 
