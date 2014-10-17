@@ -71,11 +71,12 @@ GOOGLE_ANALYTICS = 'UA-49253245-1'
 TWITTER_USERNAME = 'QMComputing'
 
 STATIC_PATHS = (
-    'static/author_images',
-    'static/images',
-    'static/cv',
-    'static/article_covers',
     'extra/CNAME',
+    'static/article_covers',
+    'static/author_images',
+    'static/cv',
+    'static/images',
+    'static/notebooks',
 )
 
 EXTRA_PATH_METADATA = {
