@@ -21,6 +21,28 @@ physics or any other field.
 Anyone interested in the subject is very welcome to come! Please contact
 Dmitrijs Milajevs <d.milajevs@qmul.ac.uk> if you have any question.
 
+Second meeting: Estimate n-gram probabilities from a text corpus
+================================================================
+
+:host: `Dmitrijs (Dima) Milajevs <d.milajevs@qmul.ac.uk>`_
+:difficulty: easy
+:download: `n-grams.ipynb <{filename}/static/notebooks/n-grams.ipynb>`_
+:show: `notebook <http://nbviewer.ipython.org/url/eecs.io/static/notebooks/n-grams.ipynb>`_
+
+After the `first meeting of the NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6>`_ there was an idea to replicate Table 6.3 in [statistical-nlp]_.
+
+During this meeting we can estimate the n-gram probabilities using MLE from some
+corpus. To make things more interesting (and faster) the n-grams counts can be
+stored as `Pandas DataFrames`__.
+
+__ http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe
+
+You need to install Pandas to be able to run the code, or you can use
+`Wakari <https://www.wakari.io/>`_, a IPython Notebook a cloud.
+
+.. [statistical-nlp] Manning, Christopher D. "Foundations of statistical natural language processing". Ed. Hinrich Schütze. MIT press, 1999.
+
+
 First meeting: Analyzing Patient Data with Python
 =================================================
 
@@ -56,22 +78,6 @@ important):
 
     In [1]: import numpy
     In [2]: quit()
-
-Meeting idea: Estimate n-gram probabilities from the BNC
-========================================================
-
-:host: `Dmitrijs (Dima) Milajevs <d.milajevs@qmul.ac.uk>`_
-:difficulty: intermediate
-
-After the `first meeting of the NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6>`_ there was an idea to replicate Table 6.3 in [statistical-nlp]_.
-
-During this meeting we can estimate the n-gram probabilities using MLE from the
-BNC corpus. To make things more interesting (and faster) the n-grams counts can
-be stored as `Pandas DataFrames`__.
-
-__ http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe
-
-.. [statistical-nlp] Manning, Christopher D. "Foundations of statistical natural language processing". Ed. Hinrich Schütze. MIT press, 1999.
 
 Useful links
 ============
