@@ -150,12 +150,20 @@
     <p>The idea is to organize a series of meeting and get familiar with modern
 scientific libraries and tools. In the beginning we can go trough <a class="reference external" href="http://software-carpentry.org/lessons.html">the materials
 provided by Software Carpentry</a>.</p>
-<p>Please fill in <a class="reference external" href="http://doodle.com/d7bee9i467w3kphc">the doodle</a> do decide the best meeting time.</p>
 <p>Once we get familiar with basic topics (for example, array operations, storage,
 plotting). We can have a look to specific problems from linguistics, biology,
 physics or any other field.</p>
 <p>Anyone interested in the subject is very welcome to come! Please contact
 Dmitrijs Milajevs &lt;<a class="reference external" href="mailto:d.milajevs&#64;qmul.ac.uk">d.milajevs&#64;qmul.ac.uk</a>&gt; if you have any question.</p>
+<div class="section" id="third-meeting-bigish-data-processing">
+<h2>Third meeting: Bigish data processing</h2>
+<p>Word similarity is the core notion in <a class="reference external" href="http://en.wikipedia.org/wiki/Distributional_semantics">distributional semantics</a>, where word
+meaning is represented as vectors. In such a vector space word similarity is
+modeled as the distance between two vectors. There are many datasets to evaluate distributional models, for example, <a class="reference external" href="http://arxiv.org/abs/1408.3456">SimLex-999</a>.</p>
+<p>During this meeting, we will build our own semantic vector space for the words
+in SimLex-999 and measure correlation of model similarity scores with human
+judgments using generators and Pandas.</p>
+</div>
 <div class="section" id="second-meeting-estimate-n-gram-probabilities-from-a-text-corpus">
 <h2>Second meeting: Estimate n-gram probabilities from a text corpus</h2>
 <table class="docutils field-list" frame="void" rules="none">
@@ -172,7 +180,7 @@ Dmitrijs Milajevs &lt;<a class="reference external" href="mailto:d.milajevs&#64;
 </tr>
 </tbody>
 </table>
-<p>After the <a class="reference external" href="http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6">first meeting of the NLP seminar</a> there was an idea to replicate Table 6.3 in <a class="citation-reference" href="#statistical-nlp" id="id3">[statistical-nlp]</a>.</p>
+<p>After the <a class="reference external" href="http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6">first meeting of the NLP seminar</a> there was an idea to replicate Table 6.3 in <a class="citation-reference" href="#statistical-nlp" id="id2">[statistical-nlp]</a>.</p>
 <p>During this meeting we can estimate the n-gram probabilities using MLE from some
 corpus. To make things more interesting (and faster) the n-grams counts can be
 stored as <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe">Pandas DataFrames</a>.</p>
@@ -181,7 +189,7 @@ stored as <a class="reference external" href="http://pandas.pydata.org/pandas-do
 <table class="docutils citation" frame="void" id="statistical-nlp" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[statistical-nlp]</a></td><td>Manning, Christopher D. &quot;Foundations of statistical natural language processing&quot;. Ed. Hinrich Schütze. MIT press, 1999.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[statistical-nlp]</a></td><td>Manning, Christopher D. &quot;Foundations of statistical natural language processing&quot;. Ed. Hinrich Schütze. MIT press, 1999.</td></tr>
 </tbody>
 </table>
 </div>
