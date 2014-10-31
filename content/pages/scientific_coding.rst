@@ -10,16 +10,26 @@ provided by Software Carpentry`__.
 
 __ http://software-carpentry.org/lessons.html
 
-Please fill in `the doodle`__ do decide the best meeting time.
-
-__ http://doodle.com/d7bee9i467w3kphc
-
 Once we get familiar with basic topics (for example, array operations, storage,
 plotting). We can have a look to specific problems from linguistics, biology,
 physics or any other field.
 
 Anyone interested in the subject is very welcome to come! Please contact
 Dmitrijs Milajevs <d.milajevs@qmul.ac.uk> if you have any question.
+
+Third meeting: Bigish data processing
+=====================================
+
+Word similarity is the core notion in `distributional semantics`_, where word
+meaning is represented as vectors. In such a vector space word similarity is
+modeled as the distance between two vectors. There are many datasets to evaluate distributional models, for example, `SimLex-999`_.
+
+During this meeting, we will build our own semantic vector space for the words
+in SimLex-999 and measure correlation of model similarity scores with human
+judgments using generators and Pandas.
+
+.. _`distributional semantics`: http://en.wikipedia.org/wiki/Distributional_semantics
+.. _`SimLex-999`: http://arxiv.org/abs/1408.3456
 
 Second meeting: Estimate n-gram probabilities from a text corpus
 ================================================================
