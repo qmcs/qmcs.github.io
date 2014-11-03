@@ -17,8 +17,14 @@ physics or any other field.
 Anyone interested in the subject is very welcome to come! Please contact
 Dmitrijs Milajevs <d.milajevs@qmul.ac.uk> if you have any question.
 
-Third meeting: Bigish data processing
-=====================================
+Third meeting: Biggish data processing
+======================================
+
+:host: `Dmitrijs (Dima) Milajevs <d.milajevs@qmul.ac.uk>`_
+:difficulty: easy
+:download: `co-occurrence.ipynb <{filename}/static/notebooks/co-occurrence.ipynb>`_
+:show: `notebook <http://nbviewer.ipython.org/url/eecs.io/static/notebooks/co-occurrence.ipynb>`_
+
 
 Word similarity is the core notion in `distributional semantics`_, where word
 meaning is represented as vectors. In such a vector space word similarity is
