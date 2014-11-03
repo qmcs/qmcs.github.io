@@ -10,5 +10,6 @@ Computing at EECS
 `Events <{filename}/pages/events.rst>`_
 =======================================
 
-* **3 November, 12:00 – 13:00 (Meeting room, ITL)**: `NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#a-log-linear-language-model>`_.
-* **3 November, 13:00 – 14:00 (Meeting room, ITL)**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Biggish data processing.
+If you want to organize an event, `propose one`__.
+
+__ https://github.com/qmcs/qmcs.github.io/issues/new
