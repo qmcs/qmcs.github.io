@@ -25,7 +25,6 @@ Third meeting: Biggish data processing
 :download: `co-occurrence.ipynb <{filename}/static/notebooks/co-occurrence.ipynb>`_
 :show: `notebook <http://nbviewer.ipython.org/url/eecs.io/static/notebooks/co-occurrence.ipynb>`_
 
-
 Word similarity is the core notion in `distributional semantics`_, where word
 meaning is represented as vectors. In such a vector space word similarity is
 modeled as the distance between two vectors. There are many datasets to evaluate distributional models, for example, `SimLex-999`_.
