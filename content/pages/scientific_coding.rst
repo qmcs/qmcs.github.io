@@ -23,7 +23,9 @@ Third meeting: Biggish data processing
 :host: `Dmitrijs (Dima) Milajevs <d.milajevs@qmul.ac.uk>`_
 :difficulty: easy
 :download: `co-occurrence.ipynb <{filename}/static/notebooks/co-occurrence.ipynb>`_
-:show: `notebook <http://nbviewer.ipython.org/url/eecs.io/static/notebooks/co-occurrence.ipynb>`_
+:show: notebook__
+
+__ http://nbviewer.ipython.org/url/eecs.io/static/notebooks/co-occurrence.ipynb
 
 Word similarity is the core notion in `distributional semantics`_, where word
 meaning is represented as vectors. In such a vector space word similarity is
@@ -42,7 +44,9 @@ Second meeting: Estimate n-gram probabilities from a text corpus
 :host: `Dmitrijs (Dima) Milajevs <d.milajevs@qmul.ac.uk>`_
 :difficulty: easy
 :download: `n-grams.ipynb <{filename}/static/notebooks/n-grams.ipynb>`_
-:show: `notebook <http://nbviewer.ipython.org/url/eecs.io/static/notebooks/n-grams.ipynb>`_
+:show: notebook__
+
+__ http://nbviewer.ipython.org/url/eecs.io/static/notebooks/n-grams.ipynb
 
 After the `first meeting of the NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#introduction-to-n-gram-models-oct-6>`_ there was an idea to replicate Table 6.3 in [statistical-nlp]_.
 
