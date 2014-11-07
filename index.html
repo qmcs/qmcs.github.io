@@ -158,45 +158,117 @@
 
 
     <h2 class="post-item-title" itemprop="name">
-      <a title="Python environment for scientific computing" data-pjax="" itemprop="url" href="http://eecs.io/python-environment-for-scientific-computing.html">
-        Latest blog post: Python environment for scientific computing
+      <a title="Robocode" data-pjax="" itemprop="url" href="http://eecs.io/robocode.html">
+        Latest blog post: Robocode
       </a>
     </h2>
 
-    <p><a class="reference external" href="http://conda.pydata.org/miniconda.html">http://conda.pydata.org/miniconda.html</a></p>
-<p>Install the package</p>
-<div class="highlight"><pre><span class="c"># Download a package for my platform (MacOS X)</span>
-wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-MacOSX-x86_64.sh
-
-<span class="c"># Make it executable</span>
-chmod +x Miniconda3-3.7.0-MacOSX-x86_64.sh
-
-<span class="c"># Run the installer</span>
-./Miniconda3-3.7.0-MacOSX-x86_64.sh
-<span class="c"># Press ENTER to see license agreement.</span>
-<span class="c"># (Read it) and press `q` to continue</span>
-<span class="c"># Accept it by typing `yes`.</span>
-<span class="c"># Note the installation prefix (/Users/dimazest/miniconda3).</span>
-<span class="c"># I&#39;ve decided *not* to add miniconda install location to my PATH (to keep it tidy).</span>
-</pre></div>
-<p>Update it</p>
-<div class="highlight"><pre>~/miniconda3/bin/conda update conda
-</pre></div>
-<p>Libraries</p>
-<div class="highlight"><pre>~/miniconda3/bin/conda install pandas scikit-learn ipython gensim
-</pre></div>
-<p>Simple testing</p>
-<p>..code block:: python</p>
+    <p>Robocode is a simple robot simulator, designed to give insight into how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.</p>
+<p></p>
+<h2>How to install</h2>
+<p>Robocode is written in Java, and can easily be installed simply by running the <strong>.jar file</strong>.</p>
+<ol>
+<li>Go to <a href="http://sourceforge.net/projects/robocode/files/robocode/1.9.2.3/">this link</a>.</li>
+<li>Choose <strong>robocode-1.9.2.3-setup.jar</strong> and save it somewhere you can easily find it, like your desktop.</li>
+<li>Run the file, and follow the instruction. Install it somewhere you will remember (you will need to know later).</li>
+<li>After completion, you will have a desktop icon, double click it to run Robocode.</li>
+</ol>
+<h2>Get familiar</h2>
+<p>To get a feeling how Robocode works, let's do a quick demonstration how the robots act.</p>
+<p>Start by clicking <strong>Battle</strong> in the top menu, and choose <strong>New</strong>. Here you will see a list of sample robots. By looking at the names, you might be able to guess how to robots will act. Pick 3-5 different ones you like, by selecting one and clicking <strong>Add</strong>. You can also remove robots that are selected by pressing <strong>Remove</strong>.</p>
+<p>When you've selected your desired contestants. Click <strong>Start Battle</strong> to begin.</p>
+<p>The robots will start to fight. In the window you will have several buttons and sliders. In the left bottom corner you find your typical <strong>Start/Stop/Pause</strong> functionality among others. On the bottom of the screen you will have a slider to control the speed of the match.</p>
+<p>A match consists of 10 rounds, and the robots gather points based on how well they do. The total score is calculated from:</p>
+<ul>
+<li>How long it survives.</li>
+<li>How much damage it deals to other robots (bullets or ramming).</li>
+</ul>
 <blockquote>
-<p>~/miniconda3/bin/python</p>
-<pre class="doctest-block">
-&gt;&gt;&gt; import numpy
-&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; np.array([1, 2, 3]) + np.array([10, 20, 30])
-array([11, 22, 33])
-</pre>
+<p><strong>Note:</strong></p>
+<p>The best robot is not necessarily the last one standing. Find the perfect balance between surviving, and dealing damage.</p>
 </blockquote>
+<p>Spend some time testing the different sample robots, gather ideas on how you want your robot to work.</p>
+<h2>Make your own robot</h2>
+<p>Now that you have seen how Robocode works, it's time to make your own!</p>
+<ol>
+<li>Click on <strong>Robot</strong> -&gt; <strong>Source Editor</strong> to open the editor.</li>
+<li>To make a new robot simply click <strong>File</strong> -&gt; <strong>New</strong> -&gt; <strong>Robot</strong>.</li>
+<li>Give your robot a good name.</li>
+<li>Use your team's name package name</li>
+</ol>
+<p>You will now be presented with the editor. It has already some code in it to give you a start. Take a look through it, and make sure to read the comments, they have a lot of useful information.</p>
+<p>Lets go through the most important methods.</p>
+<h3>Methods</h3>
+<div class="highlight"><pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{}</span>
+</pre></div>
 
+
+<p>This is the main method. This is were the majority of your robots behavior is defined. It should have a while-loop that continues to run forever, for example by using <strong>while(true)</strong>, like in the example code.</p>
+<blockquote>
+<p><strong>Note:</strong>
+A while-loop is a loop that will run as long as the statement between the brackets is true. If you put <strong>true</strong>, it will run forever. If you put <strong>i &lt; 2</strong>, it will only run as long as the variable <strong>i</strong> is less than 2.</p>
+</blockquote>
+<p>What you write before the while-loop will only get executed once. Here you can have your initialization of your robot. You can change the color of the robot, set a starting position of the gun, or get information about the battlefield size and heading (this is more complicated).</p>
+<p>Inside the while-loop you will write the algorithm that control your robot. Don't be intimated by the word algorithm, no prior knowledge is needed. By looking at the example code you can see some simple examples.</p>
+<ul>
+<li><strong>ahead(100);</strong> will move the robot 100 pixels forward.</li>
+<li><strong>turnGunRight(360);</strong> turns the gun 360 degrees, a full resolution.</li>
+<li><strong>back(100);</strong>  will move the robot 100 pixels backwards.</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> 
+You choose the values, depending how much you want to move or turn. They are not set in stone.</p>
+</blockquote>
+<p>You can put as many lines as you want in the loop, but remember the loop will be repeated infinitely. It does not need to be very long to be effective.</p>
+<hr />
+<div class="highlight"><pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onScannedRobot</span><span class="o">(</span><span class="n">ScannedRobotEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{}</span>
+</pre></div>
+
+
+<p>This method will automatically get called if another robot is scanned. This method is called automatically by the game, as long as the robot is moving, turning its body, turning its gun, or turning its radar.</p>
+<p>Here you write what you want to happen when a robot is scanned. Will you fire or retreat?</p>
+<hr />
+<div class="highlight"><pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onHitByBullet</span><span class="o">(</span><span class="n">HitByBulletEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{}</span>
+</pre></div>
+
+
+<p>This get executed if you get hit. Is this the time to run away or fire all your guns?</p>
+<hr />
+<div class="highlight"><pre><span class="kd">public</span> <span class="kt">void</span> <span class="nf">onHitWall</span><span class="o">(</span><span class="n">HitWallEvent</span> <span class="n">e</span><span class="o">)</span> <span class="o">{}</span>
+</pre></div>
+
+
+<p>This get executed if you hit a wall. You know at this point you can't go any further, maybe it's best to back up, or turn 90 degrees to get away.</p>
+<hr />
+<h3>Save &amp; Compile</h3>
+<p>While designing it's smart to save your project to avoid loosing your work in case something goes wrong. When you have designed your robot, it's time to save and compile.</p>
+<blockquote>
+<p><strong>Note:</strong>
+The compiler is what translates the code from a language we can understand (Latin alphabet), into a language the computer understands (binary, 0 and 1).</p>
+</blockquote>
+<p>Simply press <strong>Compiler</strong> -&gt; <strong>Compile</strong>, or press <strong>ctrl+B</strong>.</p>
+<p>After its compiled it's ready to see what you have made. Go back to the <strong>Robocode window</strong>, and start a new match like we did before, <strong>Battle</strong> -&gt; <strong>New</strong>.</p>
+<p>You will now see that your robot is in the list of robots. Add it, and maybe a few opponents to see how it works.</p>
+<p>After testing it you might figure out that it does not work like you first intended, or you have come up with new improvements. In that case, go back to the editor and change your code again until you're happy wit the result. </p>
+<hr />
+<h2>Where can I find more methods and commands?</h2>
+<p>Robocode has a bunch of built in methods and commands you can use to control your robot. So far we have only touched a few very basic ones. If you want to read more on how these method work or need to look up how to do certain things, take a look at these sites:</p>
+<ul>
+<li><a href="http://robocode.sourceforge.net/docs/robocode/">Robot Methods</a></li>
+<li><a href="http://robowiki.net/wiki/Robocode">Robocode Wiki</a></li>
+</ul>
+<hr />
+<h2>Fight in the tournament (Robocode event)</h2>
+<p>When the time is up, you will have to deliver your robot. Remember it needs to be compiled!</p>
+<ol>
+<li>To find it, locate the folder <strong>"Robocode"</strong> where you installed robocode.</li>
+<li>Navigate to <strong>Robots</strong> and find the folder <strong>"your team's name"</strong>.</li>
+<li>Make a copy of it and put it on your desktop.</li>
+<li>Make sure it only contains the robot you want to submit, only 1 robot per team.</li>
+<li>It <strong>must</strong> contain <strong>yourRobot.java</strong> and <strong>yourRobot.class</strong>.</li>
+<li>We will pass around USB sticks, put the folder onto it.</li>
+</ol>
+<p>Good luck!</p>
 
   </section>
 <footer class="footer" role="contentinfo">
