@@ -4,7 +4,10 @@ Events
 
 :date: 2014-10-09 20:48
 :save_as: events/index.html
-:URL: events/index.html
+:URL: events/
+
+* **26 November, 18:30 – 21:00 (ENG 209)**: `Go London User Group Meetup <http://www.meetup.com/Go-London-User-Group/>`_.
+* **29 November, 07:30 – 18:00**: `Trip to Bletchley park <{filename}/articles/020-bletchley_park.rst>`_.
 
 
 If you want to organize an event, `open an issue`__.
