@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2014-10-12T00:00:00+01:00</updated><entry><title>Robocode</title><link href="http://eecs.io/robocode.html" rel="alternate"></link><updated>2014-10-12T00:00:00+01:00</updated><author><name>René Birkeland</name></author><id>tag:eecs.io,2014-10-12:robocode.html</id><summary type="html">&lt;p&gt;Robocode is a simple robot simulator, designed to give insight into how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2014-11-10T11:04:00+00:00</updated><entry><title>Trip to Bletchley park</title><link href="http://eecs.io/trip-to-bletchley-park.html" rel="alternate"></link><updated>2014-11-10T11:04:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2014-11-10:trip-to-bletchley-park.html</id><summary type="html">&lt;p&gt;The EECS society will be making its 3rd annual visit on the &lt;strong&gt;29th of November&lt;/strong&gt;
+to Bletchley park (home of the code breakers) and the national museum of
+computing, where the first programmable computer (Colossus) was renovated.&lt;/p&gt;
+&lt;p&gt;Bletchley park is also a war museum and a part of British heritage so well worth
+a visit. The school offers a big discount on the overall visit and is limited to
+the coach size of 49 (so be quick!). The society does this trip every year as a
+part remembrance to the war heroes of Bletchley and of course to the roots of
+our discipline in EECS (birth place of the computer and that Colossus was made
+by an Electronic Engineer).&lt;/p&gt;
+&lt;p&gt;If you want to join, send an email to &lt;a class="reference external" href="mailto:epp-organisers&amp;#64;eecs.qmul.ac.uk"&gt;epp-organisers&amp;#64;eecs.qmul.ac.uk&lt;/a&gt;.&lt;/p&gt;
+</summary><category term="trip"></category></entry><entry><title>Robocode</title><link href="http://eecs.io/robocode.html" rel="alternate"></link><updated>2014-10-12T00:00:00+01:00</updated><author><name>René Birkeland</name></author><id>tag:eecs.io,2014-10-12:robocode.html</id><summary type="html">&lt;p&gt;Robocode is a simple robot simulator, designed to give insight into how programming works. A simple robot can be written in just a few minutes - but perfecting a bot can take months. The robots will enter the battlefield and fight to the death.&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;h2&gt;How to install&lt;/h2&gt;
 &lt;p&gt;Robocode is written in Java, and can easily be installed simply by running the &lt;strong&gt;.jar file&lt;/strong&gt;.&lt;/p&gt;
