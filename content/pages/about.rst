@@ -14,10 +14,11 @@ tinker with all things intriguing ranging from assembly languages to interface
 design. With a growing array of technologies we can discover and create new
 things every day.
 
-`Join us <http://www.qmsu.org/groups/ESociety/>`__, and share our passion.
+`Join us <{filename}/pages/engage>`__, and share our passion.
 
-If you have any questions contact `Henrik Skogmo <h.skogmo@se13.qmul.ac.uk>`__
-or `Dmitrijs Milajevs <d.milajevs@qmul.ac.uk>`__.
+If you have any questions contact `Henrik Skogmo <h.skogmo@se13.qmul.ac.uk>`__,
+`Dmitrijs Milajevs <d.milajevs@qmul.ac.uk>`__ or
+`the society organisers list <epp-organisers@eecs.qmul.ac.uk>`__.
 
 Activities
 ==========
