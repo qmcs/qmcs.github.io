@@ -6,9 +6,6 @@ Events
 :save_as: events/index.html
 :URL: events/
 
-* **26 November, 18:30 – 21:00 (ENG 209)**: `Go London User Group Meetup <http://www.meetup.com/Go-London-User-Group/>`_.
-* **29 November, 07:30 – 18:00**: `Trip to Bletchley park <{filename}/articles/020-bletchley_park.rst>`_.
-
 
 If you want to organize an event, `open an issue`__.
 
@@ -19,6 +16,8 @@ Past events
 
 2014
 ----
+* **26 November, 18:30 – 21:00 (ENG 209)**: `Go London User Group Meetup <http://www.meetup.com/Go-London-User-Group/>`_.
+* **29 November, 07:30 – 18:00**: `Trip to Bletchley park <{filename}/articles/020-bletchley_park.rst>`_.
 * **3 November, 12:00 – 13:00 (Meeting room, ITL)**: `NLP seminar <http://www.eecs.qmul.ac.uk/~dm303/pages/nlp-seminar.html#a-log-linear-language-model>`_.
 * **3 November, 13:00 – 14:00 (Meeting room, ITL)**: `Scientific coding workshop <{filename}/pages/scientific_coding.rst>`_: Bigish data processing.
 * **22 October, 14:00 (Electronics lab)**: `Robocode <{filename}/articles/019-robocode.md>`_.
