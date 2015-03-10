@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2015-03-09T00:00:00+00:00</updated><entry><title>Alexandre González</title><link href="http://eecs.io/alexandre-gonzalez.html" rel="alternate"></link><updated>2015-03-09T00:00:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2015-03-09:alexandre-gonzalez.html</id><summary type="html">&lt;h2&gt;Who are you and what are you doing?&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2015-03-10T10:07:00+00:00</updated><entry><title>Python environment for scientific computing</title><link href="http://eecs.io/python-environment-for-scientific-computing.html" rel="alternate"></link><updated>2015-03-10T10:07:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2015-03-10:python-environment-for-scientific-computing.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;Miniconda&lt;/a&gt; is a great way to get
+working Python environment on variety of operating systems. This tutorial goes
+trough the necessary steps to get a Python environment with common scientific
+packages.&lt;/p&gt;
+&lt;p&gt;Check out &lt;a class="reference external" href="http://holdenweb.blogspot.co.uk/2015/02/how-to-get-bits-of-python-you-need.html"&gt;Steve Holden's video&lt;/a&gt; going trough the same process and his
+valuable comments of what's going on.&lt;/p&gt;
+&lt;div class="section" id="install-miniconda"&gt;
+&lt;h2&gt;Install miniconda&lt;/h2&gt;
+&lt;p&gt;Grab miniconda for your platform from the &lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;project page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On Mac OS X or Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Download a package for my platform (MacOS X)&lt;/span&gt;
+wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-MacOSX-x86_64.sh
+
+&lt;span class="c"&gt;# Make it executable&lt;/span&gt;
+chmod +x Miniconda3-3.7.0-MacOSX-x86_64.sh
+
+&lt;span class="c"&gt;# Run the installer&lt;/span&gt;
+./Miniconda3-3.7.0-MacOSX-x86_64.sh
+&lt;span class="c"&gt;# Press ENTER to see license agreement.&lt;/span&gt;
+&lt;span class="c"&gt;# (Read it) and press `q` to continue&lt;/span&gt;
+&lt;span class="c"&gt;# Accept it by typing `yes`.&lt;/span&gt;
+&lt;span class="c"&gt;# Note the installation prefix (/Users/dimazest/miniconda3).&lt;/span&gt;
+&lt;span class="c"&gt;# I&amp;#39;ve decided *not* to add miniconda install location to my PATH&lt;/span&gt;
+&lt;span class="c"&gt;# (to keep it tidy and avoid confusion).&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On Windows, download a corresponding installer from
+&lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;http://conda.pydata.org/miniconda.html&lt;/a&gt; and run it. It's fine to add Python to
+your path on Windows, because the OS doesn't provide it's own Python
+installation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="prepare-python-environments"&gt;
+&lt;h2&gt;Prepare Python environments&lt;/h2&gt;
+&lt;p&gt;We might get an outdated version, so it's a good idea to update the installation.&lt;/p&gt;
+&lt;p&gt;Mac OS X or Linux:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;~/miniconda3/bin/conda update conda
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Windows:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;conda update conda
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As you noticed, you need to prefix &lt;tt class="docutils literal"&gt;conda&lt;/tt&gt; with &lt;tt class="docutils literal"&gt;~/miniconda3/bin/&lt;/tt&gt; because
+it's not in the path on Mac OS X or Linux.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="create-python-environments"&gt;
+&lt;h2&gt;Create Python environments&lt;/h2&gt;
+&lt;p&gt;Now we are ready to make an environment. It's a good practice to keep a
+dedicated environment per project. Imagine you have to projects, one is a web
+project and another is a scientific library. The scientific library doesn't need
+to the web stack your web application requires and vice-versa. Also this
+prevents versioning conflicts. When one project requires an old version of a
+library, and another requires the newest version of the same library.&lt;/p&gt;
+&lt;p&gt;These commands create tow virtual environments called &lt;cite&gt;py34&lt;/cite&gt; and &lt;cite&gt;py27&lt;/cite&gt; with a
+specific Python version and the packages included in &lt;a class="reference external" href="http://docs.continuum.io/anaconda/pkg-docs.html"&gt;anaconda&lt;/a&gt;. The environment names are
+not the best, but they are fine for the demonstration purposes. Prefer to name
+environments after the projects they are created for. Prefer to use Python 3,
+because it's the current version of Python. Use Python 2 only if you have to
+deal with &lt;a class="reference external" href="https://caniusepython3.com/"&gt;software&lt;/a&gt; that is &lt;a class="reference external" href="http://py3readiness.org/"&gt;not compatible with
+Python 3&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;~/miniconda3/bin/conda create -n py34 anaconda &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;3.4  &lt;span class="c"&gt;# Python 3.4&lt;/span&gt;
+~/miniconda3/bin/conda create -n py27 anaconda &lt;span class="nv"&gt;python&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;2.7  &lt;span class="c"&gt;# Optionally, Python 2.7&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Activate one of them:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Mac or Linux&lt;/span&gt;
+&lt;span class="nb"&gt;source&lt;/span&gt; ~/miniconda3/bin/activate py34
+&lt;span class="c"&gt;# Windows&lt;/span&gt;
+&lt;span class="nb"&gt;source &lt;/span&gt;activate py34
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you are ready to run &lt;a class="reference external" href="http://ipython.org/notebook.html"&gt;IPython Notebook&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ipython notebook
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+</summary><category term="python"></category></entry><entry><title>Alexandre González</title><link href="http://eecs.io/alexandre-gonzalez.html" rel="alternate"></link><updated>2015-03-09T00:00:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2015-03-09:alexandre-gonzalez.html</id><summary type="html">&lt;h2&gt;Who are you and what are you doing?&lt;/h2&gt;
 &lt;p&gt;My name is Álex González (&lt;a href="http://twitter.com/agonzalezro"&gt;@agonzalezro&lt;/a&gt; on
 twitter) and what I do in my day to day basis is programming in
 &lt;a href="https://golang.org/"&gt;Go&lt;/a&gt; and &lt;a href="http://rubyonrails.org/"&gt;RoR&lt;/a&gt; (mainly Go) plus some
