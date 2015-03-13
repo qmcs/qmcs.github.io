@@ -27,10 +27,10 @@ On Mac OS X or Linux:
 .. code-block:: bash
 
     # Download a package for my platform (MacOS X)
-    wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-MacOSX-x86_64.sh
+    wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 
     # Make it executable
-    chmod +x Miniconda3-3.7.0-MacOSX-x86_64.sh
+    chmod +x Miniconda3-latest-MacOSX-x86_64.sh
 
     # Run the installer
     ./Miniconda3-3.7.0-MacOSX-x86_64.sh
@@ -98,7 +98,7 @@ Activate one of them:
     # Mac or Linux
     source ~/miniconda3/bin/activate py34
     # Windows
-    source activate py34
+    activate py34
 
 Now you are ready to run `IPython Notebook <http://ipython.org/notebook.html>`_:
 
