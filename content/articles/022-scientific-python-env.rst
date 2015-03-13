@@ -33,7 +33,7 @@ On Mac OS X or Linux:
     chmod +x Miniconda3-latest-MacOSX-x86_64.sh
 
     # Run the installer
-    ./Miniconda3-3.7.0-MacOSX-x86_64.sh
+    ./Miniconda3-latest-MacOSX-x86_64.sh
     # Press ENTER to see license agreement.
     # (Read it) and press `q` to continue
     # Accept it by typing `yes`.
