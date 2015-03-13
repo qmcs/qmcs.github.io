@@ -16,7 +16,7 @@ wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 chmod +x Miniconda3-latest-MacOSX-x86_64.sh
 
 &lt;span class="c"&gt;# Run the installer&lt;/span&gt;
-./Miniconda3-3.7.0-MacOSX-x86_64.sh
+./Miniconda3-latest-MacOSX-x86_64.sh
 &lt;span class="c"&gt;# Press ENTER to see license agreement.&lt;/span&gt;
 &lt;span class="c"&gt;# (Read it) and press `q` to continue&lt;/span&gt;
 &lt;span class="c"&gt;# Accept it by typing `yes`.&lt;/span&gt;
