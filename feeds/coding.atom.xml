@@ -10,10 +10,10 @@ valuable comments of what's going on.&lt;/p&gt;
 &lt;p&gt;Grab miniconda for your platform from the &lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;project page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;On Mac OS X or Linux:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Download a package for my platform (MacOS X)&lt;/span&gt;
-wget http://repo.continuum.io/miniconda/Miniconda3-3.7.0-MacOSX-x86_64.sh
+wget http://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 
 &lt;span class="c"&gt;# Make it executable&lt;/span&gt;
-chmod +x Miniconda3-3.7.0-MacOSX-x86_64.sh
+chmod +x Miniconda3-latest-MacOSX-x86_64.sh
 
 &lt;span class="c"&gt;# Run the installer&lt;/span&gt;
 ./Miniconda3-3.7.0-MacOSX-x86_64.sh
@@ -63,7 +63,7 @@ Python 3&lt;/a&gt;.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Mac or Linux&lt;/span&gt;
 &lt;span class="nb"&gt;source&lt;/span&gt; ~/miniconda3/bin/activate py34
 &lt;span class="c"&gt;# Windows&lt;/span&gt;
-&lt;span class="nb"&gt;source &lt;/span&gt;activate py34
+activate py34
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now you are ready to run &lt;a class="reference external" href="http://ipython.org/notebook.html"&gt;IPython Notebook&lt;/a&gt;:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;ipython notebook
