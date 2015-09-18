@@ -72,6 +72,7 @@ TWITTER_USERNAME = 'QMComputing'
 
 STATIC_PATHS = (
     'extra/CNAME',
+    'extra/i.sh',
     'static/article_covers',
     'static/author_images',
     'static/cv',
@@ -81,6 +82,7 @@ STATIC_PATHS = (
 
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/i.sh': {'path': 'i.sh'},
 }
 
 EDIT_CONTENT_URL = 'https://github.com/qmcs/qmcs.github.io/edit/pelican/{file_path}'
