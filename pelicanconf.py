@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-import pelicanium
-
+import os
+import sys
 
 AUTHOR = 'Contributors'
 SITENAME = 'EECS Society'
@@ -20,11 +20,13 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-THEME = pelicanium.theme_path
+THEME = 'theme'
 EXTRA_TEMPLATES_PATHS = 'templates',
 
 ARTICLE_EXCLUDES = ('pages', 'authors')
 PAGE_EXCLUDES = ('authors',)
+
+sys.path.append('src/pelican_extended_authors')
 
 PLUGIN_PATH = 'src/pelican-plugins'
 PLUGINS = (
