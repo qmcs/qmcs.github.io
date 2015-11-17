@@ -1,17 +1,77 @@
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
+
 {% block content %}
 
-    {% block featured %}{% endblock %}
+{% include 'hero-member.html' %}
 
-    <section class="post-list">
-      {% for article in (articles_page.object_list if articles_page else articles) %}
-        {% include 'article_summary.html' %}
-      {% endfor%}
-    </section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 lots-of-news">
+        <div class="news-item">
+          <h1>Lorem Ipsum</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="event-breaker"></div>
 
-    {% include 'pagination.html' %}
+        <div class="event-item item-green">
+          <div class="event-info">
+            <div class="event-header">Raspberry Pi Club</div>
+            <div class="event-text">14.30 - 16.00 at Electronics Lab</div>
+            <div class="event-infolink"></div>
+          </div>
+          <a href="#">
+          <div class="event-action">
+            <i class="fa fa-ticket"></i>
+          </div>
+          </a>
+        </div>
 
-    {#{> footer this}#}
+        <div class="event-item item-red">
+          <div class="event-info">
+            <div class="event-header">Raspberry Pi Club</div>
+            <div class="event-text">14.30 - 16.00 at Electronics Lab</div>
+            <div class="event-infolink"></div>
+          </div>
 
+        </div>
+        <div class="event-item item-blue">
+          <div class="event-info">
+            <div class="event-header">Raspberry Pi Club</div>
+            <div class="event-text">14.30 - 16.00 at Electronics Lab</div>
+            <div class="event-infolink"></div>
+          </div>
+          <a href="#">
+          <div class="event-action">
+            <i class="fa fa-ticket"></i>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock content %}

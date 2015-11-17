@@ -1,28 +1,59 @@
 {% extends "base.html" %}
 {% block content %}
-  <section>
 
-    {{ page.content }}
+{% include 'hero-member.html' %}
 
-    <hr>
+<div class="container">
+<div class="row">
+  <div class="col-sm-8 lots-of-news">
+    <section>
 
-    <p class="text-center">
-      <!-- <a title="About us" class="btn btn-big" href="{{ SITE_URL }}/pages/about.html">About us</a> -->
-      <a title="Write an article" class="btn btn-big" href="https://github.com/qmcs/qmcs.github.io#writing-an-article">Contribute</a>
-      <a title="Join us" class="btn btn-primary btn-big" href="{{ SITEURL }}/engage">Join us</a>
-    </p>
+      {{ page.content }}
 
-    <hr>
+      {% set article = articles[0] %}
 
-    {% set article = articles[0] %}
+      <div class="news-item">
+        <h1><a title="{{ article.title }}" data-pjax="" itemprop="url" href="{{ SITEURL }}/{{ article.url }}">Latest post: {{ article.title }}</a></h1>
+        <p>
+          {{ article.content }}
+        </p>
 
-    <h2 class="post-item-title" itemprop="name">
-      <a title="{{ article.title }}" data-pjax="" itemprop="url" href="{{ SITEURL }}/{{ article.url }}">
-        Latest blog post: {{ article.title }}
-      </a>
-    </h2>
+      </div>
 
-    {{ article.content }}
+    </section>
+  </div>
 
-  </section>
+  <div class="col-sm-4">
+    <div class="event-breaker"></div>
+
+      <div class="event-item item-green">
+        <div class="event-info">
+          <div class="event-header">Raspberry Pi Club</div>
+          <div class="event-text">14.30 - 16.00 at Electronics Lab</div>
+          <div class="event-infolink"></div>
+        </div>
+        <a href="#">
+          <div class="event-action">
+            <i class="fa fa-ticket"></i>
+          </div>
+        </a>
+      </div>
+
+      <div class="event-item item-green">
+        <div class="event-info">
+          <div class="event-header">Raspberry Pi Club</div>
+          <div class="event-text">14.30 - 16.00 at Electronics Lab</div>
+          <div class="event-infolink"></div>
+        </div>
+        <a href="#">
+          <div class="event-action">
+            <i class="fa fa-ticket"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}

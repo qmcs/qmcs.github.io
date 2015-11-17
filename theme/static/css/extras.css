@@ -1,0 +1,36 @@
+#menu-pane {
+
+}
+
+/*
+#menu-pane li a{
+	background-color: white;
+	font-family: Verdana;
+	font-weight: 14px;
+	font-size: 14px;
+	font-style: bold;
+	color: rgb(13, 71, 161);
+	height: 45px;
+	border-radius: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+}
+
+#menu-pane li a {
+
+	height: 30px;
+}
+
+#menu-pane li a:active {
+	color: white;
+	background-color: rgb(13, 71, 161);
+}*/
+
+.hero-text {
+	text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+#navbarCollapse {
+	padding: 5px 5px 5px 5px
+}
