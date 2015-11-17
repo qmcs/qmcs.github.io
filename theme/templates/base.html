@@ -73,8 +73,10 @@
 
   </div>
 
-  {% block content %}
+  {% block content_wrapper %}
+    {% block content %}
 
+    {% endblock %}
   {% endblock %}
 
   <div class="bg-darkblue">

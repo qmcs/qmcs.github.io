@@ -28,13 +28,21 @@
 	font-weight: 700;
 }
 .news-item h1 {
-	font-family: 'Josefin Slab', serif;
-	font-weight: 400;
-	font-size: 28px;
+	font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
 	margin-bottom: 5px;
 }
+.news-item h2 {
+	font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+}
 .news-item p {
-	text-align: justify;
+	/* text-align: justify; */
+	font: 400 20px/1.6 "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+	color: #333;
+	line-height: 1.4;
 }
 .footer-links h1 {
 	font-weight: 600;
