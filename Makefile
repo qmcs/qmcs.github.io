@@ -57,6 +57,7 @@ stopserver:
 	kill -9 `cat pelican.pid`
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
+	@echo 'Log files are available for inspection in ./log folder'
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)

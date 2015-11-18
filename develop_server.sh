@@ -60,14 +60,20 @@ function shut_down(){
 }
 
 function start_up(){
+  mkdir -p log
+  local srv_stdout="${PWD}/log/server_stdout.log"; echo -n "" > $srv_stdout
+  local srv_stderr="${PWD}/log/server_stderr.log"; echo -n "" > $srv_stderr
+  local pelican_stdout="${PWD}/log/pelican_stdout.log"; echo -n "" > $pelican_stdout
+  local pelican_stderr="${PWD}/log/pelican_stderr.log"; echo -n "" > $pelican_stderr
+
   local port=$1
   echo "Starting up Pelican and pelican.server"
   shift
-  $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS &
+  $PELICAN --debug --autoreload -r $INPUTDIR -o $OUTPUTDIR -s $CONFFILE $PELICANOPTS 1>> $pelican_stdout 2>> $pelican_stderr &
   pelican_pid=$!
   echo $pelican_pid > $PELICAN_PID
   cd $OUTPUTDIR
-  $PY -m pelican.server $port &
+  $PY -m pelican.server $port 1>> $srv_stderr 2>> $srv_stdout &
   srv_pid=$!
   echo $srv_pid > $SRV_PID
   cd $BASEDIR
@@ -91,6 +97,7 @@ port=''
 
 if [[ $1 == "stop" ]]; then
   shut_down
+  echo "Log files are available for inspection in ./log folder"
 elif [[ $1 == "restart" ]]; then
   shut_down
   start_up $port

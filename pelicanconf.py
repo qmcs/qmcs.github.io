@@ -28,7 +28,7 @@ PAGE_EXCLUDES = ('authors',)
 
 sys.path.append('src/pelican_extended_authors')
 
-PLUGIN_PATH = 'src/pelican-plugins'
+PLUGIN_PATHS = ['src/pelican-plugins']
 PLUGINS = (
     'pelican_edit_url',
     'pelican_extended_authors',
