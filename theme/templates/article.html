@@ -3,52 +3,59 @@
 {% block banner %}{% endblock %}
 {% block content_wrapper %}
 
-<section class="wrapper wrapper-post">
-  <div class="wrapper-container">
-    <article itemscope itemtype="http://schema.org/BlogPosting" role="article" class="post {#{post_class}#}">
-      {% set author_bibliography = authors_info.get(article.author) %}
-      <section class="post-container">
-        <header class="post-header">
-          {% include 'post_item_list.html' %}
-          {% block post_title %}
-            <h1 itemprop="name headline" class="post-title"><a href="{{ SITEURL }}/{{ article.url }}" itemprop="url" data-pjax title="{{ article.title|striptags }}">{{ article.title }}</a></h1>
-          {% endblock %}
-          {#{! A subtitle not available in Ghosts yet }#}
-          <!--h2 itemprop="about" class="post-subtitle"></h2-->
-        </header>
-        <aside class="post-side">
-          <div class="post-author">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 lots-of-news">
+      <section>
+
+      <div class="news-item">
+        
+        <div class="">
+          <div class="post-meta-info">
+            {% include 'post_item_list.html' %}
+          </div>
+          <div class="post-social">
+              <h4 class="post-footer-heading">Spread the word</h4>
+              <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
+              <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
+              <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
+          </div>
+        </div>
+
+        <h1><a title="{{ article.title }}" data-pjax="" itemprop="url" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+        <p>
+          {{ article.content }}
+        </p>
+      </div>
+
+      </section>
+    </div>
+    <div class="col-sm-4">
+      <div class="post-author">
+
+            {% set author_bibliography = authors_info.get(article.author) %}
+            
             {% if author_bibliography.cover_image %}
-              <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-avatar">
-                <img src="{{ SITEURL }}/{{ author_bibliography.cover_image }}" alt="{{article.author}}">
-              </a>
+
+            <!-- todo: move inline css to main.css -->
+            <div style="width: 80px;" class="pull-left">
+                <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-avatar">
+                  <img src="{{ SITEURL }}/{{ author_bibliography.cover_image }}" alt="{{article.author}}">
+                </a>
+            </div>
             {% endif %}
-            <div class="post-author-info">
+            
+            <div class="post-author-info pull-left">
+              <h4 class="post-footer-heading">Written By</h4>
               <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-name">
                 {{ article.author }}
               </a>
-              <p class="post-author-bio">{{ author_bibliography.summary }}</p>
             </div>
-          </div>
-        </aside>
-        <div itemprop="articleBody" class="post-body">
-          {{ article.content }}
-        </div>
-        <footer class="post-footer">
-          <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="post-author">
-            {% if author_bibliography.cover_image %}
-              <a href="{{ SITEURL }}/{{ article.author.url }}" class="post-author-avatar">
-                <img src="{{ SITEURL }}/{{ author_bibliography.cover_image }}" alt="{{article.author}}">
-              </a>
-            {% endif %}
+            
+            <div class="clearfix"></div>
+
             <div class="post-author-info">
-              <h4 class="post-footer-heading">Written By</h4>
-
-              <a href="{{ SITEURL }}/{{ article.author.url }}" itemprop="url" class="post-author-name">
-                <span itemprop="name">{{ article.author }}</span>
-              </a>
-
-              <p itemprop="description" class="post-author-bio">{{ author_bibliography.summary }}</p>
+              <p class="post-author-bio">{{ author_bibliography.summary }}</p>
 
               {% if author_bibliography.homepage %}
               <p class="post-author-website">
@@ -73,25 +80,11 @@
                   {{ article.locale_date }}
                 </time>
               </p>
-
             </div>
           </div>
-          <div class="post-social">
-            <h4 class="post-footer-heading">Spread the word</h4>
-            <a href="#" data-action="share-twitter"><i class="fa fa-fw fa-lg fa-twitter"></i></a>
-            <a href="#" data-action="share-facebook"><i class="fa fa-fw fa-lg fa-facebook"></i></a>
-            <a href="#" data-action="share-gplus"><i class="fa fa-fw fa-lg fa-google-plus"></i></a>
-          </div>
-        </footer>
-      </section>
-
-    {% include 'disqus.html' %}
-
-    </article>
-
-    {% include 'footer.html' %}
-
+    </div>
   </div>
-</section>
+</div>
+
 
 {% endblock content_wrapper %}

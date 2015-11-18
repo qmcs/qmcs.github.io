@@ -29,8 +29,8 @@
 }
 .news-item h1 {
 	font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	font-weight: 600;
-	font-size: 24px;
+	font-weight: 700;
+	font-size: 36px;
 	margin-bottom: 5px;
 }
 .news-item h2 {
@@ -40,7 +40,8 @@
 }
 .news-item p {
 	/* text-align: justify; */
-	font: 400 20px/1.6 "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+	/* font: 400 20px/1.6 "Droid Serif", Georgia, Cambria, "Times New Roman", Times, serif; */
+	font: 400 16px/1.6 "Roboto", sans-serif;
 	color: #333;
 	line-height: 1.4;
 }
@@ -114,6 +115,69 @@
 	margin-bottom: -8px;
 }
 
+.post-author {
+	text-align: left;
+}
+.post-author-avatar {
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+.post-author-avatar img {
+	border-radius: 100%;
+	width: 100%;
+}
+.post-author-name, .post-info {
+	line-height: 1;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+}
+.post-author-info p {
+	font-size: 12px;
+	font-style: italic;
+	color: #b3b3b3;
+	font-weight: 400;
+}
+.post-footer-heading {
+	margin-bottom: 5px;
+	font-size: 10px;
+	color: #b3b3b3;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.post-info-title {
+    letter-spacing: -.5px;
+    font-style: normal;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 5px;
+    display: block;
+}
+.post-info {
+	font-size: 12px;
+	font-style: italic;
+	color: #b3b3b3;
+}
+.post-author-info {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.post-meta-list {
+    line-height: 1;
+    margin-bottom: 15px;
+    font-family: "Open Sans", "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+.post-item-meta-list, .post-meta-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 768px) {
 	.header-img {
@@ -139,6 +203,9 @@
 	}
 	#header {
 		padding-top: 10px;
+	}
+	.post-author-info {
+		margin-left: 15px;
 	}
 
 }
@@ -172,6 +239,9 @@
 		font-size: 18px;
 		padding-top: 23px;
 	}
+	.post-author-info {
+		margin-left: 5px;
+	}
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -203,13 +273,16 @@
 		margin-top: 70px;
 	}
 	.lots-of-news {
-		padding-right: 60px;
+		/* padding-right: 60px; */
 		/* border-right: 1px rgba(0,0,0,0.2) solid; */
 	}
 	.event-action .fa {
 		font-size: 20px;
 		padding-top: 23px;
 		padding-left: 4px;
+	}
+	.post-author-info {
+		margin-left: 15px;
 	}
 	
 }
