@@ -1,4 +1,4 @@
-PY=$(CURDIR)/bin/python
+PY=/usr/bin/env python3
 PELICAN=$(CURDIR)/bin/pelican
 PELICANOPTS=
 
@@ -29,6 +29,10 @@ help:
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
+
+bootstrap:
+	$(PY) bootstrap.py
+	bin/buildout
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
