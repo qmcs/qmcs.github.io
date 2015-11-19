@@ -36,7 +36,7 @@ function shut_down(){
   if [[ $? -eq 0 ]]; then
     if alive $PID; then
       echo "Killing pelican.server"
-      kill $PID
+      kill -9 $PID
     else
       echo "Stale PID, deleting"
     fi
@@ -49,7 +49,7 @@ function shut_down(){
   if [[ $? -eq 0 ]]; then
     if alive $PID; then
       echo "Killing Pelican"
-      kill $PID
+      kill -9 $PID
     else
       echo "Stale PID, deleting"
     fi
@@ -61,6 +61,7 @@ function shut_down(){
 
 function start_up(){
   mkdir -p log
+  rm log/*
   local srv_stdout="${PWD}/log/server_stdout.log"; echo -n "" > $srv_stdout
   local srv_stderr="${PWD}/log/server_stderr.log"; echo -n "" > $srv_stderr
   local pelican_stdout="${PWD}/log/pelican_stdout.log"; echo -n "" > $pelican_stdout
