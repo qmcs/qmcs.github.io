@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import os
+
+os.environ['GITHUB_USER']='<username>'
+os.environ['EECS_GITHUB_TOKEN']='<token>'

@@ -45,3 +45,4 @@ srv.pid
 src/
 log/
 .DS_Store
+github_admin_auth.py
