@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2015-03-10T10:07:00+00:00</updated><entry><title>Python environment for scientific computing</title><link href="http://eecs.io/python-environment-for-scientific-computing.html" rel="alternate"></link><updated>2015-03-10T10:07:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2015-03-10:python-environment-for-scientific-computing.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;Miniconda&lt;/a&gt; is a great way to get
+<feed xmlns="http://www.w3.org/2005/Atom"><title>EECS Society</title><link href="http://eecs.io/" rel="alternate"></link><link href="http://eecs.io/feeds/all.atom.xml" rel="self"></link><id>http://eecs.io/</id><updated>2016-01-28T00:00:00+00:00</updated><entry><title>James and Uche</title><link href="http://eecs.io/james-and-uche.html" rel="alternate"></link><updated>2016-01-28T00:00:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2016-01-28:james-and-uche.html</id><summary type="html">&lt;div class="section" id="who-are-you-and-what-are-you-doing"&gt;
+&lt;h2&gt;Who are you and what are you doing?&lt;/h2&gt;
+&lt;p&gt;We are James and Uche. Together we founded &lt;a class="reference external" href="http://yapnak.com/"&gt;Yapnak&lt;/a&gt;; the lunch app that brings
+students exclusive lunch deals for £5 and no hassle. Funnily enough, we're not
+tech guys (background wise) but instead both final year &lt;a class="reference external" href="http://www.smd.qmul.ac.uk/"&gt;Queen Mary medical
+students&lt;/a&gt;. However, we love food and so Yapnak was
+born. When we're not being student doctors we're working on Yapnak and trying to
+create the best possible food service that students can have. With over 500
+downloads and 100 claims in a few weeks we're actively trying to fan the flame.
+We've managed to getsign up some of the trendier restaurants around like
+Tayyabs, Greedy Cow and even our very own Drapers! If you haven't heard of us or
+seen the app check it out via our web link www.yapnak.com.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="what-do-you-expect-from-a-recent-graduate-to-become-a-successful-member-of-your-team"&gt;
+&lt;h2&gt;What do you expect from a recent graduate to become a successful member of your team?&lt;/h2&gt;
+&lt;p&gt;That's a good question. Three things spring to mind. Creativity, an infectious
+personality, and a strong work ethic. At this stage we're looking for people who
+can buy in to the ambition of our group, but don't need much motivation to get
+going. It's always nice to have someone who can bring something a little
+different to the team; of course that can vary from person to person.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="how-did-you-learn-programming"&gt;
+&lt;h2&gt;How did you learn programming?&lt;/h2&gt;
+&lt;p&gt;The simple answer to that question is we didn't! We have surrounded ourselves
+with the right people and looked for those with skills that complement us. Enter
+our CTO, Joshua. We needed a smart and personable tech person on the team and
+when we identified him we brought him on board.&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="interview"></category></entry><entry><title>Python environment for scientific computing</title><link href="http://eecs.io/python-environment-for-scientific-computing.html" rel="alternate"></link><updated>2015-03-10T10:07:00+00:00</updated><author><name>Dmitrijs Milajevs</name></author><id>tag:eecs.io,2015-03-10:python-environment-for-scientific-computing.html</id><summary type="html">&lt;p&gt;&lt;a class="reference external" href="http://conda.pydata.org/miniconda.html"&gt;Miniconda&lt;/a&gt; is a great way to get
 working Python environment on variety of operating systems. This tutorial goes
 trough the necessary steps to get a Python environment with common scientific
 packages.&lt;/p&gt;
