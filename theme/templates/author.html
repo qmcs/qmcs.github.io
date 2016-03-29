@@ -1,8 +1,10 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% set author_page = authors_info.get(author) %}
 
-{% block featured %}
+{% block content %}
+<div class="container">
+
   <section>
     <h1>{{ author }}</h1>
 
@@ -31,5 +33,5 @@
 
     <hr>
   </section>
-
+</div>
 {% endblock %}
