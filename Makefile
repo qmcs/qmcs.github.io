@@ -1,4 +1,4 @@
-PY=/usr/bin/env python3
+PY=/usr/bin/env python
 PELICAN=$(CURDIR)/bin/pelican
 PELICANOPTS=
 
@@ -13,10 +13,13 @@ ifeq ($(DEBUG), 1)
 	PELICANOPTS += -D
 endif
 
+all: bootstrap devserver
+
 help:
 	@echo 'Makefile for a pelican Web site                                        '
 	@echo '                                                                       '
 	@echo 'Usage:                                                                 '
+	@echo '   make                             install deps and start devserver   '
 	@echo '   make html                        (re)generate the web site          '
 	@echo '   make clean                       remove the generated files         '
 	@echo '   make regenerate                  regenerate files upon modification '
@@ -26,6 +29,7 @@ help:
 	@echo '   make stopserver                  stop local server                  '
 	@echo '   make ssh_upload                  upload the web site via SSH        '
 	@echo '   make github                      upload the web site via gh-pages   '
+	@echo '   make bootstrap                   install and build dependencies     '
 	@echo '                                                                       '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '

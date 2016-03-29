@@ -28,7 +28,7 @@ PAGE_EXCLUDES = ('authors',)
 
 sys.path.append('src/pelican_extended_authors')
 
-PLUGIN_PATHS = ['src/pelican-plugins']
+PLUGIN_PATH = 'src/pelican-plugins'
 PLUGINS = (
     'pelican_edit_url',
     'pelican_extended_authors',
@@ -37,6 +37,9 @@ PLUGINS = (
 
 SUMMARY_BEGIN_MARKER = '-- PELICAN_BEGIN_SUMMARY --'
 SUMMARY_END_MARKER = '-- PELICAN_END_SUMMARY --'
+
+# Default to first paragraph if no marker in article
+SUMMARY_USE_FIRST_PARAGRAPH = True
 
 # Menu
 DISPLAY_CATEGORIES_ON_MENU = False
